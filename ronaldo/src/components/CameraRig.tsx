@@ -127,6 +127,9 @@ export function CameraRig({preset = 'hero', progress = 0, action = false, target
       eye.set(center.x + direction.x * distance, Math.max(.65, Math.min(2.5, close ? focusY : focusY + .18)), center.z + direction.z * distance);
       const right = new Vector3(direction.z, 0, -direction.x);
       look.addScaledVector(right, distance * Math.tan(fov * Math.PI / 360) * .30);
+      // A slow, small arc keeps held reactions alive without camera shake.
+      eye.addScaledVector(right, Math.sin(seconds * .35) * .045);
+      eye.addScaledVector(direction, Math.sin(seconds * .23) * .025);
       const ray = new Raycaster(look, eye.clone().sub(look).normalize(), .15, look.distanceTo(eye));
       const first = ray.intersectObjects(obstacles, false)[0];
       if (first && first.distance < look.distanceTo(eye) + .12) {
@@ -161,6 +164,7 @@ export function CameraRig({preset = 'hero', progress = 0, action = false, target
     const year = yearAt(auditContext.sceneId, seconds);
     console.log('FRAME_AUDIT ' + JSON.stringify({cueId: cue?.id, cueStartedAtSeconds: auditContext.fromSeconds + (cue?.keySeconds ?? 0),
       yearCard: year?.year ?? null, yearCardStartedAtSeconds: year ? auditContext.fromSeconds + year.startSeconds : null,
+      motionSignature: subject?.userData.motionSignature ?? [],
       action: subject?.userData.visualAction ?? 'reaction', sceneId: auditContext.sceneId,
       localSeconds: seconds, globalTime: auditContext.fromSeconds + seconds, frame, fps,
       characterBox, cameraHeight: eye.y, outfit: subject?.userData.outfit ?? null,

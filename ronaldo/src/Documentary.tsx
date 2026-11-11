@@ -71,8 +71,8 @@ const FilmFinish: React.FC = () => {
   const grainOffset = (Math.floor(frame / 2) % 4) * 19;
   return <>
     <AbsoluteFill style={{pointerEvents: 'none',
-      background: 'radial-gradient(ellipse at 50% 43%, transparent 30%, rgba(0,0,0,.22) 64%, rgba(0,0,0,.7) 100%)'}} />
-    <AbsoluteFill style={{pointerEvents: 'none', opacity: .022,
+      background: 'radial-gradient(ellipse at 50% 43%, transparent 30%, rgba(0,0,0,.12) 64%, rgba(0,0,0,.38) 100%)'}} />
+    <AbsoluteFill style={{pointerEvents: 'none', opacity: .004,
       backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Cpath fill='%23ffffff' filter='url(%23n)' d='M0 0h160v160H0z'/%3E%3C/svg%3E")`,
       backgroundPosition: `${grainOffset}px ${grainOffset * 2}px`, mixBlendMode: 'screen'}} />
     <div style={{position: 'absolute', top: 0, left: 0, right: 0, height: bar, background: '#000'}} />

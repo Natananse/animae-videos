@@ -1,0 +1,115 @@
+{
+  "fps": 30,
+  "summary": [
+    {
+      "name": "reaction-proud",
+      "from": 0,
+      "to": 40,
+      "minimumJointRangePerHalfSecond": 0.011680061566597039,
+      "result": "PASS"
+    },
+    {
+      "name": "reaction-smile",
+      "from": 0,
+      "to": 40,
+      "minimumJointRangePerHalfSecond": 0.011680061566597039,
+      "result": "PASS"
+    },
+    {
+      "name": "reaction-determined",
+      "from": 0,
+      "to": 40,
+      "minimumJointRangePerHalfSecond": 0.005459023864474222,
+      "result": "PASS"
+    },
+    {
+      "name": "reaction-relieved",
+      "from": 0,
+      "to": 40,
+      "minimumJointRangePerHalfSecond": 0.005459023864474222,
+      "result": "PASS"
+    },
+    {
+      "name": "reaction-focus",
+      "from": 0,
+      "to": 40,
+      "minimumJointRangePerHalfSecond": 0.005459023864474222,
+      "result": "PASS"
+    },
+    {
+      "name": "reaction-sad",
+      "from": 0,
+      "to": 40,
+      "minimumJointRangePerHalfSecond": 0.005459023864474222,
+      "result": "PASS"
+    },
+    {
+      "name": "score-follow-through",
+      "from": 0,
+      "to": 12,
+      "minimumJointRangePerHalfSecond": 0.010853730409020601,
+      "result": "PASS"
+    },
+    {
+      "name": "childhood-opening",
+      "from": 0,
+      "to": 2.4,
+      "minimumJointRangePerHalfSecond": 0.009841561152774143,
+      "result": "PASS"
+    },
+    {
+      "name": "childhood-retry",
+      "from": 11.4,
+      "to": 13.4,
+      "minimumJointRangePerHalfSecond": 0.012280188310247728,
+      "result": "PASS"
+    },
+    {
+      "name": "childhood-smile",
+      "from": 22,
+      "to": 25.9,
+      "minimumJointRangePerHalfSecond": 0.012886614695186926,
+      "result": "PASS"
+    },
+    {
+      "name": "scene04-award-actor",
+      "from": 16.15,
+      "to": 27.38408,
+      "minimumJointRangePerHalfSecond": 0.009114616301367173,
+      "result": "PASS"
+    },
+    {
+      "name": "scene04-award-camera",
+      "maximumStepAt120fps": 0.0019383787271170154,
+      "result": "PASS"
+    },
+    {
+      "name": "scene05-award-actor",
+      "from": 3.52271,
+      "to": 40.31592,
+      "minimumJointRangePerHalfSecond": 0.006060775132193025,
+      "result": "PASS"
+    },
+    {
+      "name": "scene05-award-camera",
+      "maximumStepAt120fps": 0.0019378323018922321,
+      "result": "PASS"
+    },
+    {
+      "name": "scene07-award-actor",
+      "from": 1.01138,
+      "to": 10.79092,
+      "minimumJointRangePerHalfSecond": 0.006561712973378014,
+      "result": "PASS"
+    },
+    {
+      "name": "scene07-award-camera",
+      "maximumStepAt120fps": 0.0019382247927563678,
+      "result": "PASS"
+    },
+    {
+      "name": "exact strike, floor contact, planted feet, palm attachment and sentence clocks",
+      "result": "PASS"
+    }
+  ]
+}

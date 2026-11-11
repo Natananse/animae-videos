@@ -22,7 +22,12 @@
     "preview:from-final": "node scripts/make_preview.mjs",
     "audio:update": "node scripts/update_audio.mjs",
     "music:remix": "node scripts/remix_music.mjs",
-    "audio:clean": "node scripts/make_sound_cues.mjs && python3 scripts/mix_sfx.py && node scripts/remix_music.mjs --video=out/ronaldo_emotional_v3_music.mp4 --preview-video=out/ronaldo_emotional_v3_music_preview.mp4"
+    "audio:clean": "npm run audio:update",
+    "audio:prepare": "node scripts/make_sound_cues.mjs && python3 scripts/prepare_clear_audio.py",
+    "prestudio": "npm run audio:prepare",
+    "check:playback": "node scripts/check_playback.mjs",
+    "check:motion": "node scripts/check_continuous_motion.mjs",
+    "playback:720": "node scripts/make_playback.mjs"
   },
   "dependencies": {
     "@fontsource/inter": "^5.2.0",

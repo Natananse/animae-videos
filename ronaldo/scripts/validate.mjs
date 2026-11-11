@@ -96,7 +96,7 @@ const sourceOnly = process.argv.includes('--source-only');
 const report = {sourcePassed: true, sourceOnly, words, nativeWordBoundaries: nativeWordCount, sentenceCues: sentenceCount, yearCues: sync.yearEvents.length,
   trophyEvents: sync.trophyEvents.length, namedTrophies: 15, totalFrames: end, finalNarrationEnds: lastVoice, renders: []};
 const targets = [[finalFile, 1920, 1080, 30, script.totalDuration],
-  [previewFile, 960, 540, 15, script.totalDuration],
+  [previewFile, 960, 540, 30, script.totalDuration],
   ...Object.entries(reviews).map(([mode, [start, end]]) => [reviewFile(mode), 960, 540, 30, end - start])];
 if (process.argv.includes('--require-final')) assert(fs.existsSync(finalFile), 'Final video is missing');
 for (const [file, width, height, fps, seconds] of sourceOnly ? [] : targets) {

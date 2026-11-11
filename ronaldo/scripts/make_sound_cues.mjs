@@ -2,6 +2,7 @@ import assert from 'node:assert/strict';
 import {createHash} from 'node:crypto';
 import {readFileSync, writeFileSync, mkdirSync} from 'node:fs';
 import {BICYCLE_CUES, HOOK_CUES, CHILD_CUES, CHILD_EXIT_START_RUN, dribbleCues, poseAction} from '../src/animation/football.ts';
+import {actionElapsed} from '../src/animation/continuousMotion.ts';
 import {KEEPER_CUES} from '../src/scenes/goalkeeperMotion.ts';
 
 const sync = JSON.parse(readFileSync('public/sync.json', 'utf8'));
@@ -17,7 +18,7 @@ const sentenceAt = (sceneId, seconds) => {
 };
 
 // Match SyncedScene's precedence: award/reaction replacements suppress the old
-// pitch/tunnel contacts, while the two procedural chapters restart on each key.
+// pitch/tunnel contacts, while consecutive matching action sentences share their motion clock.
 const routeAt = time => {
   const scene = locate(time);
   if (!scene) return 'outside';
@@ -36,7 +37,7 @@ const routeAt = time => {
     (scene.id === 'scene07' && (outfit === 'alnassr' || action === 'shirt'))) return 'reaction';
   if (scene.id === 'scene06' && (action === 'shirt' || action === 'reaction')) return 'reaction';
   if (action === 'score' && (scene.id === 'scene04' || scene.id === 'scene07')) return 'score';
-  if (scene.id === 'scene03' || scene.id === 'scene06') return 'procedural';
+  if (scene.id === 'scene03' || scene.id === 'scene06' || (scene.id === 'scene04' && action === 'run')) return 'procedural';
   return 'baseline';
 };
 
@@ -84,11 +85,14 @@ for (const scene of timing.scenes) {
       // Goal arrival is visual at +.9s; the existing clean policy excludes net noise.
     } else if (route === 'procedural') {
       const action = sentence.visual_cue.action;
+      const clockOffset = actionElapsed(rows, sentence.id, sentence.keySeconds);
+      const clockStart = from - clockOffset;
       const contacts = action === 'run'
-        ? Array.from({length: Math.ceil((until - from) / .36)}, (_, index) => ({time: index * .36, kind: 'step'}))
-        : dribbleCues(until - from);
+        ? Array.from({length: Math.ceil((until - clockStart) / .36)}, (_, index) => ({time: index * .36, kind: 'step'}))
+        : dribbleCues(until - clockStart);
       for (const contact of contacts) {
-        const time = from + contact.time;
+        const time = clockStart + contact.time;
+        if (time < from - 1e-7) continue;
         if (time >= until - 1e-7 || routeAt(time) !== 'procedural') continue;
         cues.push({time, kind: contact.kind, gain: .48});
         proceduralContacts.push({sentenceId: sentence.id, time, kind: contact.kind, action: action === 'run' ? 'run' : action === 'training' ? 'training' : 'dribble', elapsed: contact.time});

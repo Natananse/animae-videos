@@ -1,3 +1,4 @@
+import {checkDir as deliveryCheckDir} from './delivery.mjs';
 import {bundle} from '@remotion/bundler';
 import {openBrowser, renderFrames, selectComposition} from '@remotion/renderer';
 import {createHash} from 'node:crypto';
@@ -12,7 +13,7 @@ process.chdir(root);
 const args=process.argv.slice(2);
 const videoArg=args.find(a=>a.startsWith('--video='));
 const capture=args.includes('--capture')||!videoArg;
-const checkDir='out/checks';
+const checkDir=process.env.CHECK_DIR??deliveryCheckDir;
 await fs.mkdir(checkDir,{recursive:true});
 const sync=JSON.parse(await fs.readFile('public/sync.json','utf8'));
 const timing=JSON.parse(await fs.readFile('public/timing.json','utf8'));

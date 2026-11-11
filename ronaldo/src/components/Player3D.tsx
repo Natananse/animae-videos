@@ -213,10 +213,15 @@ export function Player3D({outfit, pose = 'idle', child = false, progress, silhou
   const shirt = silhouette ? '#19222a' : kit.shirt;
   const trim = silhouette ? '#334447' : kit.trim;
   const breath = m.breath + Math.sin(t * 2.2) * .004;
+  // Pose evidence excludes film grain and tiny breathing, so a held rig cannot
+  // pass the motion check just because the image texture changes.
+  const motionSignature = [...m.position, m.yaw, m.hipHeight, ...m.pelvis, ...m.torso, ...m.head, ...m.gaze,
+    ...m.arms.flatMap(arm => [...arm.shoulder, arm.elbow, arm.wrist]),
+    ...m.legs.flatMap(leg => [...leg.hip, leg.knee, leg.ankle])];
   if (pose === 'shirt') return <group userData={{insertSubject: 'shirt', visualCheckRole: 'shirt', outfit}} rotation={[0, Math.sin(t * .22) * .06, Math.sin(t * .4) * .008]}>
     <HangingShirt outfit={outfit} />
   </group>;
-  return <group userData={{mainCharacter: !character.face, visualCheckRole: !character.face ? 'lead' : 'support', outfit, child, visualAction: visualAction ?? pose}}
+  return <group userData={{mainCharacter: !character.face, visualCheckRole: !character.face ? 'lead' : 'support', outfit, child, visualAction: visualAction ?? pose, motionSignature}}
     position={m.position} rotation={[0, m.yaw, 0]}>
     <group scale={child ? .68 : 1}>
       <group position={[0, m.hipHeight, 0]} rotation={m.pelvis}>

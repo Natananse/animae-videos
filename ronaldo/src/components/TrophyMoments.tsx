@@ -139,12 +139,20 @@ export const TrophySequence: React.FC<{events: TrophyEvent[]; sceneId: string; s
   const cue = sentenceAt(sceneId, seconds);
   if (cue?.visual_cue.action === 'lift') {
     const elapsed = Math.max(0, seconds - cue.keySeconds);
-    state.phase = 'lift'; state.elapsed = elapsed;
-    state.lift = Math.min(1, elapsed / .85);
+    const smooth = (n: number) => {const p = Math.max(0, Math.min(1, n)); return p * p * (3 - 2 * p);};
+    const initial = getTrophyState(events, sceneId, cue.keySeconds);
+    const startLift = initial.phase === 'reveal' ? 0 : initial.lift;
+    state.phase = 'lift';
+    state.lift = startLift + (1 - startLift) * smooth(elapsed / .85);
     if (sceneId === 'scene07') {
       const cups = state.earned.filter(item => item.kind === 'euro' || item.kind === 'nations-league');
-      state.focus = cups[Math.min(cups.length - 1, Math.floor(elapsed / 1.1))] ?? state.focus;
-      state.lift = Math.min(1, (elapsed % 1.1) / .55);
+      const index = Math.min(cups.length - 1, Math.floor(elapsed / 1.1));
+      state.focus = cups[index] ?? state.focus;
+      const local = Math.max(0, elapsed - index * 1.1);
+      // Lower between cups before changing the held model; never snap from the
+      // top of a lift to the next cup's starting pose.
+      const raise = index === 0 ? startLift + (1 - startLift) * smooth(local / .4) : smooth(local / .4);
+      state.lift = raise * (index < cups.length - 1 ? 1 - smooth((local - .75) / .35) : 1);
     }
   }
   const kit = outfit ?? trophyOutfit(sceneId);

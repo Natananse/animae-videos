@@ -31,3 +31,6 @@ public/voice/*.tmp*
 public/voice/*.incoming*
 public/sfx/action_mix.wav
 
+
+# Regenerated 48 kHz clarity master
+public/audio/*.wav

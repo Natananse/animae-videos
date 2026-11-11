@@ -1,8 +1,8 @@
 # The Shirt — A Ronaldo Story
 
-The current source revision is **revision pass 2, `v3_sync2`**: framing cleanup, measured narration cues and visible trophy moments within the existing Remotion, React and Three.js project. The film remains **3:20** with the earlier retention structure, cinematic style, football actions, quiet reactions and child ending. The farewell concerns Portugal international football; the narration says his club career continues. Read the dated evidence and remaining publication checks in [`script/facts.md`](script/facts.md).
+The current source revision is **`v4_clear`**: clearer narration, quieter contact sounds, continuous character animation and smoother 30 fps previews within the existing Remotion, React and Three.js project. It preserves revision pass 2's framing, word sync and trophy moments, together with the earlier retention structure, cinematic style and child ending. The film remains **3:20**. The farewell concerns Portugal international football; the narration says his club career continues. Read the dated evidence and publication checks in [`script/facts.md`](script/facts.md).
 
-Completed, validated exports are `out/ronaldo_emotional_v3_sync2_preview.mp4` and `out/ronaldo_emotional_v3_sync2.mp4`. The preview was rendered and passed before the native final. All 6,000 final frames pass the framing/pixel checks; all 56 sentence cues pass. Use the corresponding `out/v3_sync2_*_render.json` manifests, `out/v3_sync2_validation.json` and `out/checks/results.json` to assess the actual exports. [`REVISION_PASS_2.md`](REVISION_PASS_2.md) records this pass's changes and verification workflow.
+The new export targets are `out/ronaldo_emotional_v4_clear_preview.mp4` and `out/ronaldo_emotional_v4_clear.mp4`. The audio master has passed its checks; complete preview and final checks must be assessed from their generated reports after rendering. The earlier `v3_sync2` exports and evidence remain preserved. [`CLEAR_AUDIO_MOTION.md`](CLEAR_AUDIO_MOTION.md) explains the new changes and checks; [`REVISION_PASS_2.md`](REVISION_PASS_2.md) records the preceding revision.
 
 ## Setup
 
@@ -12,10 +12,11 @@ Use Node.js 24, Python 3, FFmpeg/ffprobe, Chrome and a C++17 compiler for the na
 npm ci
 npm run typecheck
 npm run validate -- --source-only
+npm run audio:prepare
 npm run studio
 ```
 
-Finished narration MP3s and measured timing are included. Only narration regeneration needs Edge TTS network access and the Python `edge-tts` package. `npm run voice` uses `PYTHON` when set, otherwise `/home/natnael/myenv/bin/python` when available, then `python3`. To prepare a fresh voice environment:
+`npm run studio` automatically runs `audio:prepare` through its `prestudio` hook. Preview and final render commands also prepare the cached audio master before bundling. Finished narration MP3s and measured timing are included and remain unchanged in this revision. Only narration regeneration needs Edge TTS network access and the Python `edge-tts` package. `npm run voice` uses `PYTHON` when set, otherwise `/home/natnael/myenv/bin/python` when available, then `python3`. To prepare a fresh voice environment:
 
 ```bash
 python3 -m venv .venv
@@ -32,25 +33,31 @@ Capture the source geometry evidence, render and check the 540p preview, fix any
 ```bash
 npm run typecheck
 npm run validate -- --source-only
+npm run audio:prepare
+npm run check:motion
 node scripts/check_framing.mjs --capture
 npm run preview
-node scripts/check_framing.mjs --video=out/ronaldo_emotional_v3_sync2_preview.mp4
+node scripts/check_framing.mjs --video=out/ronaldo_emotional_v4_clear_preview.mp4
+npm run check:playback -- --video=out/ronaldo_emotional_v4_clear_preview.mp4 --audit=out/v4_clear_checks/preview-audit.ndjson --output=out/v4_clear_checks/playback-preview.json
 npm run render
-node scripts/check_framing.mjs --video=out/ronaldo_emotional_v3_sync2.mp4
+node scripts/check_framing.mjs --video=out/ronaldo_emotional_v4_clear.mp4
+npm run check:playback -- --video=out/ronaldo_emotional_v4_clear.mp4 --audit=out/v4_clear_checks/final-audit.ndjson --output=out/v4_clear_checks/playback-final.json
 npm run validate -- --require-final
 ```
 
 | Artifact | Target and evidence |
 | --- | --- |
-| Preview | `out/ronaldo_emotional_v3_sync2_preview.mp4`, 960 × 540, 15 fps, 3,000 frames |
-| Final | `out/ronaldo_emotional_v3_sync2.mp4`, 1920 × 1080, 30 fps, 6,000 frames |
-| Export manifests | `out/v3_sync2_preview_render.json`, `out/v3_sync2_final_render.json` |
-| Sentence sync table | `out/checks/sync-table.md` |
-| Check frames | `out/checks/`, including FFmpeg-extracted sentence PNGs and `source/` browser frames |
-| Automated results | `out/checks/results.json`, `source-audit.json`, render audit NDJSON and flat-region evidence |
-| Source/export validation | `out/v3_sync2_validation.json` |
+| Preview target | `out/ronaldo_emotional_v4_clear_preview.mp4`, 960 × 540, **30 fps, 6,000 frames** |
+| Final target | `out/ronaldo_emotional_v4_clear.mp4`, 1920 × 1080, 30 fps, 6,000 frames |
+| Export manifests | `out/v4_clear_preview_render.json`, `out/v4_clear_final_render.json` |
+| Audio master and measurements | `public/audio/clear_master.wav`, `public/audio/clear_master.json`, `out/v4_clear_checks/audio-clarity.json` and `.md` |
+| Listening sample | `out/v4_clear_audio_sample.mp3`, 68–83 seconds of the new mix |
+| Sentence sync tables and frames | `out/v4_clear_checks/sync-table-preview.md`, `sync-table-final.md`, sentence PNGs and `source/` frames |
+| Framing results | `out/v4_clear_checks/results-preview.json`, `results-final.json`, `source-audit.json` and flat-region evidence |
+| Playback results | `out/v4_clear_checks/playback-preview.json`, `playback-final.json` and per-frame audit NDJSON |
+| Source/export validation | `out/v4_clear_validation.json` |
 
-Both complete targets last 200 seconds. The final renders directly from source at 1080p/30 fps; H.264 CRF 18 and AAC 192 kb/s remain the delivery settings. The cinematic 2.39:1 image sits inside the 16:9 canvas. Existing `review:opening`, `review:childhood`, `review:walking`, `review:supporting`, `review:bicycle`, `review:farewell`, `review:ending` and `stills` commands remain available for focused review.
+Both complete targets last 200 seconds. The preview now renders at the same **30 fps** as the final; the old preview's 15 fps limit is removed. Delivery settings are H.264 `yuv420p`, limited-range BT.709, two-second keyframe spacing, fast-start MP4 and stereo 48 kHz AAC at 320 kb/s. The encoder uses CRF 21 / 3 Mb/s maximum for the preview and CRF 18 / 8 Mb/s maximum for the native final. The cinematic 2.39:1 image sits inside the 16:9 canvas. Existing focused review and `stills` commands remain available.
 
 The renderer defaults to `/usr/bin/google-chrome`, one concurrent page and Chromium `angle`. Override with `BROWSER_EXECUTABLE`, `RENDER_CONCURRENCY` or `CHROMIUM_GL`; `swangle` is the software fallback. Source/asset hashes control bundle caching. Source changes after a geometry capture require a new capture before video checks.
 
@@ -68,24 +75,28 @@ The 2008 sequence names the Champions League, Premier League, first Ballon d'Or 
 
 ## Retained sound and staging
 
-The earlier retention pass's opening impact, football choreography, teammates, goalkeeper, supporter response, international farewell and closing child remain the baseline. Shared motion lives in `src/animation/football.ts`; `node scripts/check_motion.mjs` checks its mathematical contacts. Sentence-specific staging updates connect the relevant actions and costume changes to spoken keys.
+The earlier retention pass's opening impact, football choreography, teammates, goalkeeper, supporter response, international farewell and closing child remain the baseline. Shared motion lives in `src/animation/football.ts`; `node scripts/check_motion.mjs` checks its mathematical contacts. Continuous action clocks, natural joint movement, score follow-through and moving trophy cameras address held rigs and repeated pose resets while preserving the spoken cues. `npm run check:motion` checks those paths; the playback check uses actual joint signatures from every rendered frame. Camera movement or animated grain cannot satisfy its articulated-motion check. Grain, blur and vignette strength are reduced for a cleaner picture.
 
 The approved score remains *Ascension* by Scott Buckley, under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Preserve the upload credit:
 
 > 'Ascension' by Scott Buckley - released under CC-BY 4.0. www.scottbuckley.com.au
 
-The [composer's track page](https://www.scottbuckley.com.au/library/ascension/) is the primary licence reference; local provenance remains in `public/music/`. The arrangement, fades and narration-aware ducking policy remain. Short original ball, touch, footstep and landing effects remain; synthetic hiss beds, noisy wind/crowd, breath, cloth, net and applause layers stay excluded. The renderer rebuilds the cached clean Foley mix before exporting. See [`NOISE_CLEANUP.md`](NOISE_CLEANUP.md) and [`MUSIC_UPDATE.md`](MUSIC_UPDATE.md) for those earlier audio passes.
+The [composer's track page](https://www.scottbuckley.com.au/library/ascension/) is the primary licence reference; local provenance remains in `public/music/`. The new offline master keeps the narrator centered, the score stereo and the music lower during speech. Gentle voice EQ and compression improve consistency; quiet contact effects replace the prominent procedural thuds. No heavy noise processing, speech regeneration or time stretching is used. Synthetic hiss beds, noisy wind/crowd, breath, cloth, net and applause layers stay excluded.
+
+The master measures **−16.9 LUFS / −2.4 dBTP**, compared with **−22.53 LUFS** in the previous export. Contact peaks fall from **−7.5 to −25.6 dBTP**; median spoken-word voice-over-music separation is **23.2 dB**. These are measured master values, not a claim that the pending native export has completed its checks. `npm run audio:prepare` deterministically rebuilds the master when source hashes change. `npm run audio:update` remuxes the current revision's existing exports with AAC 320 kb/s while preserving their picture packets. The legacy `music:remix` script requires explicit inputs and refuses to overwrite existing exports. See [`CLEAR_AUDIO_MOTION.md`](CLEAR_AUDIO_MOTION.md), [`NOISE_CLEANUP.md`](NOISE_CLEANUP.md) and [`MUSIC_UPDATE.md`](MUSIC_UPDATE.md).
 
 ## Facts and manual review
 
 [`script/facts.md`](script/facts.md) is the primary-source ledger rechecked on **11 November 2026**. `VERIFY:` markers stay in the script and ledger for publication review. Reopen changing retirement/club-status and international-record sources before uploading. Check the distinction between the **2008 award year** and the **January 2009 FIFA World Player ceremony**, Madrid's symbolic number seven versus his arrival number nine, and Madrid's 2018 away match in Turin versus his later Juventus era.
 
-Watch the complete exports for pose/ball/hand contacts, camera clipping, trophy scale and cumulative counts, costume transitions, year-card timing, names and pronunciation, subtitle readability on a phone and audio balance. Confirm all kits and props remain free of official marks. Keep the opening disclaimer, description disclosure and Scott Buckley credit. The full checklist is in [`REVISION_PASS_2.md`](REVISION_PASS_2.md) and [`out/publish.md`](out/publish.md).
+Watch the complete exports for pose/ball/hand contacts, camera clipping, trophy scale and cumulative counts, costume transitions, year-card timing, names and pronunciation, subtitle readability and audio balance. Audition the new mix on headphones and phone speakers, and play the downloaded MP4 on the phone/player where the earlier video appeared to stick. Check both uninterrupted playback and seeking. Confirm all kits and props remain free of official marks. Keep the opening disclaimer, description disclosure and Scott Buckley credit. The full checklist is in [`CLEAR_AUDIO_MOTION.md`](CLEAR_AUDIO_MOTION.md), [`REVISION_PASS_2.md`](REVISION_PASS_2.md) and [`out/publish.md`](out/publish.md).
 
 ## Preserved deliveries and Git
 
-This revision uses new `v3_sync2` filenames. Earlier noise-cleaned v3 (`ronaldo_emotional_v3_clean*`), music v3 (`ronaldo_emotional_v3_music*`), native v3 (`ronaldo_emotional_v3*`), v2 and original four-minute deliveries remain separate. Existing source archives and the earlier London project are preserved. [`REVISION.md`](REVISION.md), [`QA.md`](QA.md) and the audio notes describe those passes.
+This revision uses new `v4_clear` filenames. The `v3_sync2` revision, earlier noise-cleaned v3 (`ronaldo_emotional_v3_clean*`), music v3 (`ronaldo_emotional_v3_music*`), native v3 (`ronaldo_emotional_v3*`), v2 and original four-minute deliveries remain separate. Existing source archives and the earlier London project are preserved. [`REVISION.md`](REVISION.md), [`QA.md`](QA.md) and the audio notes describe those passes.
 
-Local `main` history is preserved. Numbered sections use focused commits; source-only synchronization through the GitHub API is underway on a source branch while retaining the existing history. No force-push is used. Generated MP4s, render caches, dependencies, secrets and the rebuilt Foley master remain outside Git. Check the final handoff for the pushed branch and commit references.
+Local `main` history and concurrent workspace changes are preserved. After the new checks finish, source changes follow the existing publication workflow on [`revision-pass-2-source`](https://github.com/Natananse/animae-videos/tree/revision-pass-2-source). No force-push is used. Generated MP4s, audio masters, render caches, dependencies and secrets remain outside Git. Check the final handoff for publication status and commit references.
 
-Source and check-frame archives are `out/ronaldo_emotional_v3_sync2_source.zip` and `out/ronaldo_emotional_v3_sync2_checks.zip`. The final sync table is [`out/checks/sync-table.md`](out/checks/sync-table.md); the dated manual `VERIFY` checklist remains in [`script/facts.md`](script/facts.md). Git delivery is recorded in [`GIT_DELIVERY.md`](GIT_DELIVERY.md).
+New source/check archive targets use `out/ronaldo_emotional_v4_clear_source.zip` and `out/ronaldo_emotional_v4_clear_checks.zip`; their presence should be confirmed at handoff. The current sync evidence belongs in [`out/v4_clear_checks/`](out/v4_clear_checks/); the dated manual `VERIFY` checklist remains in [`script/facts.md`](script/facts.md). Earlier Git delivery is recorded in [`GIT_DELIVERY.md`](GIT_DELIVERY.md).
+
+The complete v4 30 fps preview passes all playback, articulated-motion, audio, framing and sync checks. The native final and smaller 720p playback file are checked separately after rendering. `npm run playback:720` creates `out/ronaldo_emotional_v4_clear_720p.mp4` from the native final; it uses H.264 Baseline and a 2 Mb/s video cap for easier playback. See [CLEAR_AUDIO_MOTION.md](CLEAR_AUDIO_MOTION.md) for the measured comparison and reproduction commands.

@@ -1,18 +1,17 @@
-import {bundle} from '@remotion/bundler';
-import {openBrowser, renderMedia, selectComposition} from '@remotion/renderer';
 import {execFileSync} from 'node:child_process';
 import {createHash} from 'node:crypto';
-import {existsSync, readFileSync, renameSync, writeFileSync} from 'node:fs';
+import {copyFileSync, existsSync, readFileSync, renameSync, writeFileSync} from 'node:fs';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {version, finalFile, reviews, reviewFile} from './delivery.mjs';
 
 process.chdir(path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..'));
 execFileSync(process.execPath, ['scripts/make_sound_cues.mjs'], {stdio: 'inherit'});
-execFileSync(process.env.PYTHON ?? 'python3', ['scripts/mix_sfx.py'], {stdio: 'inherit'});
+execFileSync(process.env.PYTHON ?? 'python3', ['scripts/prepare_clear_audio.py'], {stdio: 'inherit'});
 const master = `out/${version}_audio_master.wav`;
 const signature = createHash('sha256');
-for (const file of ['src/components/AudioMix.tsx', 'public/timing.json', 'public/music/bg.mp3', 'public/sfx/action_mix.wav',
+for (const file of ['src/components/AudioMix.tsx', 'public/timing.json', 'public/music/bg.mp3',
+  'public/audio/clear_master.wav', 'public/audio/clear_master.json',
   ...Array.from({length: 8}, (_, i) => `public/voice/scene${String(i + 1).padStart(2, '0')}.mp3`)]) {
   signature.update(readFileSync(file));
 }
@@ -20,17 +19,9 @@ const inputHash = signature.digest('hex');
 const cacheFile = `.cache/${version}_audio_master.json`;
 const cached = existsSync(master) && existsSync(cacheFile) && JSON.parse(readFileSync(cacheFile, 'utf8')).inputHash === inputHash;
 if (!cached) {
-// A separate bundle leaves an in-progress picture render undisturbed.
-const serveUrl = await bundle({entryPoint: path.resolve('src/index.ts'),
-  publicDir: path.resolve('public'), outDir: path.resolve('.render/audio-bundle')});
-const browser = await openBrowser('chrome', {browserExecutable: process.env.BROWSER_EXECUTABLE ?? '/usr/bin/google-chrome',
-  chromiumOptions: {gl: process.env.CHROMIUM_GL ?? 'angle'}, chromeMode: 'chrome-for-testing'});
-try {
-  const composition = await selectComposition({serveUrl, id: 'RonaldoAudio', puppeteerInstance: browser});
-  await renderMedia({serveUrl, composition, puppeteerInstance: browser, codec: 'wav',
-    audioCodec: 'pcm-16', sampleRate: 48000, outputLocation: master, concurrency: 1,
-    overwrite: true, timeoutInMilliseconds: 120000, logLevel: 'warn'});
-} finally {await browser.close({silent: true});}
+// AudioMix plays this exact offline master. Copying it preserves its 24-bit
+// samples and does not launch a competing browser or re-quantize the audio.
+copyFileSync('public/audio/clear_master.wav', master);
 writeFileSync(cacheFile, JSON.stringify({inputHash, completedAt: new Date().toISOString()}, null, 2) + '\n');
 } else console.log('Canonical audio master is cached.');
 if (process.argv.includes('--master-only')) {
@@ -48,7 +39,7 @@ for (const [file, start, seconds] of [
   const before = pictureHash(file);
   const temporary = file.replace('.mp4', '_audio_updated.mp4');
   execFileSync('ffmpeg', ['-v', 'error', '-y', '-i', file, '-ss', String(start), '-t', String(seconds), '-i', master,
-    '-map', '0:v:0', '-map', '1:a:0', '-c:v', 'copy', '-c:a', 'aac', '-b:a', '192k',
+    '-map', '0:v:0', '-map', '1:a:0', '-c:v', 'copy', '-c:a', 'aac', '-b:a', '320k',
     '-ar', '48000', '-movflags', '+faststart', temporary], {stdio: 'inherit'});
   if (pictureHash(temporary) !== before) throw new Error(`Picture packets changed during audio update: ${file}`);
   renameSync(temporary, file);

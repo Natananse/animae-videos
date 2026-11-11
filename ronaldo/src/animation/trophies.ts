@@ -1,6 +1,7 @@
 import type {CameraShot} from '../components/CameraRig';
 import type {Outfit} from '../components/Player3D';
-import {baseMotion, handPosition, type ActorMotion, type Vec3} from './football';
+import {baseMotion, handPosition, type ActorMotion, type Vec3} from './football.ts';
+import {livingPose} from './continuousMotion.ts';
 
 export type TrophyKind = 'champions-league' | 'premier-league' | 'ballon-dor' |
   'fifa-player' | 'euro' | 'nations-league';
@@ -15,6 +16,7 @@ export type EarnedTrophy = {
 export type TrophyState = {
   earned: EarnedTrophy[]; event: TrophyEvent | null; focus: EarnedTrophy | null;
   phase: 'reveal' | 'lift' | 'cabinet'; elapsed: number; lift: number; flash: number;
+  seconds: number; cameraPush: number;
 };
 const clamp = (value: number, min = 0, max = 1) => Math.max(min, Math.min(max, value));
 const smooth = (value: number) => {const n = clamp(value); return n * n * (3 - 2 * n);};
@@ -52,7 +54,13 @@ export function getTrophyState(events: TrophyEvent[], sceneId: string, seconds: 
   // A grouped spoken count is represented by that many separate models immediately.
   // Move one model to the foreground/hand; never clone it in the cabinet.
   const focus = focused[focused.length - 1] ?? null;
-  return {earned, event: current, focus, elapsed,
+  // Each reveal contributes a smooth push that decays slowly. Summing the
+  // contributions keeps camera velocity continuous when the next prize is named.
+  const revealTimes = [...new Set(events.filter(event => event.sceneId === sceneId && event.start <= seconds)
+    .map(event => event.start))];
+  const cameraPush = revealTimes.reduce((sum, start) => {const age = seconds - start;
+      return sum + (1 - Math.exp(-age / .7)) ** 2 * Math.exp(-age / 5);}, 0);
+  return {earned, event: current, focus, elapsed, seconds, cameraPush,
     phase: current && elapsed < reveal ? 'reveal' : current && elapsed < reveal + 2 ? 'lift' : 'cabinet',
     lift: current ? smooth((elapsed - reveal) / 1.3) : 0,
     flash: current ? Math.max(0, 1 - elapsed / .17) : 0};
@@ -60,24 +68,28 @@ export function getTrophyState(events: TrophyEvent[], sceneId: string, seconds: 
 
 export type TrophyCameraShot = CameraShot & {framing: 'trophy-cabinet'};
 export function trophyCamera(state: TrophyState): TrophyCameraShot {
-  const push = state.phase === 'reveal' ? smooth(state.elapsed / 1.7) : 0;
+  const push = 1 - Math.exp(-state.cameraPush * .7);
+  const arc = Math.sin(state.seconds * .18) * .05;
   return {
     // Both the athlete and the named trophy remain visible during the push-in.
-    position: [-.05, 1.88 - .08 * push, 6.65 - .6 * push],
+    position: [-.05 + arc, 1.88 - .08 * push, 6.65 - .6 * push],
     target: [-.15, 1.55, 0], fov: 35, keepComposition: true, framing: 'trophy-cabinet',
   };
 }
 
 /** The trophy base follows the real right palm from Player3D's exact rig hierarchy. */
 export function trophyLiftMotion(state: TrophyState): {motion: ActorMotion; hand: Vec3; scale: number} {
-  const motion = baseMotion('proud');
+  let motion = baseMotion('proud');
   motion.position = [1.2, 0, .15];
   motion.yaw = -.08;
   motion.emotionFrom = 'relieved'; motion.emotionBlend = clamp(state.elapsed / 1.2);
   motion.gaze = [-.12, .08]; motion.head = [-.035, -.04, 0];
-  const lift = state.phase === 'reveal' ? 0 : state.lift;
-  motion.arms[1] = {shoulder: [-1.05 - lift * .95, -.12, .16], elbow: -.18 - lift * .12, wrist: .05};
+  const release = state.phase === 'cabinet' && state.event
+    ? 1 - smooth((state.elapsed - trophyRevealDuration(state.event) - 2) / 1.2) : 1;
+  const lift = state.phase === 'reveal' ? 0 : state.lift * release;
+  motion.arms[1] = {shoulder: [-.12 - lift * 1.88, -.12, .16], elbow: -.18 - lift * .12, wrist: .05};
   motion.arms[0] = {shoulder: [-.1 - lift * .1, 0, -.12 - lift * .45], elbow: .18 + lift * .8, wrist: 0};
+  motion = livingPose(motion, state.seconds, .7);
   return {motion, hand: handPosition(motion, 1), scale: .48};
 }
 

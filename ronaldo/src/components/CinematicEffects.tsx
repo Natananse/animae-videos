@@ -37,7 +37,7 @@ const fragmentShader = /* glsl */`
     float distanceToCamera = -perspectiveDepthToViewZ(depth, cameraNear, cameraFar);
     float outOfFocus = smoothstep(focusRange, focusRange + 12.0,
       abs(distanceToCamera - focusDistance));
-    float radius = mix(1.0, 3.0, outOfFocus) * pixelScale;
+    float radius = mix(1.0, 2.0, outOfFocus) * pixelScale;
     vec2 stepSize = texelSize * radius;
     vec3 center = texture2D(colorMap, vUv).rgb;
     vec3 gathered = center * 0.2;
@@ -57,7 +57,7 @@ const fragmentShader = /* glsl */`
       gathered += sampleColor * 0.1;
       bloom += highlights(sampleColor) * 0.1;
     }
-    vec3 color = mix(center, gathered, outOfFocus * 0.65) + bloom * 0.16;
+    vec3 color = mix(center, gathered, outOfFocus * 0.30) + bloom * 0.10;
     gl_FragColor = vec4(color, 1.0);
     #include <tonemapping_fragment>
     #include <colorspace_fragment>

@@ -1,7 +1,10 @@
 // Keep every delivery pass separate from preserved renders and review clips.
-export const version = 'v3_sync2';
+export const version = 'v4_clear';
+export const checkDir = `out/${version}_checks`;
+export const previewFps = 30;
 export const finalFile = `out/ronaldo_emotional_${version}.mp4`;
 export const previewFile = `out/ronaldo_emotional_${version}_preview.mp4`;
+export const playbackFile = `out/ronaldo_emotional_${version}_720p.mp4`;
 export const reviews = {
   'review-opening': [0, 10],
   'review-childhood': [10, 36],

@@ -5,7 +5,7 @@ import {createHash} from 'node:crypto';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {execFileSync} from 'node:child_process';
-import {version, finalFile, previewFile, reviews, reviewFile, manifestFile} from './delivery.mjs';
+import {version, finalFile, previewFile, reviews, reviewFile, manifestFile, checkDir} from './delivery.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 process.chdir(root);
@@ -22,7 +22,8 @@ const onBrowserLog = ({text}) => {
 };
 // Pre-mix Foley once so the UHD 620 does not evaluate hundreds of audio nodes.
 execFileSync(process.execPath, ['scripts/make_sound_cues.mjs'], {stdio: 'inherit'});
-execFileSync(process.env.PYTHON ?? 'python3', ['scripts/mix_sfx.py'], {stdio: 'inherit'});
+execFileSync(process.env.PYTHON ?? 'python3', ['scripts/prepare_clear_audio.py'], {stdio: 'inherit'});
+const clearAudio = JSON.parse(await readFile('public/audio/clear_master.json', 'utf8'));
 const sourceHash = createHash('sha256');
 async function hashDirectory(directory) {
   for (const item of (await readdir(directory, {withFileTypes: true})).sort((a, b) => a.name.localeCompare(b.name))) {
@@ -72,9 +73,12 @@ try {
       : mode === 'benchmark' ? [0, 89] : undefined;
     let lastLog = 0;
     await renderMedia({composition, serveUrl, puppeteerInstance: browser,
-      codec: 'h264', audioCodec: 'aac', audioBitrate: '192k', sampleRate: 48000,
-      crf: mode === 'preview' || isReview ? 23 : 18, x264Preset: 'fast', pixelFormat: 'yuv420p',
-      imageFormat: 'jpeg', jpegQuality: mode === 'preview' ? 86 : 95,
+      codec: 'h264', audioCodec: 'aac', audioBitrate: '320k', sampleRate: 48000,
+      crf: mode === 'preview' || isReview ? 21 : 18, x264Preset: 'fast', pixelFormat: 'yuv420p',
+      colorSpace: 'bt709', gopSize: composition.fps * 2,
+      encodingMaxRate: mode === 'preview' || isReview ? '3M' : '8M',
+      encodingBufferSize: mode === 'preview' || isReview ? '6M' : '16M',
+      imageFormat: 'jpeg', jpegQuality: mode === 'preview' ? 92 : 97,
       concurrency: Number(process.env.RENDER_CONCURRENCY ?? 1),
       timeoutInMilliseconds: 120000, frameRange, outputLocation, overwrite: true,
       onBrowserLog, logLevel: 'warn', onProgress: (progress) => {
@@ -86,13 +90,14 @@ try {
         }
       },
     });
-    const evidence = {mode, outputLocation, sourceHash: fingerprint,
+    const evidence = {mode, outputLocation, sourceHash: fingerprint, audioMasterSha256: clearAudio.masterSha256,
+      colorSpace: 'bt709', pixelFormat: 'yuv420p', audioBitrate: '320k', maxKeyframeSeconds: 2,
       graphicsBackend: chromiumOptions.gl, concurrency: Number(process.env.RENDER_CONCURRENCY ?? 1), fps: composition.fps,
       width: composition.width, height: composition.height,
       durationInFrames: composition.durationInFrames, frameRange: frameRange ?? null,
       elapsedSeconds: (Date.now() - start) / 1000, completedAt: new Date().toISOString()};
-    await mkdir('out/checks', {recursive: true});
-    await writeFile(`out/checks/${mode}-audit.ndjson`, [...frameAudits.values()].sort((a,b) => a.globalTime-b.globalTime).map(a => JSON.stringify(a)).join('\n') + '\n');
+    await mkdir(checkDir, {recursive: true});
+    await writeFile(`${checkDir}/${mode}-audit.ndjson`, [...frameAudits.values()].sort((a,b) => a.globalTime-b.globalTime).map(a => JSON.stringify(a)).join('\n') + '\n');
     await writeFile(manifestFile(mode), JSON.stringify(evidence, null, 2) + '\n');
     console.log(`Complete: ${outputLocation} (${evidence.elapsedSeconds.toFixed(1)} seconds to render)`);
   }

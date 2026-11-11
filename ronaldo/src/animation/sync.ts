@@ -30,5 +30,12 @@ export function trophiesAt(absoluteSeconds: number): TrophyEvent[] {
   return trophyEvents.filter(event => event.count > 0 && event.absoluteSeconds <= absoluteSeconds + 1e-6);
 }
 export function yearAt(sceneId: string, localSeconds: number): YearEvent | undefined {
-  return yearEvents.filter(event => event.sceneId === sceneId && event.startSeconds <= localSeconds + 1e-6 && localSeconds < event.startSeconds + 2).at(-1);
+  const year = yearEvents.filter(event => event.sceneId === sceneId && event.startSeconds <= localSeconds + 1e-6 && localSeconds < event.startSeconds + 2).at(-1);
+  if (!year) return undefined;
+  const cue = sentenceAt(sceneId, localSeconds);
+  // End the previous card when a different prize/year is introduced; show the
+  // next numeric card only on its measured spoken year, never an outdated date.
+  const introducesDifferentYear = cue && cue.id !== year.sentenceId &&
+    [...cue.years, ...cue.trophies].some(event => event.year !== year.year);
+  return introducesDifferentYear ? undefined : year;
 }

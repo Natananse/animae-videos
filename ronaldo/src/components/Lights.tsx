@@ -8,8 +8,8 @@ export function Lights({warm = false, mood = 'stadium', faceFill = false, fillPo
   const gold = warm ? '#ffb968' : '#f2bc70';
   const blue = warm ? '#ffe0ad' : '#95bdff';
   return <group>
-    <ambientLight intensity={hushed ? 0.17 : 0.36} color={warm ? '#b7a2a0' : '#819ab6'} />
-    <hemisphereLight args={[warm ? '#f3c892' : '#91b4dd', '#17282b', hushed ? 0.35 : 0.65]} />
+    <ambientLight intensity={hushed ? 0.22 : 0.43} color={warm ? '#b7a2a0' : '#819ab6'} />
+    <hemisphereLight args={[warm ? '#f3c892' : '#91b4dd', '#17282b', hushed ? 0.42 : 0.72]} />
     <directionalLight position={[-5, 7, 5]} color={blue} intensity={hushed ? 1.5 : 2.8} castShadow
       shadow-mapSize-width={1024} shadow-mapSize-height={1024}
       shadow-camera-left={-11} shadow-camera-right={11} shadow-camera-top={10} shadow-camera-bottom={-9}
