@@ -1,3 +1,22 @@
+# Revision pass 2 delivery checks — 11 November 2026
+
+The native 1080p final completed and passed separately: **6,000/6,000 frames** contain the main character, minimum projected area **12.5658%**, camera height **1.0795–2.5000 m**, maximum connected flat region **20.6516%**, and **zero failures**. All 56 sentences, 19 award events, 21 year cards and supporting-cast checks pass. The maximum delay to the first matching encoded frame is **32.5867 ms**. Both exports pass FFprobe format checks and a complete FFmpeg decode. Final/preview source hashes match. Final render time was 1179.4 seconds; the final is 1920 × 1080, 30 fps, 6,000 frames and 200 seconds.
+
+| Export | Size and rate | Frames | Duration |
+| --- | --- | ---: | ---: |
+| `ronaldo_emotional_v3_sync2_preview.mp4` | 960 × 540, 15 fps | 3,000 | 200 s |
+| `ronaldo_emotional_v3_sync2.mp4` | 1920 × 1080, 30 fps | 6,000 | 200 s |
+
+The native preview passed before the final render. Word timing uses 329 actual native Edge boundaries, 56 sentence cues and 21 year cues. The 19 award reveal/focus events represent 15 physical prizes. Source checks include 383 sentence, cue-boundary and runtime frames; the preview and final audits cover every encoded frame. Full PNGs, actual keyword-frame evidence and stage reports are in `out/checks/`; the final table is [`out/checks/sync-table.md`](out/checks/sync-table.md).
+
+Initial checks caught plain locker walls and missing supporting cast. Modeled locker doors, teammates/opponents and word-timed applause were added; checks were rerun until source, preview and final passed. Existing score, clean sound policy, retained action silence and quiet child ending remain.
+
+Human review remains for pronunciation, subtle foot/ball and hand/trophy contacts, year-label and caption readability on a phone, official marks, music attribution and the dated facts flagged `VERIFY` in [`script/facts.md`](script/facts.md). The 2008 FIFA award-year/January 2009 ceremony distinction and symbolic Madrid number seven remain explicit.
+
+The following record applies to the separately preserved earlier v3 export.
+
+---
+
 # Emotional v3 delivery checks — 11 November 2026
 
 The completed video is `out/ronaldo_emotional_v3.mp4`. Updated source is `out/ronaldo_emotional_v3_source.zip`. Original and v2 versions remain preserved.

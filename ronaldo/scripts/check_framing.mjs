@@ -91,6 +91,14 @@ if(videoArg){
 const byFrame=new Map(evidence.records.map(r=>[r.globalFrame,r]));
 function auditFor(s){return byFrame.get(sentenceFrame(s));}
 function renderedAuditAt(seconds){return fullRenderAudit?.find(a=>a.globalTime>=seconds-1e-7);}
+function videoEvidence(a,requestedSeconds,issues){
+ return {requestedSeconds,actualFrame:a?Math.round(a.globalTime*a.fps):null,
+  fps:a?.fps??null,actualSeconds:a?.globalTime??null,delaySeconds:a?a.globalTime-requestedSeconds:null,
+  cueId:a?.cueId??null,cueStartedAtSeconds:a?.cueStartedAtSeconds??null,
+  outfit:a?.outfit??null,action:a?.action??null,characterBox:a?.characterBox??null,
+  supportingActors:a?.supportingActors??[],trophyIds:(a?.trophyIds??[]).map(canonicalTrophyId),
+  yearCard:a?.yearCard??null,result:issues.length?'FAIL: '+issues.join('; '):'PASS'};
+}
 
 function character(a){return a?.characterBox??a?.character??{};}
 function reasons(a,allowInsert=false){
@@ -140,16 +148,20 @@ for(const s of sync.sentences){
  rows.push({id:s.id,sentence:s.text,timestamp:s.absoluteKeySeconds,expectedVisual:`${expected.action}; ${expected.outfit}; ${(expected.props??[]).join(', ')}; ${expected.camera}`,result,audit:a});
  if(fullRenderAudit){
   const v=renderedAuditAt(s.absoluteKeySeconds),vIssues=[...reasons(v),...supportingProps(v,s)];
+  let firstClap=null;
   if(!v||v.globalTime-s.absoluteKeySeconds>.3)vIssues.push('no rendered frame within0.3s of keyword');
   if(v?.cueId!==s.id)vIssues.push(`rendered cue ${v?.cueId}, expected ${s.id}`);
   if(v?.outfit!==expected.outfit)vIssues.push(`rendered outfit ${v?.outfit}, expected ${expected.outfit}`);
   if(mustMatch&&!(actionFamilies[expected.action]??[expected.action]).includes(v?.action))vIssues.push(`rendered motion ${v?.action}, expected ${expected.action}`);
   if(expected.props?.includes('applauding-supporters')){
-   const firstClap=fullRenderAudit.find(r=>r.sceneId===s.sceneId&&r.supportingActors?.some(p=>p.action==='clap'&&p.outfit!==expected.outfit));
+   firstClap=fullRenderAudit.find(r=>r.sceneId===s.sceneId&&r.supportingActors?.some(p=>p.action==='clap'&&p.outfit!==expected.outfit));
    if(!firstClap||Math.abs(firstClap.globalTime-s.absoluteKeySeconds)>.3)vIssues.push('supporter clap onset differs by >0.3s');
   }
   rows.at(-1).renderedFrame=v?.globalTime;
   rows.at(-1).renderedCueDelay=v?v.globalTime-s.absoluteKeySeconds:null;
+  rows.at(-1).actualVideoEvidence={...videoEvidence(v,s.absoluteKeySeconds,vIssues),
+   clapOnsetSeconds:firstClap?.globalTime??null,
+   clapOnsetDelaySeconds:firstClap?firstClap.globalTime-s.absoluteKeySeconds:null};
   if(vIssues.length){rows.at(-1).result='FAIL: '+[...issues,...vIssues].join('; ');issues.push(...vIssues);}
  }
  if(issues.length)failures.push({type:'sentence',id:s.id,issues});
@@ -164,13 +176,16 @@ for(const event of sync.trophyEvents??[]){
  if(actual.length!==expected.length)issues.push(`count ${actual.length}, expected ${expected.length}`);
  const revealedId=event.count>0?event.id:(sync.trophyEvents??[]).find(e=>e.count>0&&e.kind===event.kind&&e.year===event.year)?.id;
  if(!actual.includes(revealedId))issues.push('named award not on screen at spoken key');
+ let actualVideoEvidence=null;
  if(fullRenderAudit){
   const v=renderedAuditAt(event.absoluteSeconds),vIds=(v?.trophyIds??[]).map(canonicalTrophyId);
+  if(!v||v.globalTime-event.absoluteSeconds>.3)issues.push('no award frame within 0.3s');
   const vExpected=[...new Set((sync.trophyEvents??[]).filter(e=>e.count>0&&e.absoluteSeconds<=(v?.globalTime??event.absoluteSeconds)+1e-5).map(e=>e.id))];
   for(const id of vExpected)if(!vIds.includes(id))issues.push(`rendered missing ${id}`);
   if(vIds.length!==vExpected.length)issues.push(`rendered count ${vIds.length}, expected ${vExpected.length}`);
+  actualVideoEvidence={...videoEvidence(v,event.absoluteSeconds,issues),expectedIds:vExpected,actualIds:vIds};
  }
- const row={...event,expectedIds:expected,actualIds:actual,result:issues.length?'FAIL: '+issues.join('; '):'PASS'};
+ const row={...event,expectedIds:expected,actualIds:actual,actualVideoEvidence,result:issues.length?'FAIL: '+issues.join('; '):'PASS'};
  trophyRows.push(row);if(issues.length)failures.push({type:'trophy',id:event.id,issues});
 }
 const yearRows=[];
@@ -178,9 +193,13 @@ for(const event of sync.yearEvents??[]){
  const f=Math.ceil(event.absoluteSeconds*30-1e-7),a=byFrame.get(f);
  const actualYear=Number(a?.yearCard??a?.yearLabel??0);
  const issues=actualYear===event.year?[]:[`year card ${actualYear||'missing'}, expected ${event.year}`];
- if(fullRenderAudit){const v=renderedAuditAt(event.absoluteSeconds);if(Number(v?.yearCard)!==event.year)issues.push(`rendered year card ${v?.yearCard}, expected ${event.year}`);}
-
- yearRows.push({...event,actualYear,result:issues.length?'FAIL: '+issues.join('; '):'PASS'});
+ let actualVideoEvidence=null;
+ if(fullRenderAudit){const v=renderedAuditAt(event.absoluteSeconds);
+  if(!v||v.globalTime-event.absoluteSeconds>.3)issues.push('no year-card frame within 0.3s');
+  if(Number(v?.yearCard)!==event.year)issues.push(`rendered year card ${v?.yearCard}, expected ${event.year}`);
+  actualVideoEvidence=videoEvidence(v,event.absoluteSeconds,issues);
+ }
+ yearRows.push({...event,actualYear,actualVideoEvidence,result:issues.length?'FAIL: '+issues.join('; '):'PASS'});
  if(issues.length)failures.push({type:'year-card',sentenceId:event.sentenceId,year:event.year,issues});
 }
 const runtime=fullRenderAudit??evidence.records.filter(a=>a.globalFrame%30===0);
@@ -220,11 +239,27 @@ if(videoArg){
 }
 const trophyPattern=/Champions League|Ballon d['’]Or|Premier League|Euro|Nations League|title|trophy|cup/i;
 const trophySentences=rows.filter(r=>trophyPattern.test(r.sentence));
+const actualVideoEvidence=fullRenderAudit?{
+ sentences:rows.map(r=>({id:r.id,...r.actualVideoEvidence})),
+ trophies:trophyRows.map(r=>({id:r.id,...r.actualVideoEvidence})),
+ years:yearRows.map(r=>({sentenceId:r.sentenceId,year:r.year,...r.actualVideoEvidence})),
+}:null;
+const delayValues=actualVideoEvidence?[...actualVideoEvidence.sentences,...actualVideoEvidence.trophies,...actualVideoEvidence.years]
+ .map(r=>r.delaySeconds).filter(Number.isFinite):[];
+const metrics={maxActualKeywordDelaySeconds:fullRenderAudit?Math.max(...rows.map(r=>r.actualVideoEvidence.delaySeconds)):null,
+ maxActualVisualDelaySeconds:delayValues.length?Math.max(...delayValues):null,
+ minCharacterBoxArea:Math.min(...runtime.map(r=>character(r).area??0)),
+ cameraHeightMin:Math.min(...runtime.map(r=>r.cameraHeight??0)),cameraHeightMax:Math.max(...runtime.map(r=>r.cameraHeight??0))};
 const clean=s=>String(s).replaceAll('|','\\|').replaceAll('\n',' ');
+const secondsText=n=>Number.isFinite(n)?`${n.toFixed(6)}s`:'missing';
+const delayText=n=>Number.isFinite(n)?`${(n*1000).toFixed(2)}ms`:'missing';
 const md=['# Voice-to-visual sync checks','',`Source audit: ${evidence.capturedAt}. Character visibility at least 8%: ${visible}/${runtime.length} ${fullRenderAudit?'rendered frames':'runtime samples'} (${(runtimeFraction*100).toFixed(1)}%).`,
  video?`Frames extracted with ffmpeg from ${video} at each exact key-word timestamp.`:'Source-only capture; run with --video=... after the 540p preview render.',
+ ...(fullRenderAudit?[`Maximum actual first-frame delay: ${(metrics.maxActualVisualDelaySeconds*1000).toFixed(2)}ms across sentences, trophy reveals and year cards. Actual frame number, time, outfit, action, cast, trophy IDs, year and clap onset are retained in results JSON.`]:[]),
  '', '| Sentence | Timestamp | Expected visual | Check result |','| --- | ---: | --- | --- |',
  ...rows.map(r=>`| ${clean(r.sentence)} | ${r.timestamp.toFixed(3)}s | ${clean(r.expectedVisual)} | ${clean(r.result)} |`),
+ ...(fullRenderAudit?['','## Actual video keyword frames','', '| Sentence | Requested time | Actual frame | Actual time | Delay | Result |','| --- | ---: | ---: | ---: | ---: | --- |',
+ ...rows.map(r=>{const a=r.actualVideoEvidence;return `| ${r.id} | ${secondsText(a.requestedSeconds)} | ${a.actualFrame} @ ${a.fps}fps | ${secondsText(a.actualSeconds)} | ${delayText(a.delaySeconds)} | ${clean(a.result)} |`;})]:[]),
  '', '## Trophy-keyword sentences','',...trophySentences.map(r=>`- ${r.timestamp.toFixed(3)}s — ${r.sentence} **${r.result}**`),
  '', '## Award reveals and cumulative cabinet','', '| Award ID | Timestamp | Expected count | Actual count | Result |','| --- | ---: | ---: | ---: | --- |',
  ...trophyRows.map(r=>`| ${r.id} | ${r.absoluteSeconds.toFixed(3)}s | ${r.expectedIds.length} | ${r.actualIds.length} | ${clean(r.result)} |`),
@@ -235,7 +270,7 @@ const md=['# Voice-to-visual sync checks','',`Source audit: ${evidence.capturedA
 const stage=video?video.includes('preview')?'preview':'final':'source';
 await fs.writeFile(`${checkDir}/sync-table.md`,md.join('\n'));
 await fs.writeFile(`${checkDir}/sync-table-${stage}.md`,md.join('\n'));
-await fs.writeFile(`${checkDir}/results.json`,JSON.stringify({sourceHash:fingerprint,video,rows,trophyRows,yearRows,trophySentences:trophySentences.map(r=>r.id),runtime:{visible,samples:runtime.length,fraction:runtimeFraction,fullRenderFrames:Boolean(fullRenderAudit)},sourceFlatReport:evidence.sourceFlatReport,flatReport,failures},null,2)+'\n');
+await fs.writeFile(`${checkDir}/results.json`,JSON.stringify({sourceHash:fingerprint,video,metrics,actualVideoEvidence,rows,trophyRows,yearRows,trophySentences:trophySentences.map(r=>r.id),runtime:{visible,samples:runtime.length,fraction:runtimeFraction,fullRenderFrames:Boolean(fullRenderAudit)},sourceFlatReport:evidence.sourceFlatReport,flatReport,failures},null,2)+'\n');
 await fs.copyFile(`${checkDir}/results.json`,`${checkDir}/results-${stage}.json`);
 if(video)await fs.copyFile(`${checkDir}/flat-regions.jsonl`,`${checkDir}/flat-regions-${stage}.jsonl`);
 console.table(rows.map(({sentence,timestamp,expectedVisual,result})=>({sentence,timestamp:timestamp.toFixed(3),expectedVisual,result})));

@@ -2,7 +2,7 @@
 
 The current source revision is **revision pass 2, `v3_sync2`**: framing cleanup, measured narration cues and visible trophy moments within the existing Remotion, React and Three.js project. The film remains **3:20** with the earlier retention structure, cinematic style, football actions, quiet reactions and child ending. The farewell concerns Portugal international football; the narration says his club career continues. Read the dated evidence and remaining publication checks in [`script/facts.md`](script/facts.md).
 
-The new delivery targets are `out/ronaldo_emotional_v3_sync2_preview.mp4` and `out/ronaldo_emotional_v3_sync2.mp4`. A target filename does not certify a completed render: use the corresponding `out/v3_sync2_*_render.json` manifests, `out/v3_sync2_validation.json` and `out/checks/results.json` to assess the actual exports. [`REVISION_PASS_2.md`](REVISION_PASS_2.md) records this pass's changes and verification workflow.
+Completed, validated exports are `out/ronaldo_emotional_v3_sync2_preview.mp4` and `out/ronaldo_emotional_v3_sync2.mp4`. The preview was rendered and passed before the native final. All 6,000 final frames pass the framing/pixel checks; all 56 sentence cues pass. Use the corresponding `out/v3_sync2_*_render.json` manifests, `out/v3_sync2_validation.json` and `out/checks/results.json` to assess the actual exports. [`REVISION_PASS_2.md`](REVISION_PASS_2.md) records this pass's changes and verification workflow.
 
 ## Setup
 
@@ -87,3 +87,5 @@ Watch the complete exports for pose/ball/hand contacts, camera clipping, trophy 
 This revision uses new `v3_sync2` filenames. Earlier noise-cleaned v3 (`ronaldo_emotional_v3_clean*`), music v3 (`ronaldo_emotional_v3_music*`), native v3 (`ronaldo_emotional_v3*`), v2 and original four-minute deliveries remain separate. Existing source archives and the earlier London project are preserved. [`REVISION.md`](REVISION.md), [`QA.md`](QA.md) and the audio notes describe those passes.
 
 Local `main` history is preserved. Numbered sections use focused commits; source-only synchronization through the GitHub API is underway on a source branch while retaining the existing history. No force-push is used. Generated MP4s, render caches, dependencies, secrets and the rebuilt Foley master remain outside Git. Check the final handoff for the pushed branch and commit references.
+
+Source and check-frame archives are `out/ronaldo_emotional_v3_sync2_source.zip` and `out/ronaldo_emotional_v3_sync2_checks.zip`. The final sync table is [`out/checks/sync-table.md`](out/checks/sync-table.md); the dated manual `VERIFY` checklist remains in [`script/facts.md`](script/facts.md). Git delivery is recorded in [`GIT_DELIVERY.md`](GIT_DELIVERY.md).

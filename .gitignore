@@ -41,3 +41,6 @@ previews/
 # Machine files and diagnostics
 .DS_Store
 *.log
+
+# Isolated local checkouts
+.worktrees/

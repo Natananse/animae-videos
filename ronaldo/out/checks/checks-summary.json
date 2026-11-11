@@ -1,0 +1,38 @@
+{
+  "revision": "v3_sync2",
+  "checkedOn": "2026-11-11",
+  "sourceHash": "65aded2612f891889681935e34d1c7c98d3334813c6e55b4a7376c30c24cd1ef",
+  "narrationWords": 329,
+  "nativeWordBoundaries": 329,
+  "sentences": 56,
+  "trophyEvents": 19,
+  "namedTrophies": 15,
+  "yearCards": 21,
+  "trophyKeywordSentences": 10,
+  "preview": {
+    "frames": 3000,
+    "width": 960,
+    "height": 540,
+    "fps": 15,
+    "durationSeconds": 200,
+    "failures": 0,
+    "characterFraction": 1,
+    "maxFlatRegionFraction": 0.205711,
+    "maxActualVisualDelaySeconds": 0.06592000000000553
+  },
+  "final": {
+    "frames": 6000,
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "durationSeconds": 200,
+    "failures": 0,
+    "characterFraction": 1,
+    "maxFlatRegionFraction": 0.206516,
+    "maxActualKeywordDelaySeconds": 0.03258666666667409,
+    "maxActualVisualDelaySeconds": 0.03258666666667409,
+    "minCharacterBoxArea": 0.12565755922163915,
+    "cameraHeightMin": 1.0795099397419508,
+    "cameraHeightMax": 2.5
+  }
+}

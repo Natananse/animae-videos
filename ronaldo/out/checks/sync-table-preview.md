@@ -2,6 +2,7 @@
 
 Source audit: 2026-11-11T14:52:54.063Z. Character visibility at least 8%: 3000/3000 rendered frames (100.0%).
 Frames extracted with ffmpeg from out/ronaldo_emotional_v3_sync2_preview.mp4 at each exact key-word timestamp.
+Maximum actual first-frame delay: 65.92ms across sentences, trophy reveals and year cards. Actual frame number, time, outfit, action, cast, trophy IDs, year and clap onset are retained in results JSON.
 
 | Sentence | Timestamp | Expected visual | Check result |
 | --- | ---: | --- | --- |
@@ -61,6 +62,67 @@ Frames extracted with ffmpeg from out/ronaldo_emotional_v3_sync2_preview.mp4 at 
 | The shirt will pass on. | 184.448s | shirt; portugal; number-seven-shirt; character-medium | PASS |
 | The effort stays in memory. | 186.443s | reaction; portugal; number-seven-shirt; character-medium | PASS |
 | Somewhere, another child is taking a ball into the light. | 189.284s | child-exit; portugal; ball; tracking | PASS |
+
+## Actual video keyword frames
+
+| Sentence | Requested time | Actual frame | Actual time | Delay | Result |
+| --- | ---: | ---: | ---: | ---: | --- |
+| scene01-s01 | 1.900000s | 29 @ 15fps | 1.933333s | 33.33ms | PASS |
+| scene01-s02 | 6.554540s | 99 @ 15fps | 6.600000s | 45.46ms | PASS |
+| scene02-s01 | 11.011380s | 166 @ 15fps | 11.066667s | 55.29ms | PASS |
+| scene02-s02 | 12.357960s | 186 @ 15fps | 12.400000s | 42.04ms | PASS |
+| scene02-s03 | 19.197710s | 288 @ 15fps | 19.200000s | 2.29ms | PASS |
+| scene02-s04 | 21.386380s | 321 @ 15fps | 21.400000s | 13.62ms | PASS |
+| scene02-s05 | 24.897710s | 374 @ 15fps | 24.933333s | 35.62ms | PASS |
+| scene02-s06 | 29.727290s | 446 @ 15fps | 29.733333s | 6.04ms | PASS |
+| scene03-s01 | 36.300000s | 545 @ 15fps | 36.333333s | 33.33ms | PASS |
+| scene03-s02 | 40.431830s | 607 @ 15fps | 40.466667s | 34.84ms | PASS |
+| scene03-s03 | 43.318170s | 650 @ 15fps | 43.333333s | 15.16ms | PASS |
+| scene03-s04 | 45.602290s | 685 @ 15fps | 45.666667s | 64.38ms | PASS |
+| scene03-s05 | 49.204540s | 739 @ 15fps | 49.266667s | 62.13ms | PASS |
+| scene04-s01 | 56.350000s | 846 @ 15fps | 56.400000s | 50.00ms | PASS |
+| scene04-s02 | 61.527290s | 923 @ 15fps | 61.533333s | 6.04ms | PASS |
+| scene04-s03 | 63.459080s | 952 @ 15fps | 63.466667s | 7.59ms | PASS |
+| scene04-s04 | 66.334080s | 996 @ 15fps | 66.400000s | 65.92ms | PASS |
+| scene04-s05 | 70.900000s | 1064 @ 15fps | 70.933333s | 33.33ms | PASS |
+| scene04-s06 | 72.150000s | 1083 @ 15fps | 72.200000s | 50.00ms | PASS |
+| scene04-s07 | 73.906830s | 1109 @ 15fps | 73.933333s | 26.50ms | PASS |
+| scene04-s08 | 75.986380s | 1140 @ 15fps | 76.000000s | 13.62ms | PASS |
+| scene04-s09 | 78.384080s | 1176 @ 15fps | 78.400000s | 15.92ms | PASS |
+| scene04-s10 | 80.986380s | 1215 @ 15fps | 81.000000s | 13.62ms | PASS |
+| scene04-s11 | 84.020460s | 1261 @ 15fps | 84.066667s | 46.21ms | PASS |
+| scene04-s12 | 86.702290s | 1301 @ 15fps | 86.733333s | 31.04ms | PASS |
+| scene05-s01 | 92.300000s | 1385 @ 15fps | 92.333333s | 33.33ms | PASS |
+| scene05-s02 | 95.522710s | 1433 @ 15fps | 95.533333s | 10.62ms | PASS |
+| scene05-s03 | 97.852290s | 1468 @ 15fps | 97.866667s | 14.38ms | PASS |
+| scene05-s04 | 99.000000s | 1485 @ 15fps | 99.000000s | 0.00ms | PASS |
+| scene05-s05 | 100.738620s | 1512 @ 15fps | 100.800000s | 61.38ms | PASS |
+| scene05-s06 | 101.840920s | 1528 @ 15fps | 101.866667s | 25.75ms | PASS |
+| scene05-s07 | 112.086380s | 1682 @ 15fps | 112.133333s | 46.95ms | PASS |
+| scene05-s08 | 115.036380s | 1726 @ 15fps | 115.066667s | 30.29ms | PASS |
+| scene05-s09 | 118.956830s | 1785 @ 15fps | 119.000000s | 43.17ms | PASS |
+| scene05-s10 | 121.150000s | 1818 @ 15fps | 121.200000s | 50.00ms | PASS |
+| scene05-s11 | 124.429540s | 1867 @ 15fps | 124.466667s | 37.13ms | PASS |
+| scene05-s12 | 125.577290s | 1884 @ 15fps | 125.600000s | 22.71ms | PASS |
+| scene05-s13 | 127.315920s | 1910 @ 15fps | 127.333333s | 17.41ms | PASS |
+| scene05-s14 | 128.452290s | 1927 @ 15fps | 128.466667s | 14.38ms | PASS |
+| scene06-s01 | 132.200000s | 1983 @ 15fps | 132.200000s | 0.00ms | PASS |
+| scene06-s02 | 135.831830s | 2038 @ 15fps | 135.866667s | 34.84ms | PASS |
+| scene06-s03 | 138.900000s | 2084 @ 15fps | 138.933333s | 33.33ms | PASS |
+| scene06-s04 | 142.111380s | 2132 @ 15fps | 142.133333s | 21.95ms | PASS |
+| scene06-s05 | 145.672710s | 2186 @ 15fps | 145.733333s | 60.62ms | PASS |
+| scene06-s06 | 147.793170s | 2217 @ 15fps | 147.800000s | 6.83ms | PASS |
+| scene07-s01 | 153.011380s | 2296 @ 15fps | 153.066667s | 55.29ms | PASS |
+| scene07-s02 | 155.154540s | 2328 @ 15fps | 155.200000s | 45.46ms | PASS |
+| scene07-s03 | 157.790920s | 2367 @ 15fps | 157.800000s | 9.08ms | PASS |
+| scene07-s04 | 160.802290s | 2413 @ 15fps | 160.866667s | 64.38ms | PASS |
+| scene07-s05 | 164.711380s | 2471 @ 15fps | 164.733333s | 21.95ms | PASS |
+| scene07-s06 | 170.000000s | 2550 @ 15fps | 170.000000s | 0.00ms | PASS |
+| scene07-s07 | 171.665920s | 2575 @ 15fps | 171.666667s | 0.75ms | PASS |
+| scene07-s08 | 174.745460s | 2622 @ 15fps | 174.800000s | 54.54ms | PASS |
+| scene08-s01 | 184.447710s | 2767 @ 15fps | 184.466667s | 18.96ms | PASS |
+| scene08-s02 | 186.443170s | 2797 @ 15fps | 186.466667s | 23.50ms | PASS |
+| scene08-s03 | 189.284080s | 2840 @ 15fps | 189.333333s | 49.25ms | PASS |
 
 ## Trophy-keyword sentences
 
