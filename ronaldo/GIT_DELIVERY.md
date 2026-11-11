@@ -18,3 +18,7 @@ The initial normal HTTPS push reached GitHub but lacked command-line credentials
 MP4s, dependencies, render caches and sound masters are excluded from source commits. Check frames and full render audit data remain generated artifacts under `out/checks/`; the human-readable sync tables are retained as review evidence. The unrelated `.aws` deletion and other session's untracked work are left untouched.
 
 The final section-five mapping and remote-head verification are recorded in `out/git-delivery.json` after publication. The isolated source worktree is aligned to the verified published head after retaining its local snapshot commits under a backup ref. Local `main` remains unchanged by that alignment.
+
+## Clear audio and continuous motion follow-up
+
+The v4 follow-up preserves all preceding history and outputs. Tested code and preview were saved on local main `2c57e74e` and published as `aa9e2fe1`. The completed delivery adds final/720p/browser evidence. Its exact mapping is in generated `out/v4_clear_checks/git-delivery.json`, which remains separate from the preceding pass receipt. Generated `public/audio/*.wav` masters are ignored; all 11 existing small source SFX WAVs remain in source. No MP4 or generated clarity master is committed.

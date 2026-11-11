@@ -1,0 +1,23 @@
+{
+  "outputLocation": "out/ronaldo_emotional_v4_clear_720p.mp4",
+  "derivedFrom": "out/ronaldo_emotional_v4_clear.mp4",
+  "nativeSourceSha256": "8803051d0f6ffdd05ef95e84b59136a6f4e6cbbe25f668fb1ccc9dcba3f7fa5a",
+  "audioMasterSha256": "c7c6e5c31a202bb85b14d9d61100ad715946fa08eebd93cf800ad5ed89cc826d",
+  "width": 1280,
+  "height": 720,
+  "fps": 30,
+  "durationInFrames": 6000,
+  "durationSeconds": 200,
+  "profile": "baseline",
+  "level": "3.1",
+  "pixelFormat": "yuv420p",
+  "colorSpace": "bt709",
+  "maximumVideoRate": "2M",
+  "maximumKeyframeSeconds": 1,
+  "audioBitrate": "192k",
+  "faststart": true,
+  "method": "Native final downscaled to 720p; every source frame retained. No interpolation or held-frame conversion.",
+  "bytes": 49003334,
+  "elapsedSeconds": 177.859,
+  "completedAt": "2026-11-11T17:28:10.686Z"
+}

@@ -1,0 +1,18 @@
+{
+  "mode": "preview",
+  "outputLocation": "out/ronaldo_emotional_v4_clear_preview.mp4",
+  "sourceHash": "e958765be23bf29b59be00876c6233b870ef518083d7291bbdbd6120e661a5d9",
+  "colorSpace": "bt709",
+  "pixelFormat": "yuv420p",
+  "audioBitrate": "320k",
+  "maxKeyframeSeconds": 2,
+  "graphicsBackend": "angle",
+  "concurrency": 2,
+  "fps": 30,
+  "width": 960,
+  "height": 540,
+  "durationInFrames": 6000,
+  "frameRange": null,
+  "elapsedSeconds": 646.628,
+  "completedAt": "2026-11-11T17:02:29.203Z"
+}

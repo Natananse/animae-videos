@@ -73,8 +73,8 @@ Frame the adult's Portugal face beside the child's face, with the hanging number
 
 ## Production handoff — keep out of the YouTube description
 
-Current source revision: **v3_sync2**. The measured narration contains **329 words / 329 native Edge word boundaries**, **56 sentence visual cues**, **21 year cues**, and **19 trophy reveal/focus events representing 15 prizes**. Narration ends at **191.856 seconds** within the 200-second film. Written-out year words in the script support exact timing; numeric years remain the on-screen labels.
+Current source revision: **v4_clear**. The measured narration contains **329 words / 329 native Edge word boundaries**, **56 sentence visual cues**, **21 year cues**, and **19 trophy reveal/focus events representing 15 prizes**. Narration ends at **191.856 seconds** within the 200-second film. Written-out year words in the script support exact timing; numeric years remain the on-screen labels.
 
-Render the 540p preview first, inspect `out/checks/sync-table.md` and its saved PNGs, then render the final. Use completed manifests and `out/checks/results.json` for actual export/check status. Expected delivery names are `out/ronaldo_emotional_v3_sync2_preview.mp4` and `out/ronaldo_emotional_v3_sync2.mp4`.
+The 540p preview was rendered first at 30 fps and passed before the native final. Completed 1080p and smaller 720p exports also pass audio, motion and playback checks. Review `out/v4_clear_checks/sync-table.md`, its saved PNGs and the playback/browser reports. Deliveries are `out/ronaldo_emotional_v4_clear_preview.mp4`, `out/ronaldo_emotional_v4_clear.mp4` and `out/ronaldo_emotional_v4_clear_720p.mp4`. Use 1080p for upload quality and 720p for easier local playback.
 
 Numbered-section source changes are synchronized through the [`revision-pass-2-source` branch](https://github.com/Natananse/animae-videos/tree/revision-pass-2-source/ronaldo). Local `main` history and previous deliveries are preserved; no force-push or MP4 commit is part of this revision. Confirm the final handoff’s commit references and synchronization status before sharing source. These production notes are not upload-description copy.

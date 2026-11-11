@@ -27,7 +27,8 @@
     "prestudio": "npm run audio:prepare",
     "check:playback": "node scripts/check_playback.mjs",
     "check:motion": "node scripts/check_continuous_motion.mjs",
-    "playback:720": "node scripts/make_playback.mjs"
+    "playback:720": "node scripts/make_playback.mjs",
+    "check:browser": "node scripts/check_browser_playback.mjs"
   },
   "dependencies": {
     "@fontsource/inter": "^5.2.0",

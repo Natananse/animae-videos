@@ -5,9 +5,9 @@ It keeps the previous retention work, native word timestamps, sentence cues,
 generic kits, trophy collection, opening disclosure and factual `VERIFY` notes.
 All earlier source and rendered deliveries remain separate.
 
-The audio master and complete 30 fps preview have passed their measured checks.
-The native final and 720p playback export are still pending separate checks.
-This document records the verified preview and the final-export workflow.
+The audio master, complete 30 fps preview, native final and 720p playback export
+have passed their checks. Actual Chrome playback and seeking also pass for the
+native and 720p files. This document records the verified exports and workflow.
 
 ## What caused the unclear sound and held-looking picture
 
@@ -173,3 +173,19 @@ Run its delivered-file check after creation:
 npm run playback:720
 node scripts/check_playback.mjs --video=out/ronaldo_emotional_v4_clear_720p.mp4 --audit=out/v4_clear_checks/final-audit.ndjson --audio-levels --output=out/v4_clear_checks/playback-720p.json
 ```
+
+## Completed final and browser checks
+
+All 6,000 native frames pass framing and native-pixel checks. The lead is visible in 100% of frames; minimum projected box area is 12.5299%, maximum flat region 20.4789%, and maximum keyword-frame delay 32.5867 ms. All 56 sentence cues, 19 award events and 21 year cards match. Native and 720p each pass all nine playback checks: every decoded frame is unique, no locked articulated-pose windows, no quiet tracked-actor intervals, continuous timestamps and complete decode. Native AAC is −16.95 LUFS / −2.43 dBTP; 720p AAC is −16.96 LUFS / −2.39 dBTP.
+
+The 720p file is **49,003,334 bytes**, about 59% smaller than the preceding 118,975,257-byte export. Its measured video rate is 1.755 Mb/s average; 2 Mb/s maxrate and a 4 Mb VBV buffer are encoder settings, not a promise of an identical instantaneous network rate.
+
+Actual muted HTML5 playback via a local HTTP byte-range server passed in installed Chrome at 0, 75, 160 and 191 seconds for both files. There were no media errors, waiting or stalled events. The cold software-decoder startup recorded nine dropped frames in each first sample; all later samples had zero drops. The longest displayed-frame gap was 179 ms, below the 0.5-second hold threshold. 720p seeking recovered in 25–55 ms. Local testing verifies decoding and seeking; it does not reproduce the viewer's internet connection or phone.
+
+Run browser tests after rendering/transcoding has stopped:
+
+```bash
+npm run check:browser -- --video=out/ronaldo_emotional_v4_clear_720p.mp4 --output=out/v4_clear_checks/browser-720p.json
+```
+
+The source and check archives contain the implementation and evidence, without generated WAV masters or MP4s in Git. The previous revision remains preserved.

@@ -1,0 +1,19 @@
+{
+  "mode": "final",
+  "outputLocation": "out/ronaldo_emotional_v4_clear.mp4",
+  "sourceHash": "e958765be23bf29b59be00876c6233b870ef518083d7291bbdbd6120e661a5d9",
+  "audioMasterSha256": "c7c6e5c31a202bb85b14d9d61100ad715946fa08eebd93cf800ad5ed89cc826d",
+  "colorSpace": "bt709",
+  "pixelFormat": "yuv420p",
+  "audioBitrate": "320k",
+  "maxKeyframeSeconds": 2,
+  "graphicsBackend": "angle",
+  "concurrency": 2,
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "durationInFrames": 6000,
+  "frameRange": null,
+  "elapsedSeconds": 1157.822,
+  "completedAt": "2026-11-11T17:24:44.254Z"
+}

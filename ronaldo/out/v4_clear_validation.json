@@ -1,0 +1,32 @@
+{
+  "sourcePassed": true,
+  "sourceOnly": false,
+  "words": 329,
+  "nativeWordBoundaries": 329,
+  "sentenceCues": 56,
+  "yearCues": 21,
+  "trophyEvents": 19,
+  "namedTrophies": 15,
+  "totalFrames": 6000,
+  "finalNarrationEnds": 191.856,
+  "renders": [
+    {
+      "file": "out/ronaldo_emotional_v4_clear.mp4",
+      "passed": true,
+      "width": 1920,
+      "height": 1080,
+      "fps": 30,
+      "frames": 6000,
+      "duration": "200.000000"
+    },
+    {
+      "file": "out/ronaldo_emotional_v4_clear_preview.mp4",
+      "passed": true,
+      "width": 960,
+      "height": 540,
+      "fps": 30,
+      "frames": 6000,
+      "duration": "200.000000"
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "revision": "v4_clear",
+  "checkedOn": "2026-11-11",
+  "allChecksPassed": true,
+  "previewFrames": 6000,
+  "finalFrames": 6000,
+  "playback720Frames": 6000,
+  "fps": 30,
+  "durationSeconds": 200,
+  "sentenceCues": 56,
+  "awardEvents": 19,
+  "namedTrophies": 15,
+  "yearCards": 21,
+  "nativeFraming": {
+    "visibleFraction": 1,
+    "maxFlatRegionFraction": 0.204789,
+    "maxActualKeywordDelaySeconds": 0.03258666666667409,
+    "maxActualVisualDelaySeconds": 0.03258666666667409,
+    "minCharacterBoxArea": 0.1252987775694079,
+    "cameraHeightMin": 1.0795099397419508,
+    "cameraHeightMax": 2.5
+  },
+  "nativeAudio": {
+    "name": "encoded audio clarity levels",
+    "passed": true,
+    "message": "-16.9 LUFS integrated; -2.4 dBTP true peak",
+    "integratedLufs": -16.95,
+    "truePeakDbtp": -2.43,
+    "loudnessRangeLu": 12,
+    "acceptedIntegratedLufs": [
+      -18,
+      -15
+    ],
+    "maximumTruePeakDbtp": -1,
+    "method": "FFmpeg loudnorm input measurements on the delivered AAC stream; output-normalized measurements are ignored. Full-programme loudness range -18 to -15 LUFS and at least 1dB true-peak headroom."
+  },
+  "playback720Audio": {
+    "name": "encoded audio clarity levels",
+    "passed": true,
+    "message": "-17.0 LUFS integrated; -2.4 dBTP true peak",
+    "integratedLufs": -16.96,
+    "truePeakDbtp": -2.39,
+    "loudnessRangeLu": 12.1,
+    "acceptedIntegratedLufs": [
+      -18,
+      -15
+    ],
+    "maximumTruePeakDbtp": -1,
+    "method": "FFmpeg loudnorm input measurements on the delivered AAC stream; output-normalized measurements are ignored. Full-programme loudness range -18 to -15 LUFS and at least 1dB true-peak headroom."
+  },
+  "nativePlaybackChecks": 9,
+  "playback720Checks": 9,
+  "browserTests": {
+    "positionsSeconds": [
+      0,
+      75,
+      160,
+      191
+    ],
+    "nativePassed": true,
+    "playback720Passed": true,
+    "nativeColdStartupDrops": 9,
+    "playback720ColdStartupDrops": 9,
+    "laterDrops": 0,
+    "noStalledOrMediaErrors": true
+  },
+  "files": [
+    {
+      "file": "ronaldo_emotional_v4_clear_preview.mp4",
+      "bytes": 39827295
+    },
+    {
+      "file": "ronaldo_emotional_v4_clear.mp4",
+      "bytes": 104048199
+    },
+    {
+      "file": "ronaldo_emotional_v4_clear_720p.mp4",
+      "bytes": 49003334
+    }
+  ]
+}

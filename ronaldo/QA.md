@@ -1,3 +1,17 @@
+# Clear audio and continuous motion delivery — 11 November 2026
+
+The completed v4 exports are `ronaldo_emotional_v4_clear_preview.mp4` (960 × 540), `ronaldo_emotional_v4_clear.mp4` (1920 × 1080) and `ronaldo_emotional_v4_clear_720p.mp4` (1280 × 720). Every file contains 6,000 frames at 30 fps / 200 seconds. All offline checks pass; actual Chrome playback and seeking pass for native and 720p.
+
+The voice is forward and consistent at approximately −17 LUFS programme level with −2.4 dBTP peaks. Music and contact effects are quieter; source narration and word timestamps are unchanged. Actual articulated-pose checks find no held windows, and tracked actor comparisons find no sustained quiet intervals. This specifically covers the freeze symptom missed by earlier framing-only checks.
+
+Native character visibility is 100%, minimum box 12.5299%, maximum connected flat region 20.4789%, and maximum visual keyword delay 32.59 ms. All sentence/year/prize/cast checks pass. 720p is 49 MB with simpler decoding and one-second keyframes. See [`CLEAR_AUDIO_MOTION.md`](CLEAR_AUDIO_MOTION.md), [`out/v4_clear_checks/checks-summary.json`](out/v4_clear_checks/checks-summary.json) and the corresponding browser/playback/audio/framing reports. The browser report records normal cold-start frame drops explicitly; no stalled events or media errors occurred.
+
+Human review remains for preferred voice tone, phone-speaker balance, exact contacts, caption/year-label readability and the existing `VERIFY` facts. Network/device playback cannot be inferred solely from a local Chrome test.
+
+The following records apply to separately preserved earlier exports.
+
+---
+
 # Revision pass 2 delivery checks — 11 November 2026
 
 The native 1080p final completed and passed separately: **6,000/6,000 frames** contain the main character, minimum projected area **12.5658%**, camera height **1.0795–2.5000 m**, maximum connected flat region **20.6516%**, and **zero failures**. All 56 sentences, 19 award events, 21 year cards and supporting-cast checks pass. The maximum delay to the first matching encoded frame is **32.5867 ms**. Both exports pass FFprobe format checks and a complete FFmpeg decode. Final/preview source hashes match. Final render time was 1179.4 seconds; the final is 1920 × 1080, 30 fps, 6,000 frames and 200 seconds.
