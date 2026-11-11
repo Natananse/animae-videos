@@ -1,0 +1,27 @@
+{
+  "title": "Ascension",
+  "author": "Scott Buckley",
+  "license": "CC BY 4.0",
+  "source": "https://www.scottbuckley.com.au/library/ascension/",
+  "download": "https://www.scottbuckley.com.au/library/wp-content/uploads/2019/02/sb_ascension.mp3",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "verifiedOn": "2026-11-11",
+  "sourceSha256": "72cce153866fbb5b0c5d8ffb0be2ea73bf64190e2b70a50cbcc8c83b5a8e0dbf",
+  "credit": "'Ascension' by Scott Buckley - released under CC-BY 4.0. www.scottbuckley.com.au",
+  "excerpt": {
+    "sourceStartSeconds": 50,
+    "durationSeconds": 200
+  },
+  "edits": [
+    "45 Hz high-pass",
+    "gentle -2.5 dB dip at 1800 Hz for narration space",
+    "-18 LUFS / -2 dBTP source normalization target",
+    "0.25-second opening fade",
+    "6-second closing fade",
+    "speech-aware gain and quiet farewell applied by AudioMix"
+  ],
+  "playbackVolume": {
+    "narration": 0.1,
+    "gaps": 0.38
+  }
+}

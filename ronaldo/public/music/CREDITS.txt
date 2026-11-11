@@ -1,0 +1,4 @@
+'Ascension' by Scott Buckley - released under CC-BY 4.0. www.scottbuckley.com.au
+Source: https://www.scottbuckley.com.au/library/ascension/
+License: https://creativecommons.org/licenses/by/4.0/
+Edited: continuous 50–250 second excerpt, gentle bass/midrange filtering, loudness adjustment, opening and closing fades; speech-aware playback ducking.

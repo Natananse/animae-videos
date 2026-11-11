@@ -1,0 +1,62 @@
+{
+  "sampleRate": 48000,
+  "seed": 7011,
+  "provenance": "Original procedural synthesis for this project. No external recordings or paid services.",
+  "assets": [
+    {
+      "file": "kick.wav",
+      "duration": 0.48,
+      "peak": 0.78
+    },
+    {
+      "file": "touch.wav",
+      "duration": 0.19,
+      "peak": 0.58
+    },
+    {
+      "file": "step.wav",
+      "duration": 0.22,
+      "peak": 0.48
+    },
+    {
+      "file": "land.wav",
+      "duration": 0.68,
+      "peak": 0.72
+    },
+    {
+      "file": "cloth.wav",
+      "duration": 0.55,
+      "peak": 0.28
+    },
+    {
+      "file": "breath.wav",
+      "duration": 0.9,
+      "peak": 0.24
+    },
+    {
+      "file": "net.wav",
+      "duration": 0.72,
+      "peak": 0.45
+    },
+    {
+      "file": "stadium.wav",
+      "duration": 8.0,
+      "peak": 0.35
+    },
+    {
+      "file": "cheer.wav",
+      "duration": 2.8,
+      "peak": 0.6
+    },
+    {
+      "file": "street.wav",
+      "duration": 8.0,
+      "peak": 0.16
+    },
+    {
+      "file": "applause.wav",
+      "duration": 2.7,
+      "peak": 0.5
+    }
+  ]
+}

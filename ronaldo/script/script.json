@@ -1,0 +1,292 @@
+{
+  "title": "THE SHIRT — A RONALDO STORY",
+  "centralQuestion": "What remains when Portugal’s number seven passes on?",
+  "wordCount": 367,
+  "fps": 30,
+  "totalFrames": 6000,
+  "totalDuration": 200,
+  "voice": "en-GB-RyanNeural",
+  "factCheckedOn": "2026-11-11",
+  "editorialNotes": [
+    "All narration is original documentary writing, not a real Ronaldo quote.",
+    "Childhood street action, training and match staging are illustrative dramatizations; no invented private event is asserted as documented history.",
+    "The opening combines a symbolic football action with a Portugal international farewell; club retirement is not claimed.",
+    "JSON VERIFY arrays flag factual numbers and milestones for publication review.",
+    "Speech uses native Edge TTS delivery with deliberate silent gaps; no atempo fitting or stretching is used.",
+    "Number seven represents eras; Ronaldo wore number nine on arrival at Madrid.",
+    "The childhood dramatization explanation is carried by the visual Dramatized scenes label and accompanying description/notes, rather than spoken narration."
+  ],
+  "openLoops": [
+    {
+      "atSeconds": 6,
+      "promise": "The boy behind the shirt",
+      "payoffScene": "scene02"
+    },
+    {
+      "atSeconds": 92,
+      "promise": "The finish and the crowd response",
+      "payoffScene": "scene05"
+    },
+    {
+      "atSeconds": 178,
+      "promise": "What the Portugal shirt means",
+      "payoffScene": "scene08"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "scene01",
+      "title": "BEFORE THE RECORDS",
+      "narration": "Portugal's seven is leaving international football. Before the records, there was a boy chasing a ball.",
+      "duration": 10,
+      "cameraPreset": "push",
+      "outfit": "portugal",
+      "mood": "midnight",
+      "verify": [
+        "VERIFY: number seven is a symbolic Portugal jersey; farewell concerns international football, not retirement from all football."
+      ],
+      "sourceUrls": [
+        "https://www.fifa.com/en/tournaments/mens/worldcup/articles/cristiano-ronaldo-portugal-retirement",
+        "https://www.uefa.com/european-qualifiers/news/026a-1297500e1b34-a17bbbcad258-1000--cristiano-ronaldo-all-time-leading-scorer-in-mens-internationals/"
+      ],
+      "segments": [
+        {
+          "offset": 1.8,
+          "narration": "Portugal's seven is leaving international football. Before the records, there was a boy chasing a ball.",
+          "id": "01-1",
+          "rate": "+10%",
+          "windowEnd": 9.85
+        }
+      ]
+    },
+    {
+      "id": "scene02",
+      "title": "AN ISLAND, A DREAM",
+      "narration": "Funchal, Madeira. Home. Cristiano Ronaldo was born here in 1985. This island was the beginning of a very different life. Its small disappointments and victories belong to childhood. Nobody in this scene knows how far the boy will travel.",
+      "duration": 26,
+      "cameraPreset": "street",
+      "outfit": "portugal",
+      "mood": "golden",
+      "verify": [
+        "VERIFY: born 5 February 1985 in Funchal, Madeira."
+      ],
+      "sourceUrls": [
+        "https://www.uefa.com/uefachampionsleague/news/023c-0e976af10937-6aed2a57b183-1000--memories-of-ronaldo-s-debut-on-this-day-in-2002/",
+        "https://www.sporting.pt/pt/sabia-que-5-fev"
+      ],
+      "segments": [
+        {
+          "offset": 0.15,
+          "narration": "Funchal, Madeira. Home.",
+          "id": "02-1",
+          "rate": "+10%",
+          "windowEnd": 3.95
+        },
+        {
+          "offset": 7.2,
+          "narration": "Cristiano Ronaldo was born here in 1985. This island was the beginning of a very different life. Its small disappointments and victories belong to childhood. Nobody in this scene knows how far the boy will travel.",
+          "id": "02-2",
+          "rate": "+10%",
+          "windowEnd": 25.8
+        }
+      ]
+    },
+    {
+      "id": "scene03",
+      "title": "THE FIRST STAGE",
+      "narration": "Sporting gave him his first senior stage in 2002. The game became faster and the space tighter. A pass needed the right weight. A run needed the right moment. His talent now had to work with teammates, against players who wanted the same ball.",
+      "duration": 20,
+      "cameraPreset": "dolly",
+      "outfit": "sporting",
+      "mood": "emerald",
+      "verify": [
+        "VERIFY: Sporting first-team debut 14 August 2002."
+      ],
+      "sourceUrls": [
+        "https://www.uefa.com/uefachampionsleague/news/023c-0e976af10937-6aed2a57b183-1000--memories-of-ronaldo-s-debut-on-this-day-in-2002/"
+      ],
+      "segments": [
+        {
+          "offset": 0.2,
+          "narration": "Sporting gave him his first senior stage in 2002. The game became faster and the space tighter. A pass needed the right weight. A run needed the right moment. His talent now had to work with teammates, against players who wanted the same ball.",
+          "id": "03-1",
+          "rate": "+10%",
+          "windowEnd": 19.85
+        }
+      ]
+    },
+    {
+      "id": "scene04",
+      "title": "THE WEIGHT OF SEVEN",
+      "narration": "United signed him in 2003. A teenager inherited the number seven shirt, carrying expectations before he had earned his own place in the club's history. He arrived as a winger, full of speed and invention. Over the following seasons, the goals became as important as the tricks. In 2008, United won the Champions League and Ronaldo received his first Ballon d'Or. Teammates had helped turn an individual talent into a champion. His next move took him to Madrid.",
+      "duration": 36,
+      "cameraPreset": "orbit",
+      "outfit": "united",
+      "mood": "red",
+      "verify": [
+        "VERIFY: Manchester United arrival and number seven in 2003.",
+        "VERIFY: 2008 Champions League title and first Ballon d’Or."
+      ],
+      "sourceUrls": [
+        "https://www.uefa.com/uefachampionsleague/news/023c-0e976af10937-6aed2a57b183-1000--memories-of-ronaldo-s-debut-on-this-day-in-2002/",
+        "https://www.uefa.com/uefachampionsleague/news/01d4-0e707fe4919f-772c18bc5bc3-1000--ballon-d-or-crowns-ronaldo-s-golden-year/"
+      ],
+      "segments": [
+        {
+          "offset": 0.25,
+          "narration": "United signed him in 2003. A teenager inherited the number seven shirt, carrying expectations before he had earned his own place in the club's history. He arrived as a winger, full of speed and invention.",
+          "id": "04-1",
+          "rate": "+10%",
+          "windowEnd": 16.75
+        },
+        {
+          "offset": 17,
+          "narration": "Over the following seasons, the goals became as important as the tricks. In 2008, United won the Champions League and Ronaldo received his first Ballon d'Or. Teammates had helped turn an individual talent into a champion. His next move took him to Madrid.",
+          "id": "04-2",
+          "rate": "+10%",
+          "windowEnd": 35.8
+        }
+      ]
+    },
+    {
+      "id": "scene05",
+      "title": "ABOVE THE GAME",
+      "narration": "Real Madrid brought him to Spain in 2009. In white, he became the club's record scorer and helped win four Champions League titles. Turin, 2018. Even the Juventus supporters stood to applaud that finish. For a moment, rivalry gave way to appreciation. They had come to support another team, yet this visiting player had made them rise to their feet. That response became part of the memory of his bicycle kick.",
+      "duration": 40,
+      "cameraPreset": "action",
+      "outfit": "madrid",
+      "mood": "blue",
+      "verify": [
+        "VERIFY: Real Madrid arrival 2009; number seven shown symbolically across the Madrid era (wore nine on arrival).",
+        "VERIFY: Real Madrid record scorer; no disputed goal total used.",
+        "VERIFY: four Champions League titles with Madrid.",
+        "VERIFY: bicycle kick against Juventus, 3 April 2018.",
+        "VERIFY: Juventus supporters stood to applaud the bicycle-kick goal on 3 April 2018."
+      ],
+      "sourceUrls": [
+        "https://www.realmadrid.com/en-US/the-club/history/football-legends/cristiano-ronaldo-dos-santos-aveiro/",
+        "https://www.juventus.com/en/news/articles/cristiano-ronaldo-ready-to-win-as-a-bianconero",
+        "https://www.juventus.com/en/news/articles/cristiano-ronaldo-wins-uefa-com-goal-of-the-season"
+      ],
+      "segments": [
+        {
+          "offset": 0.2,
+          "narration": "Real Madrid brought him to Spain in 2009. In white, he became the club's record scorer and helped win four Champions League titles.",
+          "id": "05-1",
+          "rate": "+10%",
+          "windowEnd": 11.8
+        },
+        {
+          "offset": 19.1,
+          "narration": "Turin, 2018. Even the Juventus supporters stood to applaud that finish. For a moment, rivalry gave way to appreciation. They had come to support another team, yet this visiting player had made them rise to their feet. That response became part of the memory of his bicycle kick.",
+          "id": "05-2",
+          "rate": "+10%",
+          "windowEnd": 39.8
+        }
+      ]
+    },
+    {
+      "id": "scene06",
+      "title": "COLOURS CHANGE",
+      "narration": "The move brought him to Juventus in 2018. A new dressing room, and new teammates. United again in 2021. The familiar shirt, in a different moment. Then Al Nassr, in Saudi Arabia. Portugal's red and green still linked him to home.",
+      "duration": 20,
+      "cameraPreset": "montage",
+      "outfit": "juventus",
+      "mood": "violet",
+      "verify": [
+        "VERIFY: Juventus arrival 2018; United return 2021.",
+        "VERIFY: Al Nassr club career continues after Portugal retirement."
+      ],
+      "sourceUrls": [
+        "https://www.juventus.com/en/news/articles/juventus-says-goodbye-to-cristiano-ronaldo",
+        "https://www.manutd.com/en/news/official-statement-on-agreement-reached-for-cristiano-ronaldo",
+        "https://www.fifa.com/en/tournaments/mens/worldcup/articles/cristiano-ronaldo-portugal-retirement"
+      ],
+      "segments": [
+        {
+          "id": "06-1",
+          "offset": 0.1,
+          "windowEnd": 6.5,
+          "rate": "+10%",
+          "narration": "The move brought him to Juventus in 2018. A new dressing room, and new teammates."
+        },
+        {
+          "id": "06-2",
+          "offset": 6.8,
+          "windowEnd": 13.0,
+          "rate": "+10%",
+          "narration": "United again in 2021. The familiar shirt, in a different moment."
+        },
+        {
+          "id": "06-3",
+          "offset": 13.3,
+          "windowEnd": 19.8,
+          "rate": "+10%",
+          "narration": "Then Al Nassr, in Saudi Arabia. Portugal's red and green still linked him to home."
+        }
+      ]
+    },
+    {
+      "id": "scene07",
+      "title": "A COUNTRY, TOGETHER",
+      "narration": "Portugal's story belonged to a team. The European title came in 2016. Nations League wins followed in 2019 and 2025. Ronaldo became men's international football's record scorer. On November fifth, twenty twenty-six, he announced his international retirement. His club career continues. The farewell is to this shirt, and to the teammates and supporters who made it mean something.",
+      "duration": 32,
+      "cameraPreset": "hero",
+      "outfit": "portugal",
+      "mood": "redgreen",
+      "verify": [
+        "VERIFY: Portugal Euro 2016 champions.",
+        "VERIFY: Portugal Nations League wins 2019 and 2025.",
+        "VERIFY: men’s international goalscoring record.",
+        "VERIFY: November 2026 international retirement and paraphrase of hand-back-the-No7-shirt statement.",
+        "VERIFY: number seven is symbolic, generic kit has no federation insignia."
+      ],
+      "sourceUrls": [
+        "https://www.fifa.com/en/tournaments/mens/worldcup/articles/cristiano-ronaldo-portugal-retirement",
+        "https://www.uefa.com/european-qualifiers/news/026a-1297500e1b34-a17bbbcad258-1000--cristiano-ronaldo-all-time-leading-scorer-in-mens-internationals/"
+      ],
+      "segments": [
+        {
+          "offset": 0.15,
+          "narration": "Portugal's story belonged to a team. The European title came in 2016. Nations League wins followed in 2019 and 2025. Ronaldo became men's international football's record scorer.",
+          "id": "07-1",
+          "rate": "+10%",
+          "windowEnd": 14.35
+        },
+        {
+          "offset": 14.4,
+          "narration": "On November fifth, twenty twenty-six, he announced his international retirement. His club career continues. The farewell is to this shirt, and to the teammates and supporters who made it mean something.",
+          "id": "07-2",
+          "rate": "+10%",
+          "windowEnd": 27
+        }
+      ]
+    },
+    {
+      "id": "scene08",
+      "title": "THE LIGHT REMAINS",
+      "narration": "The shirt will pass on. The effort stays in memory. Somewhere, another child is taking a ball into the light.",
+      "duration": 16,
+      "cameraPreset": "pullback",
+      "outfit": "portugal",
+      "mood": "golden",
+      "verify": [
+        "VERIFY: the shirt and departing child are symbolic illustrations; no private farewell event or childhood episode is claimed as documented."
+      ],
+      "sourceUrls": [
+        "https://www.fifa.com/en/tournaments/mens/worldcup/articles/cristiano-ronaldo-portugal-retirement"
+      ],
+      "segments": [
+        {
+          "offset": 0.2,
+          "narration": "The shirt will pass on. The effort stays in memory. Somewhere, another child is taking a ball into the light.",
+          "id": "08-1",
+          "rate": "+10%",
+          "windowEnd": 9.8
+        }
+      ]
+    }
+  ],
+  "revision": "emotional-v3",
+  "narrationReductionPercent": 31.66
+}

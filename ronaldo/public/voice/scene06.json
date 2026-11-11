@@ -1,0 +1,243 @@
+{
+  "sceneId": "scene06",
+  "cacheKey": "954e1e17ce89f02b29da09382fd6252379c4b4114b5ccb128b4fcf709b610150",
+  "voice": "en-GB-RyanNeural",
+  "duration": 19.925,
+  "voiceFrom": 0,
+  "segments": [
+    {
+      "id": "06-1",
+      "offset": 0.1,
+      "duration": 6.36,
+      "rate": "+10%",
+      "cacheKey": "e1627d91db423ec7b66230c5ddbfe6ab1a688e13d008cef216b8726e9e265e63"
+    },
+    {
+      "id": "06-2",
+      "offset": 6.8,
+      "duration": 5.64,
+      "rate": "+10%",
+      "cacheKey": "1ff6db44fdf75661d29aeb8e93be9896a50416ebb7bca81baeeff024f065aac0"
+    },
+    {
+      "id": "06-3",
+      "offset": 13.3,
+      "duration": 6.192,
+      "rate": "+10%",
+      "cacheKey": "b733f194783937121486cd9520141194b98642063ddd78dd3267b485f2ec492e"
+    }
+  ],
+  "speechRanges": [
+    {
+      "start": 0.1,
+      "end": 6.46
+    },
+    {
+      "start": 6.8,
+      "end": 12.44
+    },
+    {
+      "start": 13.3,
+      "end": 19.492
+    }
+  ],
+  "words": [
+    {
+      "text": "The",
+      "startMs": 200.0,
+      "endMs": 325.0
+    },
+    {
+      "text": "move",
+      "startMs": 336.38,
+      "endMs": 654.54
+    },
+    {
+      "text": "brought",
+      "startMs": 665.92,
+      "endMs": 915.92
+    },
+    {
+      "text": "him",
+      "startMs": 927.29,
+      "endMs": 1063.67
+    },
+    {
+      "text": "to",
+      "startMs": 1075.0,
+      "endMs": 1154.54
+    },
+    {
+      "text": "Juventus",
+      "startMs": 1165.92,
+      "endMs": 1654.54
+    },
+    {
+      "text": "in 2018",
+      "startMs": 1665.92,
+      "endMs": 2586.37
+    },
+    {
+      "text": "A",
+      "startMs": 3365.92,
+      "endMs": 3490.92
+    },
+    {
+      "text": "new",
+      "startMs": 3502.29,
+      "endMs": 3752.29
+    },
+    {
+      "text": "dressing",
+      "startMs": 3763.62,
+      "endMs": 4195.46
+    },
+    {
+      "text": "room",
+      "startMs": 4206.83,
+      "endMs": 4456.83
+    },
+    {
+      "text": "and",
+      "startMs": 4650.0,
+      "endMs": 4763.62
+    },
+    {
+      "text": "new",
+      "startMs": 4775.0,
+      "endMs": 4990.92
+    },
+    {
+      "text": "teammates",
+      "startMs": 5002.29,
+      "endMs": 5672.75
+    },
+    {
+      "text": "United",
+      "startMs": 6900.0,
+      "endMs": 7388.62
+    },
+    {
+      "text": "again",
+      "startMs": 7400.0,
+      "endMs": 7661.38
+    },
+    {
+      "text": "in 2021",
+      "startMs": 7672.71,
+      "endMs": 8775.0
+    },
+    {
+      "text": "The",
+      "startMs": 9554.54,
+      "endMs": 9690.92
+    },
+    {
+      "text": "familiar",
+      "startMs": 9702.29,
+      "endMs": 10100.0
+    },
+    {
+      "text": "shirt",
+      "startMs": 10111.38,
+      "endMs": 10475.0
+    },
+    {
+      "text": "in",
+      "startMs": 10679.54,
+      "endMs": 10759.08
+    },
+    {
+      "text": "a",
+      "startMs": 10770.46,
+      "endMs": 10838.62
+    },
+    {
+      "text": "different",
+      "startMs": 10850.0,
+      "endMs": 11213.62
+    },
+    {
+      "text": "moment",
+      "startMs": 11225.0,
+      "endMs": 11656.83
+    },
+    {
+      "text": "Then",
+      "startMs": 13400.0,
+      "endMs": 13672.71
+    },
+    {
+      "text": "Al",
+      "startMs": 13684.08,
+      "endMs": 13865.92
+    },
+    {
+      "text": "Nassr",
+      "startMs": 13877.29,
+      "endMs": 14309.12
+    },
+    {
+      "text": "in",
+      "startMs": 14479.54,
+      "endMs": 14627.25
+    },
+    {
+      "text": "Saudi",
+      "startMs": 14638.62,
+      "endMs": 15013.62
+    },
+    {
+      "text": "Arabia",
+      "startMs": 15025.0,
+      "endMs": 15570.46
+    },
+    {
+      "text": "Portugal's",
+      "startMs": 16350.0,
+      "endMs": 16906.83
+    },
+    {
+      "text": "red",
+      "startMs": 16918.17,
+      "endMs": 17156.79
+    },
+    {
+      "text": "and",
+      "startMs": 17168.17,
+      "endMs": 17247.71
+    },
+    {
+      "text": "green",
+      "startMs": 17259.08,
+      "endMs": 17543.17
+    },
+    {
+      "text": "still",
+      "startMs": 17554.54,
+      "endMs": 17815.92
+    },
+    {
+      "text": "linked",
+      "startMs": 17827.29,
+      "endMs": 18054.58
+    },
+    {
+      "text": "him",
+      "startMs": 18065.92,
+      "endMs": 18190.92
+    },
+    {
+      "text": "to",
+      "startMs": 18202.29,
+      "endMs": 18281.83
+    },
+    {
+      "text": "home",
+      "startMs": 18293.17,
+      "endMs": 18702.25
+    }
+  ],
+  "audioSha256": "0b2767859a1a0958e67f1a499d812e60ddaa3ec017e376b3374d2bf3a87ca0d4",
+  "timingSource": "Actual native WordBoundary timings offset into scene; no atempo"
+}

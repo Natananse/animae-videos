@@ -1,0 +1,227 @@
+{
+  "sceneId": "scene02",
+  "cacheKey": "ca2d524e28bbca62709b188230dffd72a354a87e86e0bb495a661cd21da81007",
+  "voice": "en-GB-RyanNeural",
+  "duration": 25.925,
+  "voiceFrom": 0,
+  "segments": [
+    {
+      "id": "02-1",
+      "offset": 0.15,
+      "duration": 3.456,
+      "rate": "+10%",
+      "cacheKey": "a7aecceccb0348fe981fbe7e09d8979c077940a8cb788f286e130ec9e30a1bb4"
+    },
+    {
+      "id": "02-2",
+      "offset": 7.2,
+      "duration": 14.184,
+      "rate": "+10%",
+      "cacheKey": "284afbee2c5ee6e00d722caebdad43321cdaa27a7283e983188554ea24a4f30b"
+    }
+  ],
+  "speechRanges": [
+    {
+      "start": 0.15,
+      "end": 3.606
+    },
+    {
+      "start": 7.2,
+      "end": 21.384
+    }
+  ],
+  "words": [
+    {
+      "text": "Funchal",
+      "startMs": 250.0,
+      "endMs": 795.46
+    },
+    {
+      "text": "Madeira",
+      "startMs": 1011.38,
+      "endMs": 1579.54
+    },
+    {
+      "text": "Home",
+      "startMs": 2357.96,
+      "endMs": 2812.5
+    },
+    {
+      "text": "Cristiano",
+      "startMs": 7300.0,
+      "endMs": 7879.54
+    },
+    {
+      "text": "Ronaldo",
+      "startMs": 7890.92,
+      "endMs": 8334.08
+    },
+    {
+      "text": "was",
+      "startMs": 8345.46,
+      "endMs": 8504.54
+    },
+    {
+      "text": "born",
+      "startMs": 8515.92,
+      "endMs": 8743.21
+    },
+    {
+      "text": "here",
+      "startMs": 8754.54,
+      "endMs": 9027.25
+    },
+    {
+      "text": "in 1985",
+      "startMs": 9038.62,
+      "endMs": 10379.54
+    },
+    {
+      "text": "This",
+      "startMs": 11159.08,
+      "endMs": 11431.79
+    },
+    {
+      "text": "island",
+      "startMs": 11443.17,
+      "endMs": 11795.46
+    },
+    {
+      "text": "was",
+      "startMs": 11806.83,
+      "endMs": 11943.21
+    },
+    {
+      "text": "the",
+      "startMs": 11954.54,
+      "endMs": 12034.08
+    },
+    {
+      "text": "beginning",
+      "startMs": 12045.46,
+      "endMs": 12386.37
+    },
+    {
+      "text": "of",
+      "startMs": 12397.71,
+      "endMs": 12465.87
+    },
+    {
+      "text": "a",
+      "startMs": 12477.29,
+      "endMs": 12522.75
+    },
+    {
+      "text": "very",
+      "startMs": 12534.08,
+      "endMs": 12840.92
+    },
+    {
+      "text": "different",
+      "startMs": 12852.29,
+      "endMs": 13204.58
+    },
+    {
+      "text": "life",
+      "startMs": 13215.92,
+      "endMs": 13636.37
+    },
+    {
+      "text": "Its",
+      "startMs": 14420.46,
+      "endMs": 14647.75
+    },
+    {
+      "text": "small",
+      "startMs": 14659.08,
+      "endMs": 14943.17
+    },
+    {
+      "text": "disappointments",
+      "startMs": 14954.54,
+      "endMs": 15590.92
+    },
+    {
+      "text": "and",
+      "startMs": 15602.29,
+      "endMs": 15704.58
+    },
+    {
+      "text": "victories",
+      "startMs": 15715.92,
+      "endMs": 16170.46
+    },
+    {
+      "text": "belong",
+      "startMs": 16181.83,
+      "endMs": 16500.0
+    },
+    {
+      "text": "to",
+      "startMs": 16511.38,
+      "endMs": 16602.29
+    },
+    {
+      "text": "childhood",
+      "startMs": 16613.62,
+      "endMs": 17250.0
+    },
+    {
+      "text": "Nobody",
+      "startMs": 18034.08,
+      "endMs": 18477.25
+    },
+    {
+      "text": "in",
+      "startMs": 18488.62,
+      "endMs": 18590.92
+    },
+    {
+      "text": "this",
+      "startMs": 18602.29,
+      "endMs": 18750.0
+    },
+    {
+      "text": "scene",
+      "startMs": 18761.38,
+      "endMs": 18965.92
+    },
+    {
+      "text": "knows",
+      "startMs": 18977.29,
+      "endMs": 19261.37
+    },
+    {
+      "text": "how",
+      "startMs": 19272.71,
+      "endMs": 19454.54
+    },
+    {
+      "text": "far",
+      "startMs": 19465.92,
+      "endMs": 19659.08
+    },
+    {
+      "text": "the",
+      "startMs": 19670.46,
+      "endMs": 19772.75
+    },
+    {
+      "text": "boy",
+      "startMs": 19784.08,
+      "endMs": 19977.25
+    },
+    {
+      "text": "will",
+      "startMs": 19988.62,
+      "endMs": 20136.33
+    },
+    {
+      "text": "travel",
+      "startMs": 20147.71,
+      "endMs": 20590.87
+    }
+  ],
+  "audioSha256": "50ae62540d186e770930900a4ac574e599dbf4aff11a8fde4a828a22ef33b5c1",
+  "timingSource": "Actual native WordBoundary timings offset into scene; no atempo"
+}

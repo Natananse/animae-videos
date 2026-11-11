@@ -1,0 +1,126 @@
+#!/usr/bin/env python3
+"""Original procedural Foley and ambience; no sampled or paid sound assets."""
+from array import array
+import json
+import math
+from pathlib import Path
+import random
+import wave
+
+RATE = 48000
+ROOT = Path(__file__).resolve().parents[1]
+DEST = ROOT / 'public/sfx'
+DEST.mkdir(parents=True, exist_ok=True)
+rng = random.Random(7011)
+
+
+def noise(duration, low=100, high=3000):
+    n = int(duration * RATE)
+    hp = lp = previous = 0.0
+    ah = math.exp(-2 * math.pi * low / RATE)
+    al = 1 - math.exp(-2 * math.pi * high / RATE)
+    result = []
+    for _ in range(n):
+        white = rng.uniform(-1, 1)
+        hp = ah * (hp + white - previous)
+        previous = white
+        lp += al * (hp - lp)
+        result.append(lp)
+    return result
+
+
+def save(name, values, peak=.72, stereo=False):
+    maximum = max(abs(x) for x in values) or 1
+    values = [x * peak / maximum for x in values]
+    samples = array('h')
+    for i, value in enumerate(values):
+        # Small deterministic stereo decorrelation for distant ambience.
+        samples.append(round(max(-1, min(1, value)) * 32767))
+        if stereo:
+            delayed = values[max(0, i - 73)]
+            samples.append(round(max(-1, min(1, value * .72 + delayed * .28)) * 32767))
+    with wave.open(str(DEST / f'{name}.wav'), 'wb') as output:
+        output.setnchannels(2 if stereo else 1)
+        output.setsampwidth(2)
+        output.setframerate(RATE)
+        output.writeframes(samples.tobytes())
+    return {'file': f'{name}.wav', 'duration': len(values) / RATE, 'peak': peak}
+
+
+assets = []
+for name, duration, decay, bass, strength in [
+    ('kick', .48, 12, 105, .78), ('touch', .19, 28, 130, .58),
+    ('step', .22, 24, 87, .48), ('land', .68, 9, 71, .72),
+]:
+    grain = noise(duration, 220, 3600)
+    values = []
+    phase = 0.0
+    for i, hiss in enumerate(grain):
+        t = i / RATE
+        phase += 2 * math.pi * (bass * math.exp(-t * 4) + 35) / RATE
+        body = math.sin(phase) * math.exp(-t * decay)
+        contact = hiss * math.exp(-t * (decay * 4)) * 1.6
+        tread = hiss * .25 * math.exp(-t * decay * .7)
+        values.append((body + contact + tread) * min(1, t / .0015))
+    assets.append(save(name, values, strength))
+
+for name, duration, low, high, peak in [
+    ('cloth', .55, 500, 4000, .28), ('breath', .9, 700, 3400, .24),
+    ('net', .72, 500, 4800, .45),
+]:
+    grain = noise(duration, low, high)
+    values = []
+    for i, value in enumerate(grain):
+        t = i / RATE
+        if name == 'breath':
+            envelope = math.sin(math.pi * t / duration) ** 2
+        elif name == 'cloth':
+            envelope = math.exp(-((t - .19) / .11) ** 2) + .6 * math.exp(-((t - .36) / .10) ** 2)
+        else:
+            envelope = min(1, t / .015) * math.exp(-t * 5) * (.75 + .25 * math.sin(t * 129))
+        values.append(value * envelope)
+    assets.append(save(name, values, peak))
+
+# A distant, wordless crowd bed built from filtered noise and diffuse vocal
+# harmonics. Its ambience is deliberately quieter than the close Foley.
+duration = 8
+crowd = noise(duration, 160, 2400)
+for i in range(len(crowd)):
+    t = i / RATE
+    murmur = .03 * math.sin(2 * math.pi * 191 * t + math.sin(t * 1.7))
+    murmur += .02 * math.sin(2 * math.pi * 347 * t + math.sin(t * .9))
+    edge = min(1, t / .08, (duration - t) / .08)
+    crowd[i] = (crowd[i] * (.5 + .12 * math.sin(t * 1.3)) + murmur) * edge
+assets.append(save('stadium', crowd, .35, True))
+
+cheer = noise(2.8, 180, 3900)
+for i in range(len(cheer)):
+    t = i / RATE
+    envelope = min(1, t / .19) * math.exp(-max(0, t - .65) * 1.1)
+    vowel = sum(math.sin(2 * math.pi * f * t + .15 * math.sin(t * 5)) for f in [219, 327, 438, 651]) * .035
+    cheer[i] = (cheer[i] + vowel) * envelope
+assets.append(save('cheer', cheer, .6, True))
+
+street = noise(8, 70, 1100)
+for i in range(len(street)):
+    t = i / RATE
+    bird = 0.0
+    for start in [1.1, 3.7, 6.2]:
+        p = t - start
+        if 0 < p < .35:
+            bird += .018 * math.sin(2 * math.pi * (2200 * p + 1400 * p * p)) * math.sin(p / .35 * math.pi) ** 2
+    street[i] = street[i] * .12 + bird
+assets.append(save('street', street, .16, True))
+
+applause = noise(2.7, 650, 6500)
+claps = [.04, .18, .29, .43, .58, .73, .88, 1.03, 1.16, 1.32, 1.49, 1.64, 1.81, 1.96, 2.12, 2.3]
+for i in range(len(applause)):
+    t = i / RATE
+    envelope = sum(math.exp(-(t - hit) * 70) for hit in claps if 0 <= t - hit < .16)
+    applause[i] *= envelope
+assets.append(save('applause', applause, .5, True))
+(DEST / 'manifest.json').write_text(json.dumps({'sampleRate': RATE, 'seed': 7011,
+    'provenance': 'Original procedural synthesis for this project. No external recordings or paid services.',
+    'assets': assets}, indent=2) + '\n')
+(DEST / 'CREDITS.txt').write_text('Original procedural Foley and ambience created for The Shirt — A Ronaldo Story.\nNo external sound recordings were used. Generated by scripts/make_sfx.py.\n')
+print(f'Prepared {len(assets)} original sound assets in {DEST}')

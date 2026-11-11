@@ -1,0 +1,126 @@
+{
+  "sceneId": "scene08",
+  "cacheKey": "0ffc7e95c781dce50dd5e0049b282fc3ebbf1f0aa1d333facdf2fb55a04cce95",
+  "voice": "en-GB-RyanNeural",
+  "duration": 15.925,
+  "voiceFrom": 0,
+  "segments": [
+    {
+      "id": "08-1",
+      "offset": 0.2,
+      "duration": 7.656,
+      "rate": "+10%",
+      "cacheKey": "864343acd7533136618684e7956dee851bb3c962a3a3b8fd16878c115e81d4d5"
+    }
+  ],
+  "speechRanges": [
+    {
+      "start": 0.2,
+      "end": 7.856
+    }
+  ],
+  "words": [
+    {
+      "text": "The",
+      "startMs": 300.0,
+      "endMs": 436.38
+    },
+    {
+      "text": "shirt",
+      "startMs": 447.71,
+      "endMs": 731.79
+    },
+    {
+      "text": "will",
+      "startMs": 743.17,
+      "endMs": 856.79
+    },
+    {
+      "text": "pass",
+      "startMs": 868.17,
+      "endMs": 1186.33
+    },
+    {
+      "text": "on",
+      "startMs": 1197.71,
+      "endMs": 1470.42
+    },
+    {
+      "text": "The",
+      "startMs": 2250.0,
+      "endMs": 2431.83
+    },
+    {
+      "text": "effort",
+      "startMs": 2443.17,
+      "endMs": 2704.54
+    },
+    {
+      "text": "stays",
+      "startMs": 2715.92,
+      "endMs": 3056.83
+    },
+    {
+      "text": "in",
+      "startMs": 3068.17,
+      "endMs": 3159.08
+    },
+    {
+      "text": "memory",
+      "startMs": 3170.46,
+      "endMs": 3568.17
+    },
+    {
+      "text": "Somewhere",
+      "startMs": 4352.29,
+      "endMs": 4829.58
+    },
+    {
+      "text": "another",
+      "startMs": 5022.71,
+      "endMs": 5272.71
+    },
+    {
+      "text": "child",
+      "startMs": 5284.08,
+      "endMs": 5636.37
+    },
+    {
+      "text": "is",
+      "startMs": 5647.71,
+      "endMs": 5738.62
+    },
+    {
+      "text": "taking",
+      "startMs": 5750.0,
+      "endMs": 6045.46
+    },
+    {
+      "text": "a",
+      "startMs": 6056.83,
+      "endMs": 6113.67
+    },
+    {
+      "text": "ball",
+      "startMs": 6125.0,
+      "endMs": 6352.29
+    },
+    {
+      "text": "into",
+      "startMs": 6363.62,
+      "endMs": 6556.79
+    },
+    {
+      "text": "the",
+      "startMs": 6568.17,
+      "endMs": 6647.71
+    },
+    {
+      "text": "light",
+      "startMs": 6659.08,
+      "endMs": 7068.17
+    }
+  ],
+  "audioSha256": "af8c6323a8af30461e131b2fff4af9ae1f6cc091c3188bb0a67e1de78c6d885a",
+  "timingSource": "Actual native WordBoundary timings offset into scene; no atempo"
+}

@@ -1,0 +1,47 @@
+{
+  "name": "the-legend-of-cr7",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A four-minute, code-animated documentary about Cristiano Ronaldo's Portugal era.",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "typecheck": "tsc --noEmit",
+    "voice": "bash scripts/voice.sh",
+    "preview": "bash scripts/render.sh preview",
+    "render": "bash scripts/render.sh final",
+    "stills": "node scripts/render.mjs stills",
+    "validate": "node scripts/validate.mjs",
+    "sync-preview-audio": "node scripts/sync_preview_audio.mjs",
+    "review:opening": "node scripts/render.mjs review-opening",
+    "review:childhood": "node scripts/render.mjs review-childhood",
+    "review:bicycle": "node scripts/render.mjs review-bicycle",
+    "review:ending": "node scripts/render.mjs review-ending",
+    "review:walking": "node scripts/render.mjs review-walking",
+    "review:supporting": "node scripts/render.mjs review-supporting",
+    "review:farewell": "node scripts/render.mjs review-farewell",
+    "preview:from-final": "node scripts/make_preview.mjs",
+    "audio:update": "node scripts/update_audio.mjs",
+    "music:remix": "node scripts/remix_music.mjs",
+    "audio:clean": "node scripts/make_sound_cues.mjs && python3 scripts/mix_sfx.py && node scripts/remix_music.mjs --video=out/ronaldo_emotional_v3_music.mp4 --preview-video=out/ronaldo_emotional_v3_music_preview.mp4"
+  },
+  "dependencies": {
+    "@fontsource/inter": "^5.2.0",
+    "@react-three/drei": "^10.0.0",
+    "@react-three/fiber": "^9.0.0",
+    "@remotion/bundler": "^4.0.0",
+    "@remotion/captions": "^4.0.0",
+    "@remotion/cli": "^4.0.0",
+    "@remotion/renderer": "^4.0.0",
+    "@remotion/three": "^4.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "remotion": "^4.0.0",
+    "three": "^0.180.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@types/three": "^0.180.0",
+    "typescript": "^5.9.0"
+  }
+}

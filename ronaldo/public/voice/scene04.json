@@ -1,0 +1,417 @@
+{
+  "sceneId": "scene04",
+  "cacheKey": "e394578d414b055091757fdf7bc07cb85b6c5e2612dea51a482bb246314530ab",
+  "voice": "en-GB-RyanNeural",
+  "duration": 35.925,
+  "voiceFrom": 0,
+  "segments": [
+    {
+      "id": "04-1",
+      "offset": 0.25,
+      "duration": 12.984,
+      "rate": "+10%",
+      "cacheKey": "9930c900c677b0ee19020981528509d9bd5e593bbc5f883036afbf99eed3e64c"
+    },
+    {
+      "id": "04-2",
+      "offset": 17.0,
+      "duration": 15.96,
+      "rate": "+10%",
+      "cacheKey": "05aaa3ac3190f99d19c7054bcff6d48bf661adb96e03ddf7db92c653b0edce3e"
+    }
+  ],
+  "speechRanges": [
+    {
+      "start": 0.25,
+      "end": 13.234
+    },
+    {
+      "start": 17.0,
+      "end": 32.96
+    }
+  ],
+  "words": [
+    {
+      "text": "United",
+      "startMs": 350.0,
+      "endMs": 861.38
+    },
+    {
+      "text": "signed",
+      "startMs": 872.71,
+      "endMs": 1156.79
+    },
+    {
+      "text": "him",
+      "startMs": 1168.17,
+      "endMs": 1315.87
+    },
+    {
+      "text": "in 2003",
+      "startMs": 1327.29,
+      "endMs": 2565.92
+    },
+    {
+      "text": "A",
+      "startMs": 3345.46,
+      "endMs": 3481.83
+    },
+    {
+      "text": "teenager",
+      "startMs": 3493.17,
+      "endMs": 3981.79
+    },
+    {
+      "text": "inherited",
+      "startMs": 3993.17,
+      "endMs": 4447.71
+    },
+    {
+      "text": "the",
+      "startMs": 4459.08,
+      "endMs": 4527.25
+    },
+    {
+      "text": "number",
+      "startMs": 4538.62,
+      "endMs": 4777.25
+    },
+    {
+      "text": "seven",
+      "startMs": 4788.62,
+      "endMs": 5072.71
+    },
+    {
+      "text": "shirt",
+      "startMs": 5084.08,
+      "endMs": 5447.71
+    },
+    {
+      "text": "carrying",
+      "startMs": 5618.17,
+      "endMs": 6015.87
+    },
+    {
+      "text": "expectations",
+      "startMs": 6027.29,
+      "endMs": 6720.46
+    },
+    {
+      "text": "before",
+      "startMs": 6731.83,
+      "endMs": 7038.67
+    },
+    {
+      "text": "he",
+      "startMs": 7050.0,
+      "endMs": 7186.38
+    },
+    {
+      "text": "had",
+      "startMs": 7197.71,
+      "endMs": 7356.79
+    },
+    {
+      "text": "earned",
+      "startMs": 7368.17,
+      "endMs": 7550.0
+    },
+    {
+      "text": "his",
+      "startMs": 7561.38,
+      "endMs": 7709.08
+    },
+    {
+      "text": "own",
+      "startMs": 7720.46,
+      "endMs": 7879.54
+    },
+    {
+      "text": "place",
+      "startMs": 7890.92,
+      "endMs": 8163.62
+    },
+    {
+      "text": "in",
+      "startMs": 8175.0,
+      "endMs": 8231.83
+    },
+    {
+      "text": "the",
+      "startMs": 8243.17,
+      "endMs": 8311.33
+    },
+    {
+      "text": "club's",
+      "startMs": 8322.71,
+      "endMs": 8629.54
+    },
+    {
+      "text": "history",
+      "startMs": 8640.92,
+      "endMs": 9072.75
+    },
+    {
+      "text": "He",
+      "startMs": 9856.83,
+      "endMs": 10038.67
+    },
+    {
+      "text": "arrived",
+      "startMs": 10050.0,
+      "endMs": 10436.38
+    },
+    {
+      "text": "as",
+      "startMs": 10447.71,
+      "endMs": 10515.87
+    },
+    {
+      "text": "a",
+      "startMs": 10527.29,
+      "endMs": 10572.75
+    },
+    {
+      "text": "winger",
+      "startMs": 10584.08,
+      "endMs": 10947.71
+    },
+    {
+      "text": "full",
+      "startMs": 11140.92,
+      "endMs": 11300.0
+    },
+    {
+      "text": "of",
+      "startMs": 11311.38,
+      "endMs": 11379.54
+    },
+    {
+      "text": "speed",
+      "startMs": 11390.92,
+      "endMs": 11754.54
+    },
+    {
+      "text": "and",
+      "startMs": 11765.92,
+      "endMs": 11856.83
+    },
+    {
+      "text": "invention",
+      "startMs": 11868.17,
+      "endMs": 12436.33
+    },
+    {
+      "text": "Over",
+      "startMs": 17100.0,
+      "endMs": 17361.38
+    },
+    {
+      "text": "the",
+      "startMs": 17372.71,
+      "endMs": 17452.25
+    },
+    {
+      "text": "following",
+      "startMs": 17463.62,
+      "endMs": 17793.17
+    },
+    {
+      "text": "seasons",
+      "startMs": 17804.54,
+      "endMs": 18315.92
+    },
+    {
+      "text": "the",
+      "startMs": 18509.08,
+      "endMs": 18600.0
+    },
+    {
+      "text": "goals",
+      "startMs": 18611.38,
+      "endMs": 18918.21
+    },
+    {
+      "text": "became",
+      "startMs": 18929.54,
+      "endMs": 19259.08
+    },
+    {
+      "text": "as",
+      "startMs": 19270.46,
+      "endMs": 19350.0
+    },
+    {
+      "text": "important",
+      "startMs": 19361.38,
+      "endMs": 19838.67
+    },
+    {
+      "text": "as",
+      "startMs": 19850.0,
+      "endMs": 19929.54
+    },
+    {
+      "text": "the",
+      "startMs": 19940.92,
+      "endMs": 20009.08
+    },
+    {
+      "text": "tricks",
+      "startMs": 20020.46,
+      "endMs": 20452.29
+    },
+    {
+      "text": "In 2008",
+      "startMs": 21231.83,
+      "endMs": 22265.92
+    },
+    {
+      "text": "United",
+      "startMs": 22447.71,
+      "endMs": 22845.42
+    },
+    {
+      "text": "won",
+      "startMs": 22856.83,
+      "endMs": 23050.0
+    },
+    {
+      "text": "the",
+      "startMs": 23061.38,
+      "endMs": 23129.54
+    },
+    {
+      "text": "Champions",
+      "startMs": 23140.92,
+      "endMs": 23606.83
+    },
+    {
+      "text": "League",
+      "startMs": 23618.17,
+      "endMs": 23845.46
+    },
+    {
+      "text": "and",
+      "startMs": 23856.83,
+      "endMs": 23947.75
+    },
+    {
+      "text": "Ronaldo",
+      "startMs": 23959.08,
+      "endMs": 24436.37
+    },
+    {
+      "text": "received",
+      "startMs": 24447.71,
+      "endMs": 24856.79
+    },
+    {
+      "text": "his",
+      "startMs": 24868.17,
+      "endMs": 25004.54
+    },
+    {
+      "text": "first",
+      "startMs": 25015.92,
+      "endMs": 25345.46
+    },
+    {
+      "text": "Ballon",
+      "startMs": 25356.83,
+      "endMs": 25629.54
+    },
+    {
+      "text": "d'Or",
+      "startMs": 25640.92,
+      "endMs": 26004.54
+    },
+    {
+      "text": "Teammates",
+      "startMs": 26788.62,
+      "endMs": 27265.92
+    },
+    {
+      "text": "had",
+      "startMs": 27277.29,
+      "endMs": 27390.92
+    },
+    {
+      "text": "helped",
+      "startMs": 27402.29,
+      "endMs": 27686.37
+    },
+    {
+      "text": "turn",
+      "startMs": 27697.71,
+      "endMs": 27913.62
+    },
+    {
+      "text": "an",
+      "startMs": 27925.0,
+      "endMs": 28004.54
+    },
+    {
+      "text": "individual",
+      "startMs": 28015.92,
+      "endMs": 28515.92
+    },
+    {
+      "text": "talent",
+      "startMs": 28527.29,
+      "endMs": 28845.46
+    },
+    {
+      "text": "into",
+      "startMs": 28856.83,
+      "endMs": 29129.54
+    },
+    {
+      "text": "a",
+      "startMs": 29140.92,
+      "endMs": 29197.75
+    },
+    {
+      "text": "champion",
+      "startMs": 29209.08,
+      "endMs": 29709.08
+    },
+    {
+      "text": "His",
+      "startMs": 30493.17,
+      "endMs": 30720.46
+    },
+    {
+      "text": "next",
+      "startMs": 30731.83,
+      "endMs": 31015.92
+    },
+    {
+      "text": "move",
+      "startMs": 31027.29,
+      "endMs": 31277.29
+    },
+    {
+      "text": "took",
+      "startMs": 31288.62,
+      "endMs": 31459.08
+    },
+    {
+      "text": "him",
+      "startMs": 31470.46,
+      "endMs": 31595.46
+    },
+    {
+      "text": "to",
+      "startMs": 31606.83,
+      "endMs": 31686.37
+    },
+    {
+      "text": "Madrid",
+      "startMs": 31697.71,
+      "endMs": 32175.0
+    }
+  ],
+  "audioSha256": "a7fd27d5d2bad88369156322e73198e031077e574ad68443f7a182afb589c33d",
+  "timingSource": "Actual native WordBoundary timings offset into scene; no atempo"
+}

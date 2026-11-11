@@ -1,0 +1,241 @@
+{
+  "sceneId": "scene03",
+  "cacheKey": "c5dac9695f4377305450641cb7dd402a56f670f2d7630eac4f8febf7d0d900b1",
+  "voice": "en-GB-RyanNeural",
+  "duration": 19.925,
+  "voiceFrom": 0,
+  "segments": [
+    {
+      "id": "03-1",
+      "offset": 0.2,
+      "duration": 16.296,
+      "rate": "+10%",
+      "cacheKey": "06f7c7808f42d28ff9d31f4260fa4e56aca83de55d0c2b3eaa13e25cbb19ed53"
+    }
+  ],
+  "speechRanges": [
+    {
+      "start": 0.2,
+      "end": 16.496
+    }
+  ],
+  "words": [
+    {
+      "text": "Sporting",
+      "startMs": 300.0,
+      "endMs": 743.17
+    },
+    {
+      "text": "gave",
+      "startMs": 754.54,
+      "endMs": 981.83
+    },
+    {
+      "text": "him",
+      "startMs": 993.17,
+      "endMs": 1129.54
+    },
+    {
+      "text": "his",
+      "startMs": 1140.92,
+      "endMs": 1288.62
+    },
+    {
+      "text": "first",
+      "startMs": 1300.0,
+      "endMs": 1629.54
+    },
+    {
+      "text": "senior",
+      "startMs": 1640.92,
+      "endMs": 1936.37
+    },
+    {
+      "text": "stage",
+      "startMs": 1947.71,
+      "endMs": 2334.08
+    },
+    {
+      "text": "in 2002",
+      "startMs": 2345.46,
+      "endMs": 3493.21
+    },
+    {
+      "text": "The",
+      "startMs": 4272.71,
+      "endMs": 4420.42
+    },
+    {
+      "text": "game",
+      "startMs": 4431.83,
+      "endMs": 4625.0
+    },
+    {
+      "text": "became",
+      "startMs": 4636.38,
+      "endMs": 4954.54
+    },
+    {
+      "text": "faster",
+      "startMs": 4965.92,
+      "endMs": 5352.29
+    },
+    {
+      "text": "and",
+      "startMs": 5363.62,
+      "endMs": 5500.0
+    },
+    {
+      "text": "the",
+      "startMs": 5511.38,
+      "endMs": 5579.54
+    },
+    {
+      "text": "space",
+      "startMs": 5590.92,
+      "endMs": 5931.83
+    },
+    {
+      "text": "tighter",
+      "startMs": 5943.17,
+      "endMs": 6375.0
+    },
+    {
+      "text": "A",
+      "startMs": 7159.08,
+      "endMs": 7306.79
+    },
+    {
+      "text": "pass",
+      "startMs": 7318.17,
+      "endMs": 7625.0
+    },
+    {
+      "text": "needed",
+      "startMs": 7636.38,
+      "endMs": 7920.46
+    },
+    {
+      "text": "the",
+      "startMs": 7931.83,
+      "endMs": 8000.0
+    },
+    {
+      "text": "right",
+      "startMs": 8011.38,
+      "endMs": 8284.08
+    },
+    {
+      "text": "weight",
+      "startMs": 8295.46,
+      "endMs": 8670.46
+    },
+    {
+      "text": "A",
+      "startMs": 9454.54,
+      "endMs": 9590.92
+    },
+    {
+      "text": "run",
+      "startMs": 9602.29,
+      "endMs": 9897.75
+    },
+    {
+      "text": "needed",
+      "startMs": 9909.08,
+      "endMs": 10170.46
+    },
+    {
+      "text": "the",
+      "startMs": 10181.83,
+      "endMs": 10250.0
+    },
+    {
+      "text": "right",
+      "startMs": 10261.38,
+      "endMs": 10534.08
+    },
+    {
+      "text": "moment",
+      "startMs": 10545.46,
+      "endMs": 10977.29
+    },
+    {
+      "text": "His",
+      "startMs": 11761.38,
+      "endMs": 11977.29
+    },
+    {
+      "text": "talent",
+      "startMs": 11988.62,
+      "endMs": 12295.46
+    },
+    {
+      "text": "now",
+      "startMs": 12306.83,
+      "endMs": 12511.37
+    },
+    {
+      "text": "had",
+      "startMs": 12522.71,
+      "endMs": 12693.17
+    },
+    {
+      "text": "to",
+      "startMs": 12704.54,
+      "endMs": 12784.08
+    },
+    {
+      "text": "work",
+      "startMs": 12795.46,
+      "endMs": 13068.17
+    },
+    {
+      "text": "with",
+      "startMs": 13079.54,
+      "endMs": 13193.17
+    },
+    {
+      "text": "teammates",
+      "startMs": 13204.54,
+      "endMs": 13738.62
+    },
+    {
+      "text": "against",
+      "startMs": 13909.08,
+      "endMs": 14204.54
+    },
+    {
+      "text": "players",
+      "startMs": 14215.92,
+      "endMs": 14522.75
+    },
+    {
+      "text": "who",
+      "startMs": 14534.08,
+      "endMs": 14636.37
+    },
+    {
+      "text": "wanted",
+      "startMs": 14647.71,
+      "endMs": 14965.87
+    },
+    {
+      "text": "the",
+      "startMs": 14977.29,
+      "endMs": 15045.46
+    },
+    {
+      "text": "same",
+      "startMs": 15056.83,
+      "endMs": 15318.21
+    },
+    {
+      "text": "ball",
+      "startMs": 15329.54,
+      "endMs": 15693.17
+    }
+  ],
+  "audioSha256": "16eab1043308196038cfc4533523c36e9552b3050ae53817e4d7ea64864934ed",
+  "timingSource": "Actual native WordBoundary timings offset into scene; no atempo"
+}

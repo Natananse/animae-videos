@@ -1,0 +1,106 @@
+{
+  "sceneId": "scene01",
+  "cacheKey": "bede87e725ca520bfc6692cfa9e4385b89eb75ef67943cc4efbc8240a6d3c226",
+  "voice": "en-GB-RyanNeural",
+  "duration": 9.925,
+  "voiceFrom": 0,
+  "segments": [
+    {
+      "id": "01-1",
+      "offset": 1.8,
+      "duration": 6.648,
+      "rate": "+10%",
+      "cacheKey": "4f415ef87d7676256a8a632553499da7f79ce0c89adccb3467d885656c6fcb56"
+    }
+  ],
+  "speechRanges": [
+    {
+      "start": 1.8,
+      "end": 8.448
+    }
+  ],
+  "words": [
+    {
+      "text": "Portugal's",
+      "startMs": 1900.0,
+      "endMs": 2411.38
+    },
+    {
+      "text": "seven",
+      "startMs": 2422.71,
+      "endMs": 2695.42
+    },
+    {
+      "text": "is",
+      "startMs": 2706.83,
+      "endMs": 2843.21
+    },
+    {
+      "text": "leaving",
+      "startMs": 2854.54,
+      "endMs": 3195.46
+    },
+    {
+      "text": "international",
+      "startMs": 3206.83,
+      "endMs": 3797.75
+    },
+    {
+      "text": "football",
+      "startMs": 3809.08,
+      "endMs": 4286.37
+    },
+    {
+      "text": "Before",
+      "startMs": 5065.92,
+      "endMs": 5384.08
+    },
+    {
+      "text": "the",
+      "startMs": 5395.46,
+      "endMs": 5486.37
+    },
+    {
+      "text": "records",
+      "startMs": 5497.71,
+      "endMs": 5997.71
+    },
+    {
+      "text": "there",
+      "startMs": 6213.62,
+      "endMs": 6315.92
+    },
+    {
+      "text": "was",
+      "startMs": 6327.29,
+      "endMs": 6463.67
+    },
+    {
+      "text": "a",
+      "startMs": 6475.0,
+      "endMs": 6543.17
+    },
+    {
+      "text": "boy",
+      "startMs": 6554.54,
+      "endMs": 6793.17
+    },
+    {
+      "text": "chasing",
+      "startMs": 6804.54,
+      "endMs": 7236.37
+    },
+    {
+      "text": "a",
+      "startMs": 7247.71,
+      "endMs": 7304.54
+    },
+    {
+      "text": "ball",
+      "startMs": 7315.92,
+      "endMs": 7656.83
+    }
+  ],
+  "audioSha256": "35a3f1d33166275e5875eceb9e2148cc2ae2037dae21508c30d269100c6f841f",
+  "timingSource": "Actual native WordBoundary timings offset into scene; no atempo"
+}

@@ -1,0 +1,43 @@
+# Dependencies and local tools
+node_modules/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Secrets and local agent configuration
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+*.pfx
+credentials.json
+service-account*.json
+.aws
+.aws/
+.codex/
+.agents/
+
+# Generated media and render caches (publishing copy is source)
+out/*
+!out/publish.md
+dist/
+build/
+.remotion/
+.cache/
+tmp/
+temp/
+renders/
+render-tmp/
+frames/
+previews/
+*.mp4
+*.mov
+*.webm
+*.blend1
+
+# Machine files and diagnostics
+.DS_Store
+*.log

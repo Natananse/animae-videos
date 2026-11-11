@@ -1,0 +1,307 @@
+{
+  "sceneId": "scene07",
+  "cacheKey": "202f95d1d45774f646fbfc3519603c83cd736f1e211b0527af828983ad22720e",
+  "voice": "en-GB-RyanNeural",
+  "duration": 31.925,
+  "voiceFrom": 0,
+  "segments": [
+    {
+      "id": "07-1",
+      "offset": 0.15,
+      "duration": 14.088,
+      "rate": "+10%",
+      "cacheKey": "500c10f4613675eaae63ad3d098ef4f3090293c85916d666ed52afbd998709d4"
+    },
+    {
+      "id": "07-2",
+      "offset": 14.4,
+      "duration": 12.168,
+      "rate": "+10%",
+      "cacheKey": "795a9419a5511e23ea572e1a711a77594ae556fd53cd31e83cfa1bc0cc5ea707"
+    }
+  ],
+  "speechRanges": [
+    {
+      "start": 0.15,
+      "end": 14.238
+    },
+    {
+      "start": 14.4,
+      "end": 26.568
+    }
+  ],
+  "words": [
+    {
+      "text": "Portugal's",
+      "startMs": 250.0,
+      "endMs": 772.71
+    },
+    {
+      "text": "story",
+      "startMs": 784.08,
+      "endMs": 1136.37
+    },
+    {
+      "text": "belonged",
+      "startMs": 1147.71,
+      "endMs": 1488.62
+    },
+    {
+      "text": "to",
+      "startMs": 1500.0,
+      "endMs": 1625.0
+    },
+    {
+      "text": "a",
+      "startMs": 1636.38,
+      "endMs": 1693.21
+    },
+    {
+      "text": "team",
+      "startMs": 1704.54,
+      "endMs": 2113.62
+    },
+    {
+      "text": "The",
+      "startMs": 2893.17,
+      "endMs": 3040.87
+    },
+    {
+      "text": "European",
+      "startMs": 3052.29,
+      "endMs": 3563.67
+    },
+    {
+      "text": "title",
+      "startMs": 3575.0,
+      "endMs": 3904.54
+    },
+    {
+      "text": "came",
+      "startMs": 3915.92,
+      "endMs": 4188.62
+    },
+    {
+      "text": "in 2016",
+      "startMs": 4200.0,
+      "endMs": 5245.46
+    },
+    {
+      "text": "Nations",
+      "startMs": 6029.54,
+      "endMs": 6506.83
+    },
+    {
+      "text": "League",
+      "startMs": 6518.17,
+      "endMs": 6734.08
+    },
+    {
+      "text": "wins",
+      "startMs": 6745.46,
+      "endMs": 7040.92
+    },
+    {
+      "text": "followed",
+      "startMs": 7052.29,
+      "endMs": 7381.83
+    },
+    {
+      "text": "in 2019 and 2025",
+      "startMs": 7393.17,
+      "endMs": 9563.62
+    },
+    {
+      "text": "Ronaldo",
+      "startMs": 10347.71,
+      "endMs": 10893.17
+    },
+    {
+      "text": "became",
+      "startMs": 10904.54,
+      "endMs": 11234.08
+    },
+    {
+      "text": "men's",
+      "startMs": 11245.46,
+      "endMs": 11518.17
+    },
+    {
+      "text": "international",
+      "startMs": 11529.54,
+      "endMs": 12120.46
+    },
+    {
+      "text": "football's",
+      "startMs": 12131.83,
+      "endMs": 12597.75
+    },
+    {
+      "text": "record",
+      "startMs": 12609.08,
+      "endMs": 13006.79
+    },
+    {
+      "text": "scorer",
+      "startMs": 13018.17,
+      "endMs": 13438.62
+    },
+    {
+      "text": "On",
+      "startMs": 14500.0,
+      "endMs": 14715.92
+    },
+    {
+      "text": "November",
+      "startMs": 14727.29,
+      "endMs": 15136.37
+    },
+    {
+      "text": "fifth",
+      "startMs": 15147.71,
+      "endMs": 15477.25
+    },
+    {
+      "text": "twenty",
+      "startMs": 15659.08,
+      "endMs": 15920.46
+    },
+    {
+      "text": "twenty-six",
+      "startMs": 15931.83,
+      "endMs": 16590.92
+    },
+    {
+      "text": "he",
+      "startMs": 16795.46,
+      "endMs": 16875.0
+    },
+    {
+      "text": "announced",
+      "startMs": 16886.38,
+      "endMs": 17227.29
+    },
+    {
+      "text": "his",
+      "startMs": 17238.62,
+      "endMs": 17375.0
+    },
+    {
+      "text": "international",
+      "startMs": 17386.38,
+      "endMs": 17988.67
+    },
+    {
+      "text": "retirement",
+      "startMs": 18000.0,
+      "endMs": 18659.08
+    },
+    {
+      "text": "His",
+      "startMs": 19438.62,
+      "endMs": 19654.54
+    },
+    {
+      "text": "club",
+      "startMs": 19665.92,
+      "endMs": 19938.62
+    },
+    {
+      "text": "career",
+      "startMs": 19950.0,
+      "endMs": 20325.0
+    },
+    {
+      "text": "continues",
+      "startMs": 20336.38,
+      "endMs": 21040.92
+    },
+    {
+      "text": "The",
+      "startMs": 21825.0,
+      "endMs": 21950.0
+    },
+    {
+      "text": "farewell",
+      "startMs": 21961.38,
+      "endMs": 22347.75
+    },
+    {
+      "text": "is",
+      "startMs": 22359.08,
+      "endMs": 22450.0
+    },
+    {
+      "text": "to",
+      "startMs": 22461.38,
+      "endMs": 22540.92
+    },
+    {
+      "text": "this",
+      "startMs": 22552.29,
+      "endMs": 22734.12
+    },
+    {
+      "text": "shirt",
+      "startMs": 22745.46,
+      "endMs": 23075.0
+    },
+    {
+      "text": "and",
+      "startMs": 23279.54,
+      "endMs": 23347.71
+    },
+    {
+      "text": "to",
+      "startMs": 23359.08,
+      "endMs": 23438.62
+    },
+    {
+      "text": "the",
+      "startMs": 23450.0,
+      "endMs": 23529.54
+    },
+    {
+      "text": "teammates",
+      "startMs": 23540.92,
+      "endMs": 24018.21
+    },
+    {
+      "text": "and",
+      "startMs": 24029.54,
+      "endMs": 24131.83
+    },
+    {
+      "text": "supporters",
+      "startMs": 24143.17,
+      "endMs": 24620.46
+    },
+    {
+      "text": "who",
+      "startMs": 24631.83,
+      "endMs": 24734.12
+    },
+    {
+      "text": "made",
+      "startMs": 24745.46,
+      "endMs": 24961.37
+    },
+    {
+      "text": "it",
+      "startMs": 24972.71,
+      "endMs": 25040.87
+    },
+    {
+      "text": "mean",
+      "startMs": 25052.29,
+      "endMs": 25268.21
+    },
+    {
+      "text": "something",
+      "startMs": 25279.54,
+      "endMs": 25779.54
+    }
+  ],
+  "audioSha256": "e85e4f57ab664b3fcb464e6c16068afc5f01e07ccec50d2ad90645f6fe7ab67c",
+  "timingSource": "Actual native WordBoundary timings offset into scene; no atempo"
+}
