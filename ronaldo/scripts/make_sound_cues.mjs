@@ -28,6 +28,7 @@ const routeAt = time => {
     (scene.id === 'scene05' && ((seconds >= 3.52 && seconds < 12) || seconds >= 29.15)) ||
     (scene.id === 'scene07' && seconds >= 1.01 && action !== 'score' && seconds < 14.4);
   if (award) return 'trophy';
+  if (scene.id === 'scene05' && seconds >= 18.4 && seconds < 29.15) return 'reaction';
   if (action === 'celebrate' && scene.id === 'scene04') return 'reaction';
   if (scene.id === 'scene01' && seconds >= 1.9 && seconds < 6.55) return 'reaction';
   if (scene.id === 'scene08' && seconds < 2) return 'reaction';

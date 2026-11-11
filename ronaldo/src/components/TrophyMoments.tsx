@@ -2,6 +2,7 @@ import React, {useEffect, useMemo} from 'react';
 import {CanvasTexture, CatmullRomCurve3, LinearFilter, SRGBColorSpace, Vector2, Vector3} from 'three';
 import {sentenceAt} from '../animation/sync';
 import {Player3D, type Outfit} from './Player3D';
+import {GENERIC_CAST, ReactionActor} from '../scenes/ActionCharacters';
 import {LockerRoom} from '../scenes/Environments';
 import {Box, SceneWorld} from '../scenes/SceneWorld';
 import {getTrophyState, isTrophyWindow, trophyCamera, trophyLiftMotion, trophyOutfit,
@@ -114,6 +115,12 @@ export const TrophyMoments: React.FC<{state: TrophyState; outfit: Outfit}> = ({s
     {cabinet.map((item, index) => <Award key={item.id} item={item} scale={.34}
       position={[-2.915 + index % columns * .49, .44 + Math.floor(index / columns) * .57, -.55]} />)}
     <Player3D outfit={outfit} motion={motion} visualAction={state.phase === 'lift' ? 'lift' : 'celebrate'} />
+    {state.phase === 'lift' && <>
+      <ReactionActor seconds={state.elapsed} outfit={outfit} position={[-.35, 0, -.9]} yaw={.3}
+        emotion="smile" gesture="clap" character={GENERIC_CAST.teammateUnited} />
+      <ReactionActor seconds={state.elapsed + .2} outfit={outfit} position={[2.6, 0, -1.5]} yaw={-.3}
+        emotion="smile" gesture="clap" character={GENERIC_CAST.teammatePortugal} />
+    </>}
     {state.focus && moveToFront && (holding
       ? <Award item={state.focus} position={[hand[0], hand[1] - .07 * scale, hand[2]]} scale={scale} />
       : <>

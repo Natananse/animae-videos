@@ -102,8 +102,10 @@ export function CameraRig({preset = 'hero', progress = 0, action = false, target
     const inserts: import('three').Object3D[] = [];
     const obstacles: import('three').Object3D[] = [];
     const trophyObjects: import('three').Object3D[] = [];
+    const supportObjects: import('three').Object3D[] = [];
     scene.traverse((object) => {
       if (object.userData.mainCharacter) subjects.push(object);
+      if (object.userData.visualCheckRole === 'support') supportObjects.push(object);
       if (object.userData.insertSubject) inserts.push(object);
       if (object.userData.cameraObstacle && object instanceof Mesh) obstacles.push(object);
       if (object.userData.trophyId) trophyObjects.push(object);
@@ -162,6 +164,7 @@ export function CameraRig({preset = 'hero', progress = 0, action = false, target
       action: subject?.userData.visualAction ?? 'reaction', sceneId: auditContext.sceneId,
       localSeconds: seconds, globalTime: auditContext.fromSeconds + seconds, frame, fps,
       characterBox, cameraHeight: eye.y, outfit: subject?.userData.outfit ?? null,
+      supportingActors: supportObjects.map(object => ({outfit: object.userData.outfit, action: object.userData.visualAction, area: project(new Box3().setFromObject(object)).area})).filter(actor => actor.area > .002),
       trophyIds: trophyObjects.filter(object => project(new Box3().setFromObject(object)).area > .00005).map(object => object.userData.trophyId), insert: !subjects.length && inserts.length > 0,
       subject: subjects.length ? 'character' : inserts[0]?.userData.insertSubject ?? 'missing'}));
     invalidate();

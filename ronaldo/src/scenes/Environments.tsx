@@ -60,6 +60,17 @@ export function LockerRoom({accent = '#345b59', awards = false, awardStage = fal
       <Box position={[side * 2.65, .24, .15]} size={[.12, .5, .12]} color="#46535a" />
       <Box position={[side * 3.7, 2.9, -1.8]} size={[.035, .05, 5.6]} color={accent} emissive={accent} />
     </group>)}
+    {/* Individual locker doors give quiet reactions a readable inhabited setting. */}
+    {Array.from({length: 11}, (_, index) => {
+      const x = (index - 5) * .68;
+      return <group key={`locker-${index}`}>
+        <Box position={[x, 1.9, -3.29]} size={[.61, 2.65, .07]}
+          color={index % 2 ? '#3a5159' : '#293d48'} roughness={.6} />
+        <Box position={[x + .20, 1.8, -3.20]} size={[.035, .26, .045]} color="#c0b59c" roughness={.3} />
+        {[0, 1, 2].map(vent => <Box key={vent} position={[x, 2.65 + vent * .09, -3.24]}
+          size={[.35, .028, .025]} color="#101f28" />)}
+      </group>;
+    })}
     <Box position={[0, 3.35, -3.28]} size={[5.4, .07, .035]} color="#b9c6c4" emissive={accent} />
     {awards && <group position={[-2.45, 0, -2.2]}>
       <Box position={[0, .46, 0]} size={[1.1, .92, .8]} color="#121b22" />

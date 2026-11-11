@@ -28,14 +28,29 @@ export function SyncedScene({sceneId, children}: {sceneId: string; children: Rea
     shot={{position: [.8, 2.4, 3.2], target: [0, 2, 0], fov: 38}}>
     <Stadium mood={kit} /><FootballActor sample={poseAction('celebrate', elapsed + 1.5)} outfit={kit} ball={false} />
   </SceneWorld>;
+  const hasTeammates = cue.visual_cue.props.includes('teammates');
+  const hasSupporters = cue.visual_cue.props.some(prop => prop.includes('supporters'));
   const reaction = (shirt = false, room = false) => <SceneWorld progress={0} mood={kit} background="#0a1820"
     shot={{position: [.6, 2.45, 3.1], target: [0, 2, 0], fov: 38}}>
     {room || shirt ? <LockerRoom accent={kit === 'united' ? '#aa3a49' : '#43806b'} /> : <Stadium mood={kit} />}
     <ReactionActor seconds={elapsed} outfit={kit} emotion="proud" />
+    {cue.visual_cue.props.includes('teammates') && <>
+      <ReactionActor seconds={elapsed} outfit={kit} position={[-1.5, 0, -.9]} yaw={.3}
+        emotion="smile" character={GENERIC_CAST.teammateUnited} />
+      <ReactionActor seconds={elapsed} outfit={kit} position={[1.7, 0, -1.5]} yaw={-.3}
+        emotion="smile" character={GENERIC_CAST.teammatePortugal} />
+    </>}
+    {hasSupporters && <>
+      <ReactionActor seconds={elapsed} outfit={sceneId === 'scene07' ? 'portugal' : 'juventus'} position={[hasTeammates ? -2.8 : -1.5, 0, hasTeammates ? -2.3 : -.9]} yaw={.3}
+        emotion="smile" gesture="clap" character={GENERIC_CAST.supporter} />
+      <ReactionActor seconds={elapsed + .25} outfit={sceneId === 'scene07' ? 'portugal' : 'juventus'} position={[hasTeammates ? 2.8 : 1.8, 0, hasTeammates ? -2.5 : -1.5]} yaw={-.3}
+        emotion="smile" gesture="clap" character={GENERIC_CAST.opponent} />
+    </>}
     {shirt && <group position={[-1.4, 0, -.25]}><Player3D outfit={kit} pose="shirt" /></group>}
   </SceneWorld>;
   if (sceneId === 'scene01' && seconds >= 1.9 && seconds < 6.55) return reaction(true, true);
   if (sceneId === 'scene08' && seconds < 2) return reaction(true, true);
+  if (sceneId === 'scene05' && seconds >= 18.4 && seconds < 29.15) return reaction();
   if ((sceneId === 'scene04' && outfit === 'madrid') ||
     (sceneId === 'scene07' && (outfit === 'alnassr' || action === 'shirt'))) return reaction(action === 'shirt', action === 'shirt');
   if (sceneId === 'scene06' && (action === 'shirt' || action === 'reaction')) return reaction(action === 'shirt', true);
@@ -63,9 +78,11 @@ export function SyncedScene({sceneId, children}: {sceneId: string; children: Rea
       <TrainingGround /><FootballActor sample={sample} outfit="sporting" />
       <ReactionActor seconds={elapsed} outfit="sporting" position={[2, 0, p[2] - 1.5]}
         character={GENERIC_CAST.teammatePortugal} emotion="determined" />
+      {cue.visual_cue.props.includes('opponent') && <ReactionActor seconds={elapsed} outfit="united"
+        position={[-2.2, 0, p[2] - 2]} character={GENERIC_CAST.opponent} emotion="focus" />}
     </SceneWorld>;
   }
-  if (sceneId === 'scene06') {
+  if (sceneId === 'scene06' || (sceneId === 'scene04' && action === 'run')) {
     const sample = poseAction(action === 'run' ? 'run' : action === 'training' ? 'training' : 'dribble', elapsed);
     const p = sample.motion.position;
     return <SceneWorld progress={0} warm={kit === 'alnassr'} mood={kit} background={kit === 'alnassr' ? '#8f8c78' : '#14212c'}
