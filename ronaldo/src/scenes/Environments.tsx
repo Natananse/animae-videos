@@ -49,13 +49,13 @@ export function TrainingGround() {
 }
 
 /** Quiet off-pitch space for departure and reaction shots. */
-export function LockerRoom({accent = '#345b59', awards = false}: {accent?: string; awards?: boolean}) {
+export function LockerRoom({accent = '#345b59', awards = false, awardStage = false}: {accent?: string; awards?: boolean; awardStage?: boolean}) {
   return <group>
     <Box position={[0, -.1, -2]} size={[16, .2, 17]} color="#343b3d" roughness={.55} />
     <Box position={[0, 2.3, -3.5]} size={[12, 4.6, .3]} color="#1c2a33" />
     {[-1, 1].map((side) => <group key={side}>
       <Box position={[side * 3.9, 1.6, -1.8]} size={[.25, 3.2, 6]} color="#172630" />
-      <Box position={[side * 2.65, .53, -1.1]} size={[1.3, .14, 4]} color="#8d6e50" />
+      {!awardStage && <Box position={[side * 2.65, .53, -1.1]} size={[1.3, .14, 4]} color="#8d6e50" />}
       <Box position={[side * 2.65, .24, -2.2]} size={[.12, .5, .12]} color="#46535a" />
       <Box position={[side * 2.65, .24, .15]} size={[.12, .5, .12]} color="#46535a" />
       <Box position={[side * 3.7, 2.9, -1.8]} size={[.035, .05, 5.6]} color={accent} emissive={accent} />

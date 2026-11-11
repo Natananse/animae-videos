@@ -53,7 +53,7 @@ export const SceneWorld: React.FC<{
       {children}
       <CinematicEffects target={shot?.target ?? target} />
     </ThreeCanvas>
-    {flash > 0 && <AbsoluteFill style={{background: '#fff4d2', opacity: flash * .92, mixBlendMode: 'screen'}} />}
+    {flash > 0 && <AbsoluteFill style={{background: '#fff4d2', opacity: flash * .12, mixBlendMode: 'screen'}} />}
   </AbsoluteFill>;
 };
 

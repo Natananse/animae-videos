@@ -216,7 +216,7 @@ export function Player3D({outfit, pose = 'idle', child = false, progress, silhou
   if (pose === 'shirt') return <group userData={{insertSubject: 'shirt', visualCheckRole: 'shirt', outfit}} rotation={[0, Math.sin(t * .22) * .06, Math.sin(t * .4) * .008]}>
     <HangingShirt outfit={outfit} />
   </group>;
-  return <group userData={{mainCharacter: !character.face, visualCheckRole: !character.face ? 'lead' : 'support', outfit, child}}
+  return <group userData={{mainCharacter: !character.face, visualCheckRole: !character.face ? 'lead' : 'support', outfit, child, visualAction: visualAction ?? pose}}
     position={m.position} rotation={[0, m.yaw, 0]}>
     <group scale={child ? .68 : 1}>
       <group position={[0, m.hipHeight, 0]} rotation={m.pelvis}>

@@ -1,6 +1,7 @@
 import React from 'react';
 import {useCurrentFrame, useVideoConfig} from 'remotion';
-import {sentenceAt} from '../animation/sync';
+import {sentenceAt, trophyEvents} from '../animation/sync';
+import {TrophySequence, type TrophyEvent} from '../components/TrophyMoments';
 import {baseMotion, bootPosition, poseAction, type ActionSample} from '../animation/football';
 import {Player3D, type Outfit} from '../components/Player3D';
 import {Stadium} from '../components/Stadium';
@@ -17,6 +18,16 @@ export function SyncedScene({sceneId, children}: {sceneId: string; children: Rea
   const {action, outfit} = cue.visual_cue;
   const kit = outfit as Outfit;
   const elapsed = Math.max(0, seconds - cue.keySeconds);
+  const awards = trophyEvents.map(event => ({...event, start: event.startSeconds, duration: 1.5})) as TrophyEvent[];
+  const inAwardSequence = (sceneId === 'scene04' && seconds >= 16.15 && outfit === 'united') ||
+    (sceneId === 'scene05' && ((seconds >= 3.52 && seconds < 12) || seconds >= 29.15)) ||
+    (sceneId === 'scene07' && seconds >= 1.01 && action !== 'score' && seconds < 14.4);
+  if (inAwardSequence) return <TrophySequence events={awards} sceneId={sceneId} seconds={seconds}
+    durationInFrames={1} outfit={kit} />;
+  if (action === 'celebrate' && sceneId === 'scene04') return <SceneWorld progress={0} mood={kit}
+    shot={{position: [.8, 2.4, 3.2], target: [0, 2, 0], fov: 38}}>
+    <Stadium mood={kit} /><FootballActor sample={poseAction('celebrate', elapsed + 1.5)} outfit={kit} ball={false} />
+  </SceneWorld>;
   const reaction = (shirt = false, room = false) => <SceneWorld progress={0} mood={kit} background="#0a1820"
     shot={{position: [.6, 2.45, 3.1], target: [0, 2, 0], fov: 38}}>
     {room || shirt ? <LockerRoom accent={kit === 'united' ? '#aa3a49' : '#43806b'} /> : <Stadium mood={kit} />}
