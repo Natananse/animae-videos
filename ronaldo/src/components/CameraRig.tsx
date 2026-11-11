@@ -2,6 +2,7 @@ import React, {useContext, useLayoutEffect} from 'react';
 import {useThree} from '@react-three/fiber';
 import {useCurrentFrame, useVideoConfig} from 'remotion';
 import {Box3, Mesh, PerspectiveCamera, Raycaster, Vector3} from 'three';
+import {sentenceAt, yearAt} from '../animation/sync';
 import {FrameContext} from './FrameAudit';
 
 export type CameraRigProps = {
@@ -9,7 +10,7 @@ export type CameraRigProps = {
   shot?: CameraShot;
 };
 
-export type CameraShot = {position: [number, number, number]; target: [number, number, number]; fov?: number};
+export type CameraShot = {position: [number, number, number]; target: [number, number, number]; fov?: number; keepComposition?: boolean};
 
 type CameraBeat = {angle: number; distance: number; height: number; aimY: number; fov: number};
 const smooth = (n: number) => n * n * (3 - 2 * n);
@@ -100,18 +101,18 @@ export function CameraRig({preset = 'hero', progress = 0, action = false, target
     const subjects: import('three').Object3D[] = [];
     const inserts: import('three').Object3D[] = [];
     const obstacles: import('three').Object3D[] = [];
-    const trophies: string[] = [];
+    const trophyObjects: import('three').Object3D[] = [];
     scene.traverse((object) => {
       if (object.userData.mainCharacter) subjects.push(object);
       if (object.userData.insertSubject) inserts.push(object);
       if (object.userData.cameraObstacle && object instanceof Mesh) obstacles.push(object);
-      if (object.userData.trophyId) trophies.push(object.userData.trophyId);
+      if (object.userData.trophyId) trophyObjects.push(object);
     });
     const subject = subjects[0] ?? inserts[0];
     const bounds = subject ? new Box3().setFromObject(subject) : null;
     let look = new Vector3(...aim);
     let eye = new Vector3(position[0] + shake, Math.max(.3, Math.min(2.5, position[1])), position[2]);
-    if (bounds && !bounds.isEmpty()) {
+    if (bounds && !bounds.isEmpty() && !shot?.keepComposition) {
       const center = bounds.getCenter(new Vector3());
       const size = bounds.getSize(new Vector3());
       const child = Boolean(subject?.userData.child);
@@ -154,10 +155,14 @@ export function CameraRig({preset = 'hero', progress = 0, action = false, target
         visible: points.some(p => p.z > -1 && p.z < 1) && width * height >= .08};
     };
     const characterBox = project(subjects[0] ? new Box3().setFromObject(subjects[0]) : null);
-    console.log('FRAME_AUDIT ' + JSON.stringify({sceneId: auditContext.sceneId,
+    const cue = sentenceAt(auditContext.sceneId, seconds);
+    const year = yearAt(auditContext.sceneId, seconds);
+    console.log('FRAME_AUDIT ' + JSON.stringify({cueId: cue?.id, cueStartedAtSeconds: auditContext.fromSeconds + (cue?.keySeconds ?? 0),
+      yearCard: year?.year ?? null, yearCardStartedAtSeconds: year ? auditContext.fromSeconds + year.startSeconds : null,
+      action: subject?.userData.visualAction ?? 'reaction', sceneId: auditContext.sceneId,
       localSeconds: seconds, globalTime: auditContext.fromSeconds + seconds, frame, fps,
       characterBox, cameraHeight: eye.y, outfit: subject?.userData.outfit ?? null,
-      trophyIds: trophies, insert: !subjects.length && inserts.length > 0,
+      trophyIds: trophyObjects.filter(object => project(new Box3().setFromObject(object)).area > .00005).map(object => object.userData.trophyId), insert: !subjects.length && inserts.length > 0,
       subject: subjects.length ? 'character' : inserts[0]?.userData.insertSubject ?? 'missing'}));
     invalidate();
   }, [camera, scene, frame, position[0], position[1], position[2], aim[0], aim[1], aim[2], shake, fov, invalidate]);

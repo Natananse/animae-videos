@@ -23,7 +23,7 @@ export function FootballActor({sample, outfit, child = false, ball = true, worn 
   const radius = .235 * (child ? CHILD_SCALE : 1);
   const held = sample.phase === 'collect' || sample.phase === 'run-into-light';
   return <>
-    <Player3D outfit={outfit} child={child} motion={sample.motion} character={character} />
+    <Player3D outfit={outfit} child={child} visualAction={sample.phase} motion={sample.motion} character={character} />
     {ball && <Ball position={sample.ball} worn={worn} scale={child ? CHILD_SCALE : 1}
       rotation={held ? [0, 0, 0] : [sample.ball[2] / radius, 0, -sample.ball[0] / radius]} />}
   </>;
@@ -62,5 +62,5 @@ export function ReactionActor({seconds, outfit, position = [0, 0, 0], yaw = 0,
     ];
     motion.head = [-.015 + Math.sin(seconds * 3) * .015, -.05, 0];
   }
-  return <Player3D outfit={outfit} motion={motion} character={character} />;
+  return <Player3D outfit={outfit} motion={motion} character={character} visualAction={gesture === 'clap' ? 'clap' : 'reaction'} />;
 }

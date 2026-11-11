@@ -4,6 +4,7 @@ from __future__ import annotations
 import argparse, asyncio, hashlib, html, json, subprocess, tempfile
 from pathlib import Path
 import edge_tts
+from build_sync import build_sync
 
 ROOT=Path(__file__).resolve().parents[1]
 VOICE_DIR=ROOT/'public/voice'
@@ -103,6 +104,7 @@ def assemble_timing(story):
     if last_voice>story['totalDuration']-6: raise RuntimeError('Closing six-second visual ending must have no narration')
     result={'fps':FPS,'totalFrames':cursor,'totalDuration':cursor/FPS,'voice':story['voice'],'lastVoiceEndSeconds':round(last_voice,5),'timingPolicy':'Native cached passages measured by ffprobe, separated by authored silent action windows','scenes':scenes}
     atomic_json(ROOT/'public/timing.json',result)
+    build_sync(story)
     print(f'Timeline: {cursor} frames / {cursor/FPS:g}s; final voice ends {last_voice:.3f}s',flush=True)
     return result
 

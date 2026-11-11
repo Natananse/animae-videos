@@ -1,6 +1,6 @@
 {
   "sceneId": "scene02",
-  "cacheKey": "ca2d524e28bbca62709b188230dffd72a354a87e86e0bb495a661cd21da81007",
+  "cacheKey": "63f05a44760687ea28e758678a91da464fa6d71a608c574410c2405f500835dc",
   "voice": "en-GB-RyanNeural",
   "duration": 25.925,
   "voiceFrom": 0,
@@ -15,9 +15,9 @@
     {
       "id": "02-2",
       "offset": 7.2,
-      "duration": 14.184,
+      "duration": 14.136,
       "rate": "+10%",
-      "cacheKey": "284afbee2c5ee6e00d722caebdad43321cdaa27a7283e983188554ea24a4f30b"
+      "cacheKey": "faeb9f5aaed03ed3d7018683a8fe260409ba6e5396302264853b324e445d799a"
     }
   ],
   "speechRanges": [
@@ -27,7 +27,7 @@
     },
     {
       "start": 7.2,
-      "end": 21.384
+      "end": 21.336
     }
   ],
   "words": [
@@ -72,156 +72,166 @@
       "endMs": 9027.25
     },
     {
-      "text": "in 1985",
+      "text": "in",
       "startMs": 9038.62,
-      "endMs": 10379.54
+      "endMs": 9186.33
+    },
+    {
+      "text": "nineteen",
+      "startMs": 9197.71,
+      "endMs": 9618.17
+    },
+    {
+      "text": "eighty-five",
+      "startMs": 9629.54,
+      "endMs": 10322.71
     },
     {
       "text": "This",
-      "startMs": 11159.08,
-      "endMs": 11431.79
+      "startMs": 11102.29,
+      "endMs": 11375.0
     },
     {
       "text": "island",
-      "startMs": 11443.17,
-      "endMs": 11795.46
+      "startMs": 11386.38,
+      "endMs": 11738.67
     },
     {
       "text": "was",
-      "startMs": 11806.83,
-      "endMs": 11943.21
+      "startMs": 11750.0,
+      "endMs": 11886.38
     },
     {
       "text": "the",
-      "startMs": 11954.54,
-      "endMs": 12034.08
+      "startMs": 11897.71,
+      "endMs": 11977.25
     },
     {
       "text": "beginning",
-      "startMs": 12045.46,
-      "endMs": 12386.37
+      "startMs": 11988.62,
+      "endMs": 12329.54
     },
     {
       "text": "of",
-      "startMs": 12397.71,
-      "endMs": 12465.87
+      "startMs": 12340.92,
+      "endMs": 12409.08
     },
     {
       "text": "a",
-      "startMs": 12477.29,
-      "endMs": 12522.75
+      "startMs": 12420.46,
+      "endMs": 12465.92
     },
     {
       "text": "very",
-      "startMs": 12534.08,
-      "endMs": 12840.92
+      "startMs": 12477.29,
+      "endMs": 12784.12
     },
     {
       "text": "different",
-      "startMs": 12852.29,
-      "endMs": 13204.58
+      "startMs": 12795.46,
+      "endMs": 13147.75
     },
     {
       "text": "life",
-      "startMs": 13215.92,
-      "endMs": 13636.37
+      "startMs": 13159.08,
+      "endMs": 13579.54
     },
     {
       "text": "Its",
-      "startMs": 14420.46,
-      "endMs": 14647.75
+      "startMs": 14363.62,
+      "endMs": 14590.92
     },
     {
       "text": "small",
-      "startMs": 14659.08,
-      "endMs": 14943.17
+      "startMs": 14602.29,
+      "endMs": 14886.37
     },
     {
       "text": "disappointments",
-      "startMs": 14954.54,
-      "endMs": 15590.92
+      "startMs": 14897.71,
+      "endMs": 15534.08
     },
     {
       "text": "and",
-      "startMs": 15602.29,
-      "endMs": 15704.58
+      "startMs": 15545.46,
+      "endMs": 15647.75
     },
     {
       "text": "victories",
-      "startMs": 15715.92,
-      "endMs": 16170.46
+      "startMs": 15659.08,
+      "endMs": 16113.62
     },
     {
       "text": "belong",
-      "startMs": 16181.83,
-      "endMs": 16500.0
+      "startMs": 16125.0,
+      "endMs": 16443.17
     },
     {
       "text": "to",
-      "startMs": 16511.38,
-      "endMs": 16602.29
+      "startMs": 16454.54,
+      "endMs": 16545.46
     },
     {
       "text": "childhood",
-      "startMs": 16613.62,
-      "endMs": 17250.0
+      "startMs": 16556.83,
+      "endMs": 17193.21
     },
     {
       "text": "Nobody",
-      "startMs": 18034.08,
-      "endMs": 18477.25
+      "startMs": 17977.29,
+      "endMs": 18420.46
     },
     {
       "text": "in",
-      "startMs": 18488.62,
-      "endMs": 18590.92
+      "startMs": 18431.83,
+      "endMs": 18534.12
     },
     {
       "text": "this",
-      "startMs": 18602.29,
-      "endMs": 18750.0
+      "startMs": 18545.46,
+      "endMs": 18693.17
     },
     {
       "text": "scene",
-      "startMs": 18761.38,
-      "endMs": 18965.92
+      "startMs": 18704.54,
+      "endMs": 18909.08
     },
     {
       "text": "knows",
-      "startMs": 18977.29,
-      "endMs": 19261.37
+      "startMs": 18920.46,
+      "endMs": 19204.54
     },
     {
       "text": "how",
-      "startMs": 19272.71,
-      "endMs": 19454.54
+      "startMs": 19215.92,
+      "endMs": 19397.75
     },
     {
       "text": "far",
-      "startMs": 19465.92,
-      "endMs": 19659.08
+      "startMs": 19409.08,
+      "endMs": 19602.25
     },
     {
       "text": "the",
-      "startMs": 19670.46,
-      "endMs": 19772.75
+      "startMs": 19613.62,
+      "endMs": 19715.92
     },
     {
       "text": "boy",
-      "startMs": 19784.08,
-      "endMs": 19977.25
+      "startMs": 19727.29,
+      "endMs": 19920.46
     },
     {
       "text": "will",
-      "startMs": 19988.62,
-      "endMs": 20136.33
+      "startMs": 19931.83,
+      "endMs": 20079.54
     },
     {
       "text": "travel",
-      "startMs": 20147.71,
-      "endMs": 20590.87
+      "startMs": 20090.92,
+      "endMs": 20534.08
     }
   ],
-  "audioSha256": "50ae62540d186e770930900a4ac574e599dbf4aff11a8fde4a828a22ef33b5c1",
+  "audioSha256": "3fb596a098df65c71a18c1ca6a3fd98669bd4804c0df1720146f6c9d97cbe544",
   "timingSource": "Actual native WordBoundary timings offset into scene; no atempo"
 }

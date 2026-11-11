@@ -1,6 +1,6 @@
 {
   "sceneId": "scene06",
-  "cacheKey": "954e1e17ce89f02b29da09382fd6252379c4b4114b5ccb128b4fcf709b610150",
+  "cacheKey": "a7dc7b2a46037f2dde3c1b60856d3dd178e47921279f96c3d2f51ea4b1149e7c",
   "voice": "en-GB-RyanNeural",
   "duration": 19.925,
   "voiceFrom": 0,
@@ -8,29 +8,29 @@
     {
       "id": "06-1",
       "offset": 0.1,
-      "duration": 6.36,
+      "duration": 6.432,
       "rate": "+10%",
-      "cacheKey": "e1627d91db423ec7b66230c5ddbfe6ab1a688e13d008cef216b8726e9e265e63"
+      "cacheKey": "7e4640d456bb904b276b166a65fb3c89b0db6b04039e9a3904d2c8852b479531"
     },
     {
       "id": "06-2",
       "offset": 6.8,
       "duration": 5.64,
       "rate": "+10%",
-      "cacheKey": "1ff6db44fdf75661d29aeb8e93be9896a50416ebb7bca81baeeff024f065aac0"
+      "cacheKey": "3d536cf55b74f1e7b1f3cd884e4e7a21a4877d32f299f8eda50bc3b123ffe33d"
     },
     {
       "id": "06-3",
       "offset": 13.3,
-      "duration": 6.192,
+      "duration": 5.64,
       "rate": "+10%",
-      "cacheKey": "b733f194783937121486cd9520141194b98642063ddd78dd3267b485f2ec492e"
+      "cacheKey": "ccf4cc25fb09238524a25eca3bd5a8b94775fb0dbde3101ee139630f65881d81"
     }
   ],
   "speechRanges": [
     {
       "start": 0.1,
-      "end": 6.46
+      "end": 6.532
     },
     {
       "start": 6.8,
@@ -38,93 +38,83 @@
     },
     {
       "start": 13.3,
-      "end": 19.492
+      "end": 18.94
     }
   ],
   "words": [
     {
-      "text": "The",
-      "startMs": 200.0,
-      "endMs": 325.0
-    },
-    {
-      "text": "move",
-      "startMs": 336.38,
-      "endMs": 654.54
-    },
-    {
-      "text": "brought",
-      "startMs": 665.92,
-      "endMs": 915.92
-    },
-    {
-      "text": "him",
-      "startMs": 927.29,
-      "endMs": 1063.67
-    },
-    {
-      "text": "to",
-      "startMs": 1075.0,
-      "endMs": 1154.54
-    },
-    {
       "text": "Juventus",
-      "startMs": 1165.92,
-      "endMs": 1654.54
+      "startMs": 200.0,
+      "endMs": 893.17
     },
     {
-      "text": "in 2018",
-      "startMs": 1665.92,
-      "endMs": 2586.37
+      "text": "Turin",
+      "startMs": 1120.46,
+      "endMs": 1540.92
+    },
+    {
+      "text": "2018",
+      "startMs": 1768.17,
+      "endMs": 2654.54
     },
     {
       "text": "A",
-      "startMs": 3365.92,
-      "endMs": 3490.92
+      "startMs": 3434.08,
+      "endMs": 3559.08
     },
     {
       "text": "new",
-      "startMs": 3502.29,
-      "endMs": 3752.29
+      "startMs": 3570.46,
+      "endMs": 3820.46
     },
     {
       "text": "dressing",
-      "startMs": 3763.62,
-      "endMs": 4195.46
+      "startMs": 3831.83,
+      "endMs": 4263.67
     },
     {
       "text": "room",
-      "startMs": 4206.83,
-      "endMs": 4456.83
+      "startMs": 4275.0,
+      "endMs": 4525.0
     },
     {
       "text": "and",
-      "startMs": 4650.0,
-      "endMs": 4763.62
+      "startMs": 4718.17,
+      "endMs": 4831.79
     },
     {
       "text": "new",
-      "startMs": 4775.0,
-      "endMs": 4990.92
+      "startMs": 4843.17,
+      "endMs": 5059.08
     },
     {
       "text": "teammates",
-      "startMs": 5002.29,
-      "endMs": 5672.75
+      "startMs": 5070.46,
+      "endMs": 5740.92
     },
     {
       "text": "United",
       "startMs": 6900.0,
-      "endMs": 7388.62
+      "endMs": 7377.29
     },
     {
       "text": "again",
-      "startMs": 7400.0,
-      "endMs": 7661.38
+      "startMs": 7388.62,
+      "endMs": 7650.0
     },
     {
-      "text": "in 2021",
-      "startMs": 7672.71,
+      "text": "in",
+      "startMs": 7661.38,
+      "endMs": 7786.38
+    },
+    {
+      "text": "twenty",
+      "startMs": 7797.71,
+      "endMs": 8093.17
+    },
+    {
+      "text": "twenty-one",
+      "startMs": 8104.54,
       "endMs": 8775.0
     },
     {
@@ -165,79 +155,74 @@
     {
       "text": "Then",
       "startMs": 13400.0,
-      "endMs": 13672.71
+      "endMs": 13661.38
     },
     {
       "text": "Al",
-      "startMs": 13684.08,
-      "endMs": 13865.92
+      "startMs": 13672.71,
+      "endMs": 13820.42
     },
     {
       "text": "Nassr",
-      "startMs": 13877.29,
-      "endMs": 14309.12
+      "startMs": 13831.83,
+      "endMs": 14229.54
     },
     {
       "text": "in",
-      "startMs": 14479.54,
-      "endMs": 14627.25
+      "startMs": 14400.0,
+      "endMs": 14525.0
     },
     {
-      "text": "Saudi",
-      "startMs": 14638.62,
-      "endMs": 15013.62
-    },
-    {
-      "text": "Arabia",
-      "startMs": 15025.0,
-      "endMs": 15570.46
+      "text": "Riyadh",
+      "startMs": 14536.38,
+      "endMs": 15013.67
     },
     {
       "text": "Portugal's",
-      "startMs": 16350.0,
-      "endMs": 16906.83
+      "startMs": 15793.17,
+      "endMs": 16350.0
     },
     {
       "text": "red",
-      "startMs": 16918.17,
-      "endMs": 17156.79
+      "startMs": 16361.38,
+      "endMs": 16600.0
     },
     {
       "text": "and",
-      "startMs": 17168.17,
-      "endMs": 17247.71
+      "startMs": 16611.38,
+      "endMs": 16690.92
     },
     {
       "text": "green",
-      "startMs": 17259.08,
-      "endMs": 17543.17
+      "startMs": 16702.29,
+      "endMs": 16986.37
     },
     {
       "text": "still",
-      "startMs": 17554.54,
-      "endMs": 17815.92
+      "startMs": 16997.71,
+      "endMs": 17259.08
     },
     {
       "text": "linked",
-      "startMs": 17827.29,
-      "endMs": 18054.58
+      "startMs": 17270.46,
+      "endMs": 17497.75
     },
     {
       "text": "him",
-      "startMs": 18065.92,
-      "endMs": 18190.92
+      "startMs": 17509.08,
+      "endMs": 17634.08
     },
     {
       "text": "to",
-      "startMs": 18202.29,
-      "endMs": 18281.83
+      "startMs": 17645.46,
+      "endMs": 17725.0
     },
     {
       "text": "home",
-      "startMs": 18293.17,
-      "endMs": 18702.25
+      "startMs": 17736.38,
+      "endMs": 18145.46
     }
   ],
-  "audioSha256": "0b2767859a1a0958e67f1a499d812e60ddaa3ec017e376b3374d2bf3a87ca0d4",
+  "audioSha256": "0b1189c35f13a895c886862e5f35a26bfb4ac7cae590da3d7327c7158418c26a",
   "timingSource": "Actual native WordBoundary timings offset into scene; no atempo"
 }

@@ -30,6 +30,6 @@ export default function Scene08({durationInFrames}: SceneProps) {
         target: [p[0], .96, p[2]], fov: 39};
   return <SceneWorld progress={progress} shot={{...shot, target: shot.target as [number, number, number]}}
     warm mood="childhood" background="#d8bb8b" fog={[18, 70]}>
-    <MadeiraStreet towardLight /><FootballActor sample={sample} outfit="sporting" child worn />
+    <MadeiraStreet towardLight /><FootballActor sample={sample} outfit="portugal" child worn />
   </SceneWorld>;
 }

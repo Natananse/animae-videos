@@ -1,7 +1,7 @@
 {
   "title": "THE SHIRT — A RONALDO STORY",
   "centralQuestion": "What remains when Portugal’s number seven passes on?",
-  "wordCount": 367,
+  "wordCount": 329,
   "fps": 30,
   "totalFrames": 6000,
   "totalDuration": 200,
@@ -14,7 +14,8 @@
     "JSON VERIFY arrays flag factual numbers and milestones for publication review.",
     "Speech uses native Edge TTS delivery with deliberate silent gaps; no atempo fitting or stretching is used.",
     "Number seven represents eras; Ronaldo wore number nine on arrival at Madrid.",
-    "The childhood dramatization explanation is carried by the visual Dramatized scenes label and accompanying description/notes, rather than spoken narration."
+    "The opening carries Animated tribute, not real footage for three seconds; the same disclosure appears in the publish description.",
+    "Year phrases use written-out spoken words where necessary so Edge returns one measured WordBoundary per narration word; visual year cards retain numeric years in each sentence year_cues."
   ],
   "openLoops": [
     {
@@ -57,12 +58,44 @@
           "rate": "+10%",
           "windowEnd": 9.85
         }
+      ],
+      "sentences": [
+        {
+          "text": "Portugal's seven is leaving international football.",
+          "segmentId": "01-1",
+          "id": "scene01-s01",
+          "visual_cue": {
+            "action": "reaction",
+            "outfit": "portugal",
+            "props": [
+              "number-seven-shirt"
+            ],
+            "camera": "character-medium",
+            "start_word": "Portugal's"
+          },
+          "year_cues": []
+        },
+        {
+          "text": "Before the records, there was a boy chasing a ball.",
+          "segmentId": "01-1",
+          "id": "scene01-s02",
+          "visual_cue": {
+            "action": "run",
+            "outfit": "portugal",
+            "props": [
+              "ball"
+            ],
+            "camera": "tracking",
+            "start_word": "boy"
+          },
+          "year_cues": []
+        }
       ]
     },
     {
       "id": "scene02",
       "title": "AN ISLAND, A DREAM",
-      "narration": "Funchal, Madeira. Home. Cristiano Ronaldo was born here in 1985. This island was the beginning of a very different life. Its small disappointments and victories belong to childhood. Nobody in this scene knows how far the boy will travel.",
+      "narration": "Funchal, Madeira. Home. Cristiano Ronaldo was born here in nineteen eighty-five. This island was the beginning of a very different life. Its small disappointments and victories belong to childhood. Nobody in this scene knows how far the boy will travel.",
       "duration": 26,
       "cameraPreset": "street",
       "outfit": "portugal",
@@ -84,17 +117,121 @@
         },
         {
           "offset": 7.2,
-          "narration": "Cristiano Ronaldo was born here in 1985. This island was the beginning of a very different life. Its small disappointments and victories belong to childhood. Nobody in this scene knows how far the boy will travel.",
+          "narration": "Cristiano Ronaldo was born here in nineteen eighty-five. This island was the beginning of a very different life. Its small disappointments and victories belong to childhood. Nobody in this scene knows how far the boy will travel.",
           "id": "02-2",
           "rate": "+10%",
           "windowEnd": 25.8
+        }
+      ],
+      "sentences": [
+        {
+          "text": "Funchal, Madeira.",
+          "segmentId": "02-1",
+          "id": "scene02-s01",
+          "visual_cue": {
+            "action": "dribble",
+            "outfit": "portugal",
+            "props": [
+              "ball",
+              "Madeira-street",
+              "sea"
+            ],
+            "camera": "tracking",
+            "start_word": "Madeira"
+          },
+          "year_cues": []
+        },
+        {
+          "text": "Home.",
+          "segmentId": "02-1",
+          "id": "scene02-s02",
+          "visual_cue": {
+            "action": "reaction",
+            "outfit": "portugal",
+            "props": [
+              "ball",
+              "Madeira-street",
+              "sea"
+            ],
+            "camera": "character-medium",
+            "start_word": "Home"
+          },
+          "year_cues": []
+        },
+        {
+          "text": "Cristiano Ronaldo was born here in nineteen eighty-five.",
+          "segmentId": "02-2",
+          "id": "scene02-s03",
+          "visual_cue": {
+            "action": "reaction",
+            "outfit": "portugal",
+            "props": [
+              "ball",
+              "year-card"
+            ],
+            "camera": "character-medium",
+            "start_word": "nineteen"
+          },
+          "year_cues": [
+            {
+              "year": 1985,
+              "start_word": "nineteen eighty-five"
+            }
+          ]
+        },
+        {
+          "text": "This island was the beginning of a very different life.",
+          "segmentId": "02-2",
+          "id": "scene02-s04",
+          "visual_cue": {
+            "action": "dribble",
+            "outfit": "portugal",
+            "props": [
+              "ball",
+              "Madeira-street",
+              "sea"
+            ],
+            "camera": "tracking",
+            "start_word": "island"
+          },
+          "year_cues": []
+        },
+        {
+          "text": "Its small disappointments and victories belong to childhood.",
+          "segmentId": "02-2",
+          "id": "scene02-s05",
+          "visual_cue": {
+            "action": "training",
+            "outfit": "portugal",
+            "props": [
+              "ball"
+            ],
+            "camera": "tracking",
+            "start_word": "disappointments"
+          },
+          "year_cues": []
+        },
+        {
+          "text": "Nobody in this scene knows how far the boy will travel.",
+          "segmentId": "02-2",
+          "id": "scene02-s06",
+          "visual_cue": {
+            "action": "run",
+            "outfit": "portugal",
+            "props": [
+              "ball"
+            ],
+            "camera": "tracking",
+            "start_word": "boy"
+          },
+          "year_cues": []
         }
       ]
     },
     {
       "id": "scene03",
       "title": "THE FIRST STAGE",
-      "narration": "Sporting gave him his first senior stage in 2002. The game became faster and the space tighter. A pass needed the right weight. A run needed the right moment. His talent now had to work with teammates, against players who wanted the same ball.",
+      "narration": "Sporting gave him his first senior stage in two thousand and two. The game became faster and the space tighter. A pass needed the right weight. A run needed the right moment. His talent now had to work with teammates, against players who wanted the same ball.",
       "duration": 20,
       "cameraPreset": "dolly",
       "outfit": "sporting",
@@ -108,24 +245,114 @@
       "segments": [
         {
           "offset": 0.2,
-          "narration": "Sporting gave him his first senior stage in 2002. The game became faster and the space tighter. A pass needed the right weight. A run needed the right moment. His talent now had to work with teammates, against players who wanted the same ball.",
+          "narration": "Sporting gave him his first senior stage in two thousand and two. The game became faster and the space tighter. A pass needed the right weight. A run needed the right moment. His talent now had to work with teammates, against players who wanted the same ball.",
           "id": "03-1",
           "rate": "+10%",
           "windowEnd": 19.85
+        }
+      ],
+      "sentences": [
+        {
+          "text": "Sporting gave him his first senior stage in two thousand and two.",
+          "segmentId": "03-1",
+          "id": "scene03-s01",
+          "visual_cue": {
+            "action": "training",
+            "outfit": "sporting",
+            "props": [
+              "ball",
+              "teammates",
+              "year-card"
+            ],
+            "camera": "tracking",
+            "start_word": "Sporting"
+          },
+          "year_cues": [
+            {
+              "year": 2002,
+              "start_word": "two thousand and two"
+            }
+          ]
+        },
+        {
+          "text": "The game became faster and the space tighter.",
+          "segmentId": "03-1",
+          "id": "scene03-s02",
+          "visual_cue": {
+            "action": "training",
+            "outfit": "sporting",
+            "props": [
+              "ball",
+              "teammates"
+            ],
+            "camera": "tracking",
+            "start_word": "game"
+          },
+          "year_cues": []
+        },
+        {
+          "text": "A pass needed the right weight.",
+          "segmentId": "03-1",
+          "id": "scene03-s03",
+          "visual_cue": {
+            "action": "training",
+            "outfit": "sporting",
+            "props": [
+              "ball",
+              "teammate"
+            ],
+            "camera": "tracking",
+            "start_word": "pass"
+          },
+          "year_cues": []
+        },
+        {
+          "text": "A run needed the right moment.",
+          "segmentId": "03-1",
+          "id": "scene03-s04",
+          "visual_cue": {
+            "action": "run",
+            "outfit": "sporting",
+            "props": [
+              "ball",
+              "teammate"
+            ],
+            "camera": "tracking",
+            "start_word": "run"
+          },
+          "year_cues": []
+        },
+        {
+          "text": "His talent now had to work with teammates, against players who wanted the same ball.",
+          "segmentId": "03-1",
+          "id": "scene03-s05",
+          "visual_cue": {
+            "action": "training",
+            "outfit": "sporting",
+            "props": [
+              "ball",
+              "teammates",
+              "opponent"
+            ],
+            "camera": "tracking",
+            "start_word": "teammates"
+          },
+          "year_cues": []
         }
       ]
     },
     {
       "id": "scene04",
       "title": "THE WEIGHT OF SEVEN",
-      "narration": "United signed him in 2003. A teenager inherited the number seven shirt, carrying expectations before he had earned his own place in the club's history. He arrived as a winger, full of speed and invention. Over the following seasons, the goals became as important as the tricks. In 2008, United won the Champions League and Ronaldo received his first Ballon d'Or. Teammates had helped turn an individual talent into a champion. His next move took him to Madrid.",
+      "narration": "Manchester United signed him in two thousand and three. A teenager inherited the number seven shirt. He arrived as a winger, full of speed and invention. His goals soon matched his tricks. 2008. The Champions League. The Premier League. His first Ballon d'Or. The 2008 FIFA World Player of the Year award. Four prizes, one remarkable year. He lifts a trophy with his teammates. Then Madrid called.",
       "duration": 36,
       "cameraPreset": "orbit",
       "outfit": "united",
       "mood": "red",
       "verify": [
         "VERIFY: Manchester United arrival and number seven in 2003.",
-        "VERIFY: 2008 Champions League title and first Ballon d’Or."
+        "VERIFY: 2008 Champions League title and first Ballon d’Or.",
+        "VERIFY: United also won the 2007/08 Premier League; Ronaldo won FIFA World Player of the Year 2008 (presented January 2009, distinct from Ballon d’Or)."
       ],
       "sourceUrls": [
         "https://www.uefa.com/uefachampionsleague/news/023c-0e976af10937-6aed2a57b183-1000--memories-of-ronaldo-s-debut-on-this-day-in-2002/",
@@ -134,24 +361,225 @@
       "segments": [
         {
           "offset": 0.25,
-          "narration": "United signed him in 2003. A teenager inherited the number seven shirt, carrying expectations before he had earned his own place in the club's history. He arrived as a winger, full of speed and invention.",
+          "narration": "Manchester United signed him in two thousand and three. A teenager inherited the number seven shirt. He arrived as a winger, full of speed and invention. His goals soon matched his tricks.",
           "id": "04-1",
           "rate": "+10%",
-          "windowEnd": 16.75
+          "windowEnd": 14.65
         },
         {
-          "offset": 17,
-          "narration": "Over the following seasons, the goals became as important as the tricks. In 2008, United won the Champions League and Ronaldo received his first Ballon d'Or. Teammates had helped turn an individual talent into a champion. His next move took him to Madrid.",
+          "offset": 14.8,
+          "narration": "2008. The Champions League. The Premier League. His first Ballon d'Or. The 2008 FIFA World Player of the Year award. Four prizes, one remarkable year. He lifts a trophy with his teammates. Then Madrid called.",
           "id": "04-2",
           "rate": "+10%",
           "windowEnd": 35.8
+        }
+      ],
+      "sentences": [
+        {
+          "text": "Manchester United signed him in two thousand and three.",
+          "segmentId": "04-1",
+          "id": "scene04-s01",
+          "visual_cue": {
+            "action": "run",
+            "outfit": "united",
+            "props": [
+              "Manchester-stadium",
+              "year-card"
+            ],
+            "camera": "tracking",
+            "start_word": "Manchester"
+          },
+          "year_cues": [
+            {
+              "year": 2003,
+              "start_word": "two thousand and three"
+            }
+          ]
+        },
+        {
+          "text": "A teenager inherited the number seven shirt.",
+          "segmentId": "04-1",
+          "id": "scene04-s02",
+          "visual_cue": {
+            "action": "shirt",
+            "outfit": "united",
+            "props": [
+              "number-seven-shirt"
+            ],
+            "camera": "character-medium",
+            "start_word": "shirt"
+          },
+          "year_cues": []
+        },
+        {
+          "text": "He arrived as a winger, full of speed and invention.",
+          "segmentId": "04-1",
+          "id": "scene04-s03",
+          "visual_cue": {
+            "action": "dribble",
+            "outfit": "united",
+            "props": [
+              "ball"
+            ],
+            "camera": "tracking",
+            "start_word": "winger"
+          },
+          "year_cues": []
+        },
+        {
+          "text": "His goals soon matched his tricks.",
+          "segmentId": "04-1",
+          "id": "scene04-s04",
+          "visual_cue": {
+            "action": "score",
+            "outfit": "united",
+            "props": [
+              "ball",
+              "goal"
+            ],
+            "camera": "tracking",
+            "start_word": "goals"
+          },
+          "year_cues": []
+        },
+        {
+          "text": "2008.",
+          "segmentId": "04-2",
+          "id": "scene04-s05",
+          "visual_cue": {
+            "action": "celebrate",
+            "outfit": "united",
+            "props": [
+              "year-card"
+            ],
+            "camera": "character-medium",
+            "start_word": "2008"
+          },
+          "year_cues": [
+            {
+              "year": 2008,
+              "start_word": "2008"
+            }
+          ]
+        },
+        {
+          "text": "The Champions League.",
+          "segmentId": "04-2",
+          "id": "scene04-s06",
+          "visual_cue": {
+            "action": "celebrate",
+            "outfit": "united",
+            "props": [
+              "champions-league"
+            ],
+            "camera": "trophy-push",
+            "start_word": "Champions"
+          },
+          "year_cues": []
+        },
+        {
+          "text": "The Premier League.",
+          "segmentId": "04-2",
+          "id": "scene04-s07",
+          "visual_cue": {
+            "action": "celebrate",
+            "outfit": "united",
+            "props": [
+              "premier-league"
+            ],
+            "camera": "trophy-push",
+            "start_word": "Premier"
+          },
+          "year_cues": []
+        },
+        {
+          "text": "His first Ballon d'Or.",
+          "segmentId": "04-2",
+          "id": "scene04-s08",
+          "visual_cue": {
+            "action": "celebrate",
+            "outfit": "united",
+            "props": [
+              "ballon-dor"
+            ],
+            "camera": "trophy-push",
+            "start_word": "Ballon"
+          },
+          "year_cues": []
+        },
+        {
+          "text": "The 2008 FIFA World Player of the Year award.",
+          "segmentId": "04-2",
+          "id": "scene04-s09",
+          "visual_cue": {
+            "action": "celebrate",
+            "outfit": "united",
+            "props": [
+              "fifa-player"
+            ],
+            "camera": "trophy-push",
+            "start_word": "FIFA"
+          },
+          "year_cues": [
+            {
+              "year": 2008,
+              "start_word": "2008"
+            }
+          ]
+        },
+        {
+          "text": "Four prizes, one remarkable year.",
+          "segmentId": "04-2",
+          "id": "scene04-s10",
+          "visual_cue": {
+            "action": "celebrate",
+            "outfit": "united",
+            "props": [
+              "trophy-cabinet"
+            ],
+            "camera": "character-medium",
+            "start_word": "Four"
+          },
+          "year_cues": []
+        },
+        {
+          "text": "He lifts a trophy with his teammates.",
+          "segmentId": "04-2",
+          "id": "scene04-s11",
+          "visual_cue": {
+            "action": "lift",
+            "outfit": "united",
+            "props": [
+              "trophy",
+              "teammates",
+              "trophy-cabinet"
+            ],
+            "camera": "trophy-wide",
+            "start_word": "lifts"
+          },
+          "year_cues": []
+        },
+        {
+          "text": "Then Madrid called.",
+          "segmentId": "04-2",
+          "id": "scene04-s12",
+          "visual_cue": {
+            "action": "reaction",
+            "outfit": "madrid",
+            "props": [
+              "Madrid-stadium"
+            ],
+            "camera": "character-medium",
+            "start_word": "Madrid"
+          },
+          "year_cues": []
         }
       ]
     },
     {
       "id": "scene05",
       "title": "ABOVE THE GAME",
-      "narration": "Real Madrid brought him to Spain in 2009. In white, he became the club's record scorer and helped win four Champions League titles. Turin, 2018. Even the Juventus supporters stood to applaud that finish. For a moment, rivalry gave way to appreciation. They had come to support another team, yet this visiting player had made them rise to their feet. That response became part of the memory of his bicycle kick.",
+      "narration": "Madrid brought him to Spain in two thousand and nine. Four Champions League titles. 2014. 2016. 2017. 2018. That finish, 2018. Juventus supporters stood to applaud his bicycle kick. For a moment, rivalry gave way to appreciation. More Ballon d'Or wins in white: 2013. 2014. 2016. 2017. Four more golden balls.",
       "duration": 40,
       "cameraPreset": "action",
       "outfit": "madrid",
@@ -161,7 +589,8 @@
         "VERIFY: Real Madrid record scorer; no disputed goal total used.",
         "VERIFY: four Champions League titles with Madrid.",
         "VERIFY: bicycle kick against Juventus, 3 April 2018.",
-        "VERIFY: Juventus supporters stood to applaud the bicycle-kick goal on 3 April 2018."
+        "VERIFY: Juventus supporters stood to applaud the bicycle-kick goal on 3 April 2018.",
+        "VERIFY: further Ballon d’Or wins in 2013, 2014, 2016 and 2017; five total including 2008."
       ],
       "sourceUrls": [
         "https://www.realmadrid.com/en-US/the-club/history/football-legends/cristiano-ronaldo-dos-santos-aveiro/",
@@ -171,24 +600,304 @@
       "segments": [
         {
           "offset": 0.2,
-          "narration": "Real Madrid brought him to Spain in 2009. In white, he became the club's record scorer and helped win four Champions League titles.",
+          "narration": "Madrid brought him to Spain in two thousand and nine. Four Champions League titles. 2014. 2016. 2017. 2018.",
           "id": "05-1",
           "rate": "+10%",
           "windowEnd": 11.8
         },
         {
           "offset": 19.1,
-          "narration": "Turin, 2018. Even the Juventus supporters stood to applaud that finish. For a moment, rivalry gave way to appreciation. They had come to support another team, yet this visiting player had made them rise to their feet. That response became part of the memory of his bicycle kick.",
+          "narration": "That finish, 2018. Juventus supporters stood to applaud his bicycle kick. For a moment, rivalry gave way to appreciation.",
           "id": "05-2",
           "rate": "+10%",
-          "windowEnd": 39.8
+          "windowEnd": 28.6
+        },
+        {
+          "id": "05-3",
+          "offset": 28.8,
+          "windowEnd": 39.8,
+          "rate": "+10%",
+          "narration": "More Ballon d'Or wins in white: 2013. 2014. 2016. 2017. Four more golden balls."
+        }
+      ],
+      "sentences": [
+        {
+          "text": "Madrid brought him to Spain in two thousand and nine.",
+          "segmentId": "05-1",
+          "id": "scene05-s01",
+          "visual_cue": {
+            "action": "run",
+            "outfit": "madrid",
+            "props": [
+              "Madrid-stadium",
+              "year-card"
+            ],
+            "camera": "tracking",
+            "start_word": "Madrid"
+          },
+          "year_cues": [
+            {
+              "year": 2009,
+              "start_word": "two thousand and nine"
+            }
+          ]
+        },
+        {
+          "text": "Four Champions League titles.",
+          "segmentId": "05-1",
+          "id": "scene05-s02",
+          "visual_cue": {
+            "action": "celebrate",
+            "outfit": "madrid",
+            "props": [
+              "champions-league",
+              "trophy-cabinet"
+            ],
+            "camera": "trophy-push",
+            "start_word": "Four"
+          },
+          "year_cues": []
+        },
+        {
+          "text": "2014.",
+          "segmentId": "05-1",
+          "id": "scene05-s03",
+          "visual_cue": {
+            "action": "celebrate",
+            "outfit": "madrid",
+            "props": [
+              "champions-league",
+              "year-card"
+            ],
+            "camera": "trophy-push",
+            "start_word": "2014"
+          },
+          "year_cues": [
+            {
+              "year": 2014,
+              "start_word": "2014"
+            }
+          ]
+        },
+        {
+          "text": "2016.",
+          "segmentId": "05-1",
+          "id": "scene05-s04",
+          "visual_cue": {
+            "action": "celebrate",
+            "outfit": "madrid",
+            "props": [
+              "champions-league",
+              "year-card"
+            ],
+            "camera": "trophy-push",
+            "start_word": "2016"
+          },
+          "year_cues": [
+            {
+              "year": 2016,
+              "start_word": "2016"
+            }
+          ]
+        },
+        {
+          "text": "2017.",
+          "segmentId": "05-1",
+          "id": "scene05-s05",
+          "visual_cue": {
+            "action": "celebrate",
+            "outfit": "madrid",
+            "props": [
+              "champions-league",
+              "year-card"
+            ],
+            "camera": "trophy-push",
+            "start_word": "2017"
+          },
+          "year_cues": [
+            {
+              "year": 2017,
+              "start_word": "2017"
+            }
+          ]
+        },
+        {
+          "text": "2018.",
+          "segmentId": "05-1",
+          "id": "scene05-s06",
+          "visual_cue": {
+            "action": "celebrate",
+            "outfit": "madrid",
+            "props": [
+              "champions-league",
+              "year-card"
+            ],
+            "camera": "trophy-push",
+            "start_word": "2018"
+          },
+          "year_cues": [
+            {
+              "year": 2018,
+              "start_word": "2018"
+            }
+          ]
+        },
+        {
+          "text": "That finish, 2018.",
+          "segmentId": "05-2",
+          "id": "scene05-s07",
+          "visual_cue": {
+            "action": "reaction",
+            "outfit": "madrid",
+            "props": [
+              "year-card"
+            ],
+            "camera": "character-medium",
+            "start_word": "2018"
+          },
+          "year_cues": [
+            {
+              "year": 2018,
+              "start_word": "2018"
+            }
+          ]
+        },
+        {
+          "text": "Juventus supporters stood to applaud his bicycle kick.",
+          "segmentId": "05-2",
+          "id": "scene05-s08",
+          "visual_cue": {
+            "action": "celebrate",
+            "outfit": "madrid",
+            "props": [
+              "applauding-supporters"
+            ],
+            "camera": "character-medium",
+            "start_word": "applaud"
+          },
+          "year_cues": []
+        },
+        {
+          "text": "For a moment, rivalry gave way to appreciation.",
+          "segmentId": "05-2",
+          "id": "scene05-s09",
+          "visual_cue": {
+            "action": "reaction",
+            "outfit": "madrid",
+            "props": [
+              "supporters"
+            ],
+            "camera": "character-medium",
+            "start_word": "appreciation"
+          },
+          "year_cues": []
+        },
+        {
+          "text": "More Ballon d'Or wins in white: 2013.",
+          "segmentId": "05-3",
+          "id": "scene05-s10",
+          "visual_cue": {
+            "action": "celebrate",
+            "outfit": "madrid",
+            "props": [
+              "ballon-dor",
+              "trophy-cabinet",
+              "year-card"
+            ],
+            "camera": "trophy-push",
+            "start_word": "Ballon"
+          },
+          "year_cues": [
+            {
+              "year": 2013,
+              "start_word": "2013"
+            }
+          ]
+        },
+        {
+          "text": "2014.",
+          "segmentId": "05-3",
+          "id": "scene05-s11",
+          "visual_cue": {
+            "action": "celebrate",
+            "outfit": "madrid",
+            "props": [
+              "ballon-dor",
+              "year-card"
+            ],
+            "camera": "trophy-push",
+            "start_word": "2014"
+          },
+          "year_cues": [
+            {
+              "year": 2014,
+              "start_word": "2014"
+            }
+          ]
+        },
+        {
+          "text": "2016.",
+          "segmentId": "05-3",
+          "id": "scene05-s12",
+          "visual_cue": {
+            "action": "celebrate",
+            "outfit": "madrid",
+            "props": [
+              "ballon-dor",
+              "year-card"
+            ],
+            "camera": "trophy-push",
+            "start_word": "2016"
+          },
+          "year_cues": [
+            {
+              "year": 2016,
+              "start_word": "2016"
+            }
+          ]
+        },
+        {
+          "text": "2017.",
+          "segmentId": "05-3",
+          "id": "scene05-s13",
+          "visual_cue": {
+            "action": "celebrate",
+            "outfit": "madrid",
+            "props": [
+              "ballon-dor",
+              "year-card"
+            ],
+            "camera": "trophy-push",
+            "start_word": "2017"
+          },
+          "year_cues": [
+            {
+              "year": 2017,
+              "start_word": "2017"
+            }
+          ]
+        },
+        {
+          "text": "Four more golden balls.",
+          "segmentId": "05-3",
+          "id": "scene05-s14",
+          "visual_cue": {
+            "action": "celebrate",
+            "outfit": "madrid",
+            "props": [
+              "trophy-cabinet"
+            ],
+            "camera": "trophy-wide",
+            "start_word": "Four"
+          },
+          "year_cues": []
         }
       ]
     },
     {
       "id": "scene06",
       "title": "COLOURS CHANGE",
-      "narration": "The move brought him to Juventus in 2018. A new dressing room, and new teammates. United again in 2021. The familiar shirt, in a different moment. Then Al Nassr, in Saudi Arabia. Portugal's red and green still linked him to home.",
+      "narration": "Juventus, Turin, 2018. A new dressing room, and new teammates. United again in twenty twenty-one. The familiar shirt, in a different moment. Then Al Nassr, in Riyadh. Portugal's red and green still linked him to home.",
       "duration": 20,
       "cameraPreset": "montage",
       "outfit": "juventus",
@@ -206,30 +915,137 @@
         {
           "id": "06-1",
           "offset": 0.1,
-          "windowEnd": 6.5,
+          "windowEnd": 6.6,
           "rate": "+10%",
-          "narration": "The move brought him to Juventus in 2018. A new dressing room, and new teammates."
+          "narration": "Juventus, Turin, 2018. A new dressing room, and new teammates."
         },
         {
           "id": "06-2",
           "offset": 6.8,
           "windowEnd": 13.0,
           "rate": "+10%",
-          "narration": "United again in 2021. The familiar shirt, in a different moment."
+          "narration": "United again in twenty twenty-one. The familiar shirt, in a different moment."
         },
         {
           "id": "06-3",
           "offset": 13.3,
           "windowEnd": 19.8,
           "rate": "+10%",
-          "narration": "Then Al Nassr, in Saudi Arabia. Portugal's red and green still linked him to home."
+          "narration": "Then Al Nassr, in Riyadh. Portugal's red and green still linked him to home."
+        }
+      ],
+      "sentences": [
+        {
+          "text": "Juventus, Turin, 2018.",
+          "segmentId": "06-1",
+          "id": "scene06-s01",
+          "visual_cue": {
+            "action": "training",
+            "outfit": "juventus",
+            "props": [
+              "Turin-training-ground",
+              "ball",
+              "year-card"
+            ],
+            "camera": "tracking",
+            "start_word": "Juventus"
+          },
+          "year_cues": [
+            {
+              "year": 2018,
+              "start_word": "2018"
+            }
+          ]
+        },
+        {
+          "text": "A new dressing room, and new teammates.",
+          "segmentId": "06-1",
+          "id": "scene06-s02",
+          "visual_cue": {
+            "action": "reaction",
+            "outfit": "juventus",
+            "props": [
+              "dressing-room",
+              "teammates"
+            ],
+            "camera": "character-medium",
+            "start_word": "dressing"
+          },
+          "year_cues": []
+        },
+        {
+          "text": "United again in twenty twenty-one.",
+          "segmentId": "06-2",
+          "id": "scene06-s03",
+          "visual_cue": {
+            "action": "run",
+            "outfit": "united",
+            "props": [
+              "Manchester-stadium",
+              "year-card"
+            ],
+            "camera": "tracking",
+            "start_word": "United"
+          },
+          "year_cues": [
+            {
+              "year": 2021,
+              "start_word": "twenty twenty-one"
+            }
+          ]
+        },
+        {
+          "text": "The familiar shirt, in a different moment.",
+          "segmentId": "06-2",
+          "id": "scene06-s04",
+          "visual_cue": {
+            "action": "shirt",
+            "outfit": "united",
+            "props": [
+              "number-seven-shirt"
+            ],
+            "camera": "character-medium",
+            "start_word": "shirt"
+          },
+          "year_cues": []
+        },
+        {
+          "text": "Then Al Nassr, in Riyadh.",
+          "segmentId": "06-3",
+          "id": "scene06-s05",
+          "visual_cue": {
+            "action": "dribble",
+            "outfit": "alnassr",
+            "props": [
+              "Riyadh-stadium",
+              "ball"
+            ],
+            "camera": "tracking",
+            "start_word": "Al"
+          },
+          "year_cues": []
+        },
+        {
+          "text": "Portugal's red and green still linked him to home.",
+          "segmentId": "06-3",
+          "id": "scene06-s06",
+          "visual_cue": {
+            "action": "reaction",
+            "outfit": "portugal",
+            "props": [
+              "number-seven-shirt"
+            ],
+            "camera": "character-medium",
+            "start_word": "Portugal's"
+          },
+          "year_cues": []
         }
       ]
     },
     {
       "id": "scene07",
       "title": "A COUNTRY, TOGETHER",
-      "narration": "Portugal's story belonged to a team. The European title came in 2016. Nations League wins followed in 2019 and 2025. Ronaldo became men's international football's record scorer. On November fifth, twenty twenty-six, he announced his international retirement. His club career continues. The farewell is to this shirt, and to the teammates and supporters who made it mean something.",
+      "narration": "Portugal won Euro twenty sixteen. Nations League, 2019. Nations League, 2025. He lifts each cup. Ronaldo became men's international record scorer. On November fifth, twenty twenty-six, he announced his international retirement. His club career continues. The farewell is to this shirt, and to the teammates and supporters who made it mean something.",
       "duration": 32,
       "cameraPreset": "hero",
       "outfit": "portugal",
@@ -248,7 +1064,7 @@
       "segments": [
         {
           "offset": 0.15,
-          "narration": "Portugal's story belonged to a team. The European title came in 2016. Nations League wins followed in 2019 and 2025. Ronaldo became men's international football's record scorer.",
+          "narration": "Portugal won Euro twenty sixteen. Nations League, 2019. Nations League, 2025. He lifts each cup. Ronaldo became men's international record scorer.",
           "id": "07-1",
           "rate": "+10%",
           "windowEnd": 14.35
@@ -259,6 +1075,160 @@
           "id": "07-2",
           "rate": "+10%",
           "windowEnd": 27
+        }
+      ],
+      "sentences": [
+        {
+          "text": "Portugal won Euro twenty sixteen.",
+          "segmentId": "07-1",
+          "id": "scene07-s01",
+          "visual_cue": {
+            "action": "celebrate",
+            "outfit": "portugal",
+            "props": [
+              "euro",
+              "year-card",
+              "trophy-cabinet"
+            ],
+            "camera": "trophy-push",
+            "start_word": "Euro"
+          },
+          "year_cues": [
+            {
+              "year": 2016,
+              "start_word": "twenty sixteen"
+            }
+          ]
+        },
+        {
+          "text": "Nations League, 2019.",
+          "segmentId": "07-1",
+          "id": "scene07-s02",
+          "visual_cue": {
+            "action": "celebrate",
+            "outfit": "portugal",
+            "props": [
+              "nations-league",
+              "year-card",
+              "trophy-cabinet"
+            ],
+            "camera": "trophy-push",
+            "start_word": "Nations"
+          },
+          "year_cues": [
+            {
+              "year": 2019,
+              "start_word": "2019"
+            }
+          ]
+        },
+        {
+          "text": "Nations League, 2025.",
+          "segmentId": "07-1",
+          "id": "scene07-s03",
+          "visual_cue": {
+            "action": "celebrate",
+            "outfit": "portugal",
+            "props": [
+              "nations-league",
+              "year-card",
+              "trophy-cabinet"
+            ],
+            "camera": "trophy-push",
+            "start_word": "Nations"
+          },
+          "year_cues": [
+            {
+              "year": 2025,
+              "start_word": "2025"
+            }
+          ]
+        },
+        {
+          "text": "He lifts each cup.",
+          "segmentId": "07-1",
+          "id": "scene07-s04",
+          "visual_cue": {
+            "action": "lift",
+            "outfit": "portugal",
+            "props": [
+              "euro",
+              "nations-league",
+              "teammates"
+            ],
+            "camera": "trophy-wide",
+            "start_word": "lifts"
+          },
+          "year_cues": []
+        },
+        {
+          "text": "Ronaldo became men's international record scorer.",
+          "segmentId": "07-1",
+          "id": "scene07-s05",
+          "visual_cue": {
+            "action": "score",
+            "outfit": "portugal",
+            "props": [
+              "ball",
+              "goal"
+            ],
+            "camera": "tracking",
+            "start_word": "scorer"
+          },
+          "year_cues": []
+        },
+        {
+          "text": "On November fifth, twenty twenty-six, he announced his international retirement.",
+          "segmentId": "07-2",
+          "id": "scene07-s06",
+          "visual_cue": {
+            "action": "shirt",
+            "outfit": "portugal",
+            "props": [
+              "number-seven-shirt",
+              "year-card"
+            ],
+            "camera": "character-medium",
+            "start_word": "retirement"
+          },
+          "year_cues": [
+            {
+              "year": 2026,
+              "start_word": "twenty twenty-six"
+            }
+          ]
+        },
+        {
+          "text": "His club career continues.",
+          "segmentId": "07-2",
+          "id": "scene07-s07",
+          "visual_cue": {
+            "action": "reaction",
+            "outfit": "alnassr",
+            "props": [
+              "ball"
+            ],
+            "camera": "character-medium",
+            "start_word": "club"
+          },
+          "year_cues": []
+        },
+        {
+          "text": "The farewell is to this shirt, and to the teammates and supporters who made it mean something.",
+          "segmentId": "07-2",
+          "id": "scene07-s08",
+          "visual_cue": {
+            "action": "shirt",
+            "outfit": "portugal",
+            "props": [
+              "number-seven-shirt",
+              "teammates",
+              "supporters"
+            ],
+            "camera": "character-medium",
+            "start_word": "shirt"
+          },
+          "year_cues": []
         }
       ]
     },
@@ -284,9 +1254,56 @@
           "rate": "+10%",
           "windowEnd": 9.8
         }
+      ],
+      "sentences": [
+        {
+          "text": "The shirt will pass on.",
+          "segmentId": "08-1",
+          "id": "scene08-s01",
+          "visual_cue": {
+            "action": "shirt",
+            "outfit": "portugal",
+            "props": [
+              "number-seven-shirt"
+            ],
+            "camera": "character-medium",
+            "start_word": "shirt"
+          },
+          "year_cues": []
+        },
+        {
+          "text": "The effort stays in memory.",
+          "segmentId": "08-1",
+          "id": "scene08-s02",
+          "visual_cue": {
+            "action": "reaction",
+            "outfit": "portugal",
+            "props": [
+              "number-seven-shirt"
+            ],
+            "camera": "character-medium",
+            "start_word": "effort"
+          },
+          "year_cues": []
+        },
+        {
+          "text": "Somewhere, another child is taking a ball into the light.",
+          "segmentId": "08-1",
+          "id": "scene08-s03",
+          "visual_cue": {
+            "action": "child-exit",
+            "outfit": "portugal",
+            "props": [
+              "ball"
+            ],
+            "camera": "tracking",
+            "start_word": "child"
+          },
+          "year_cues": []
+        }
       ]
     }
   ],
-  "revision": "emotional-v3",
-  "narrationReductionPercent": 31.66
+  "revision": "framing-sync-v4",
+  "narrationReductionPercent": 38.73
 }

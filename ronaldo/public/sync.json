@@ -1,0 +1,2986 @@
+{
+  "schemaVersion": 1,
+  "wordTimingAudit": {
+    "narrationWords": 329,
+    "nativeWordBoundaries": 329,
+    "allBoundariesSingleWord": true
+  },
+  "timingSource": "Captured native Edge TTS WordBoundary events, measured assembled MP3s; no speech stretching or uniform word estimates",
+  "fps": 30,
+  "totalDuration": 200.0,
+  "sentences": [
+    {
+      "id": "scene01-s01",
+      "sceneId": "scene01",
+      "text": "Portugal's seven is leaving international football.",
+      "startSeconds": 1.9,
+      "endSeconds": 4.28637,
+      "keySeconds": 1.9,
+      "absoluteKeySeconds": 1.9,
+      "visual_cue": {
+        "action": "reaction",
+        "outfit": "portugal",
+        "props": [
+          "number-seven-shirt"
+        ],
+        "camera": "character-medium",
+        "start_word": "Portugal's"
+      },
+      "years": [],
+      "trophies": [],
+      "expectedTrophyCount": 0,
+      "keyFrame": 57,
+      "visualStartSeconds": 1.9,
+      "syncDeltaSeconds": 0.0
+    },
+    {
+      "id": "scene01-s02",
+      "sceneId": "scene01",
+      "text": "Before the records, there was a boy chasing a ball.",
+      "startSeconds": 5.06592,
+      "endSeconds": 7.65683,
+      "keySeconds": 6.55454,
+      "absoluteKeySeconds": 6.55454,
+      "visual_cue": {
+        "action": "run",
+        "outfit": "portugal",
+        "props": [
+          "ball"
+        ],
+        "camera": "tracking",
+        "start_word": "boy"
+      },
+      "years": [],
+      "trophies": [],
+      "expectedTrophyCount": 0,
+      "keyFrame": 197,
+      "visualStartSeconds": 6.566667,
+      "syncDeltaSeconds": 0.012127
+    },
+    {
+      "id": "scene02-s01",
+      "sceneId": "scene02",
+      "text": "Funchal, Madeira.",
+      "startSeconds": 0.25,
+      "endSeconds": 1.57954,
+      "keySeconds": 1.01138,
+      "absoluteKeySeconds": 11.01138,
+      "visual_cue": {
+        "action": "dribble",
+        "outfit": "portugal",
+        "props": [
+          "ball",
+          "Madeira-street",
+          "sea"
+        ],
+        "camera": "tracking",
+        "start_word": "Madeira"
+      },
+      "years": [],
+      "trophies": [],
+      "expectedTrophyCount": 0,
+      "keyFrame": 331,
+      "visualStartSeconds": 1.033333,
+      "syncDeltaSeconds": 0.021953
+    },
+    {
+      "id": "scene02-s02",
+      "sceneId": "scene02",
+      "text": "Home.",
+      "startSeconds": 2.35796,
+      "endSeconds": 2.8125,
+      "keySeconds": 2.35796,
+      "absoluteKeySeconds": 12.35796,
+      "visual_cue": {
+        "action": "reaction",
+        "outfit": "portugal",
+        "props": [
+          "ball",
+          "Madeira-street",
+          "sea"
+        ],
+        "camera": "character-medium",
+        "start_word": "Home"
+      },
+      "years": [],
+      "trophies": [],
+      "expectedTrophyCount": 0,
+      "keyFrame": 371,
+      "visualStartSeconds": 2.366667,
+      "syncDeltaSeconds": 0.008707
+    },
+    {
+      "id": "scene02-s03",
+      "sceneId": "scene02",
+      "text": "Cristiano Ronaldo was born here in nineteen eighty-five.",
+      "startSeconds": 7.3,
+      "endSeconds": 10.322709999999999,
+      "keySeconds": 9.19771,
+      "absoluteKeySeconds": 19.19771,
+      "visual_cue": {
+        "action": "reaction",
+        "outfit": "portugal",
+        "props": [
+          "ball",
+          "year-card"
+        ],
+        "camera": "character-medium",
+        "start_word": "nineteen"
+      },
+      "years": [
+        {
+          "year": 1985,
+          "startSeconds": 9.19771,
+          "absoluteSeconds": 19.19771
+        }
+      ],
+      "trophies": [],
+      "expectedTrophyCount": 0,
+      "keyFrame": 576,
+      "visualStartSeconds": 9.2,
+      "syncDeltaSeconds": 0.00229
+    },
+    {
+      "id": "scene02-s04",
+      "sceneId": "scene02",
+      "text": "This island was the beginning of a very different life.",
+      "startSeconds": 11.10229,
+      "endSeconds": 13.579540000000001,
+      "keySeconds": 11.38638,
+      "absoluteKeySeconds": 21.38638,
+      "visual_cue": {
+        "action": "dribble",
+        "outfit": "portugal",
+        "props": [
+          "ball",
+          "Madeira-street",
+          "sea"
+        ],
+        "camera": "tracking",
+        "start_word": "island"
+      },
+      "years": [],
+      "trophies": [],
+      "expectedTrophyCount": 0,
+      "keyFrame": 642,
+      "visualStartSeconds": 11.4,
+      "syncDeltaSeconds": 0.01362
+    },
+    {
+      "id": "scene02-s05",
+      "sceneId": "scene02",
+      "text": "Its small disappointments and victories belong to childhood.",
+      "startSeconds": 14.363620000000001,
+      "endSeconds": 17.19321,
+      "keySeconds": 14.89771,
+      "absoluteKeySeconds": 24.89771,
+      "visual_cue": {
+        "action": "training",
+        "outfit": "portugal",
+        "props": [
+          "ball"
+        ],
+        "camera": "tracking",
+        "start_word": "disappointments"
+      },
+      "years": [],
+      "trophies": [],
+      "expectedTrophyCount": 0,
+      "keyFrame": 747,
+      "visualStartSeconds": 14.9,
+      "syncDeltaSeconds": 0.00229
+    },
+    {
+      "id": "scene02-s06",
+      "sceneId": "scene02",
+      "text": "Nobody in this scene knows how far the boy will travel.",
+      "startSeconds": 17.97729,
+      "endSeconds": 20.534080000000003,
+      "keySeconds": 19.72729,
+      "absoluteKeySeconds": 29.72729,
+      "visual_cue": {
+        "action": "run",
+        "outfit": "portugal",
+        "props": [
+          "ball"
+        ],
+        "camera": "tracking",
+        "start_word": "boy"
+      },
+      "years": [],
+      "trophies": [],
+      "expectedTrophyCount": 0,
+      "keyFrame": 892,
+      "visualStartSeconds": 19.733333,
+      "syncDeltaSeconds": 0.006043
+    },
+    {
+      "id": "scene03-s01",
+      "sceneId": "scene03",
+      "text": "Sporting gave him his first senior stage in two thousand and two.",
+      "startSeconds": 0.3,
+      "endSeconds": 3.49321,
+      "keySeconds": 0.3,
+      "absoluteKeySeconds": 36.3,
+      "visual_cue": {
+        "action": "training",
+        "outfit": "sporting",
+        "props": [
+          "ball",
+          "teammates",
+          "year-card"
+        ],
+        "camera": "tracking",
+        "start_word": "Sporting"
+      },
+      "years": [
+        {
+          "year": 2002,
+          "startSeconds": 2.47046,
+          "absoluteSeconds": 38.47046
+        }
+      ],
+      "trophies": [],
+      "expectedTrophyCount": 0,
+      "keyFrame": 1089,
+      "visualStartSeconds": 0.3,
+      "syncDeltaSeconds": 0.0
+    },
+    {
+      "id": "scene03-s02",
+      "sceneId": "scene03",
+      "text": "The game became faster and the space tighter.",
+      "startSeconds": 4.27271,
+      "endSeconds": 6.375,
+      "keySeconds": 4.43183,
+      "absoluteKeySeconds": 40.43183,
+      "visual_cue": {
+        "action": "training",
+        "outfit": "sporting",
+        "props": [
+          "ball",
+          "teammates"
+        ],
+        "camera": "tracking",
+        "start_word": "game"
+      },
+      "years": [],
+      "trophies": [],
+      "expectedTrophyCount": 0,
+      "keyFrame": 1213,
+      "visualStartSeconds": 4.433333,
+      "syncDeltaSeconds": 0.001503
+    },
+    {
+      "id": "scene03-s03",
+      "sceneId": "scene03",
+      "text": "A pass needed the right weight.",
+      "startSeconds": 7.15908,
+      "endSeconds": 8.670459999999999,
+      "keySeconds": 7.31817,
+      "absoluteKeySeconds": 43.31817,
+      "visual_cue": {
+        "action": "training",
+        "outfit": "sporting",
+        "props": [
+          "ball",
+          "teammate"
+        ],
+        "camera": "tracking",
+        "start_word": "pass"
+      },
+      "years": [],
+      "trophies": [],
+      "expectedTrophyCount": 0,
+      "keyFrame": 1300,
+      "visualStartSeconds": 7.333333,
+      "syncDeltaSeconds": 0.015163
+    },
+    {
+      "id": "scene03-s04",
+      "sceneId": "scene03",
+      "text": "A run needed the right moment.",
+      "startSeconds": 9.454540000000001,
+      "endSeconds": 10.97729,
+      "keySeconds": 9.60229,
+      "absoluteKeySeconds": 45.60229,
+      "visual_cue": {
+        "action": "run",
+        "outfit": "sporting",
+        "props": [
+          "ball",
+          "teammate"
+        ],
+        "camera": "tracking",
+        "start_word": "run"
+      },
+      "years": [],
+      "trophies": [],
+      "expectedTrophyCount": 0,
+      "keyFrame": 1369,
+      "visualStartSeconds": 9.633333,
+      "syncDeltaSeconds": 0.031043
+    },
+    {
+      "id": "scene03-s05",
+      "sceneId": "scene03",
+      "text": "His talent now had to work with teammates, against players who wanted the same ball.",
+      "startSeconds": 11.761379999999999,
+      "endSeconds": 15.69317,
+      "keySeconds": 13.20454,
+      "absoluteKeySeconds": 49.20454,
+      "visual_cue": {
+        "action": "training",
+        "outfit": "sporting",
+        "props": [
+          "ball",
+          "teammates",
+          "opponent"
+        ],
+        "camera": "tracking",
+        "start_word": "teammates"
+      },
+      "years": [],
+      "trophies": [],
+      "expectedTrophyCount": 0,
+      "keyFrame": 1477,
+      "visualStartSeconds": 13.233333,
+      "syncDeltaSeconds": 0.028793
+    },
+    {
+      "id": "scene04-s01",
+      "sceneId": "scene04",
+      "text": "Manchester United signed him in two thousand and three.",
+      "startSeconds": 0.35,
+      "endSeconds": 2.91817,
+      "keySeconds": 0.35,
+      "absoluteKeySeconds": 56.35,
+      "visual_cue": {
+        "action": "run",
+        "outfit": "united",
+        "props": [
+          "Manchester-stadium",
+          "year-card"
+        ],
+        "camera": "tracking",
+        "start_word": "Manchester"
+      },
+      "years": [
+        {
+          "year": 2003,
+          "startSeconds": 1.83862,
+          "absoluteSeconds": 57.83862
+        }
+      ],
+      "trophies": [],
+      "expectedTrophyCount": 0,
+      "keyFrame": 1691,
+      "visualStartSeconds": 0.366667,
+      "syncDeltaSeconds": 0.016667
+    },
+    {
+      "id": "scene04-s02",
+      "sceneId": "scene04",
+      "text": "A teenager inherited the number seven shirt.",
+      "startSeconds": 3.69771,
+      "endSeconds": 5.94775,
+      "keySeconds": 5.52729,
+      "absoluteKeySeconds": 61.52729,
+      "visual_cue": {
+        "action": "shirt",
+        "outfit": "united",
+        "props": [
+          "number-seven-shirt"
+        ],
+        "camera": "character-medium",
+        "start_word": "shirt"
+      },
+      "years": [],
+      "trophies": [],
+      "expectedTrophyCount": 0,
+      "keyFrame": 1846,
+      "visualStartSeconds": 5.533333,
+      "syncDeltaSeconds": 0.006043
+    },
+    {
+      "id": "scene04-s03",
+      "sceneId": "scene04",
+      "text": "He arrived as a winger, full of speed and invention.",
+      "startSeconds": 6.7318299999999995,
+      "endSeconds": 9.31133,
+      "keySeconds": 7.45908,
+      "absoluteKeySeconds": 63.45908,
+      "visual_cue": {
+        "action": "dribble",
+        "outfit": "united",
+        "props": [
+          "ball"
+        ],
+        "camera": "tracking",
+        "start_word": "winger"
+      },
+      "years": [],
+      "trophies": [],
+      "expectedTrophyCount": 0,
+      "keyFrame": 1904,
+      "visualStartSeconds": 7.466667,
+      "syncDeltaSeconds": 0.007587
+    },
+    {
+      "id": "scene04-s04",
+      "sceneId": "scene04",
+      "text": "His goals soon matched his tricks.",
+      "startSeconds": 10.09546,
+      "endSeconds": 11.77729,
+      "keySeconds": 10.33408,
+      "absoluteKeySeconds": 66.33408,
+      "visual_cue": {
+        "action": "score",
+        "outfit": "united",
+        "props": [
+          "ball",
+          "goal"
+        ],
+        "camera": "tracking",
+        "start_word": "goals"
+      },
+      "years": [],
+      "trophies": [],
+      "expectedTrophyCount": 0,
+      "keyFrame": 1991,
+      "visualStartSeconds": 10.366667,
+      "syncDeltaSeconds": 0.032587
+    },
+    {
+      "id": "scene04-s05",
+      "sceneId": "scene04",
+      "text": "2008.",
+      "startSeconds": 14.9,
+      "endSeconds": 15.865920000000001,
+      "keySeconds": 14.9,
+      "absoluteKeySeconds": 70.9,
+      "visual_cue": {
+        "action": "celebrate",
+        "outfit": "united",
+        "props": [
+          "year-card"
+        ],
+        "camera": "character-medium",
+        "start_word": "2008"
+      },
+      "years": [
+        {
+          "year": 2008,
+          "startSeconds": 14.9,
+          "absoluteSeconds": 70.9
+        }
+      ],
+      "trophies": [],
+      "expectedTrophyCount": 0,
+      "keyFrame": 2127,
+      "visualStartSeconds": 14.9,
+      "syncDeltaSeconds": 0.0
+    },
+    {
+      "id": "scene04-s06",
+      "sceneId": "scene04",
+      "text": "The Champions League.",
+      "startSeconds": 16.07046,
+      "endSeconds": 16.979580000000002,
+      "keySeconds": 16.15,
+      "absoluteKeySeconds": 72.15,
+      "visual_cue": {
+        "action": "celebrate",
+        "outfit": "united",
+        "props": [
+          "champions-league"
+        ],
+        "camera": "trophy-push",
+        "start_word": "Champions"
+      },
+      "years": [],
+      "trophies": [
+        {
+          "id": "scene04-s06-champions-league-2008-reveal",
+          "sceneId": "scene04",
+          "kind": "champions-league",
+          "year": 2008,
+          "startSeconds": 16.15,
+          "absoluteSeconds": 72.15,
+          "count": 1,
+          "cumulativeCount": 1
+        }
+      ],
+      "expectedTrophyCount": 1,
+      "keyFrame": 2165,
+      "visualStartSeconds": 16.166667,
+      "syncDeltaSeconds": 0.016667
+    },
+    {
+      "id": "scene04-s07",
+      "sceneId": "scene04",
+      "text": "The Premier League.",
+      "startSeconds": 17.75908,
+      "endSeconds": 18.622709999999998,
+      "keySeconds": 17.90683,
+      "absoluteKeySeconds": 73.90683,
+      "visual_cue": {
+        "action": "celebrate",
+        "outfit": "united",
+        "props": [
+          "premier-league"
+        ],
+        "camera": "trophy-push",
+        "start_word": "Premier"
+      },
+      "years": [],
+      "trophies": [
+        {
+          "id": "scene04-s07-premier-league-2008-reveal",
+          "sceneId": "scene04",
+          "kind": "premier-league",
+          "year": 2008,
+          "startSeconds": 17.90683,
+          "absoluteSeconds": 73.90683,
+          "count": 1,
+          "cumulativeCount": 2
+        }
+      ],
+      "expectedTrophyCount": 2,
+      "keyFrame": 2218,
+      "visualStartSeconds": 17.933333,
+      "syncDeltaSeconds": 0.026503
+    },
+    {
+      "id": "scene04-s08",
+      "sceneId": "scene04",
+      "text": "His first Ballon d'Or.",
+      "startSeconds": 19.406830000000003,
+      "endSeconds": 20.656830000000003,
+      "keySeconds": 19.98638,
+      "absoluteKeySeconds": 75.98638,
+      "visual_cue": {
+        "action": "celebrate",
+        "outfit": "united",
+        "props": [
+          "ballon-dor"
+        ],
+        "camera": "trophy-push",
+        "start_word": "Ballon"
+      },
+      "years": [],
+      "trophies": [
+        {
+          "id": "scene04-s08-ballon-dor-2008-reveal",
+          "sceneId": "scene04",
+          "kind": "ballon-dor",
+          "year": 2008,
+          "startSeconds": 19.98638,
+          "absoluteSeconds": 75.98638,
+          "count": 1,
+          "cumulativeCount": 3
+        }
+      ],
+      "expectedTrophyCount": 3,
+      "keyFrame": 2280,
+      "visualStartSeconds": 20.0,
+      "syncDeltaSeconds": 0.01362
+    },
+    {
+      "id": "scene04-s09",
+      "sceneId": "scene04",
+      "text": "The 2008 FIFA World Player of the Year award.",
+      "startSeconds": 21.44092,
+      "endSeconds": 24.20229,
+      "keySeconds": 22.38408,
+      "absoluteKeySeconds": 78.38408,
+      "visual_cue": {
+        "action": "celebrate",
+        "outfit": "united",
+        "props": [
+          "fifa-player"
+        ],
+        "camera": "trophy-push",
+        "start_word": "FIFA"
+      },
+      "years": [
+        {
+          "year": 2008,
+          "startSeconds": 21.58862,
+          "absoluteSeconds": 77.58862
+        }
+      ],
+      "trophies": [
+        {
+          "id": "scene04-s09-fifa-player-2008-reveal",
+          "sceneId": "scene04",
+          "kind": "fifa-player",
+          "year": 2008,
+          "startSeconds": 22.38408,
+          "absoluteSeconds": 78.38408,
+          "count": 1,
+          "cumulativeCount": 4
+        }
+      ],
+      "expectedTrophyCount": 4,
+      "keyFrame": 2352,
+      "visualStartSeconds": 22.4,
+      "syncDeltaSeconds": 0.01592
+    },
+    {
+      "id": "scene04-s10",
+      "sceneId": "scene04",
+      "text": "Four prizes, one remarkable year.",
+      "startSeconds": 24.98638,
+      "endSeconds": 27.05454,
+      "keySeconds": 24.98638,
+      "absoluteKeySeconds": 80.98638,
+      "visual_cue": {
+        "action": "celebrate",
+        "outfit": "united",
+        "props": [
+          "trophy-cabinet"
+        ],
+        "camera": "character-medium",
+        "start_word": "Four"
+      },
+      "years": [],
+      "trophies": [],
+      "expectedTrophyCount": 4,
+      "keyFrame": 2430,
+      "visualStartSeconds": 25.0,
+      "syncDeltaSeconds": 0.01362
+    },
+    {
+      "id": "scene04-s11",
+      "sceneId": "scene04",
+      "text": "He lifts a trophy with his teammates.",
+      "startSeconds": 27.83862,
+      "endSeconds": 29.66821,
+      "keySeconds": 28.02046,
+      "absoluteKeySeconds": 84.02046,
+      "visual_cue": {
+        "action": "lift",
+        "outfit": "united",
+        "props": [
+          "trophy",
+          "teammates",
+          "trophy-cabinet"
+        ],
+        "camera": "trophy-wide",
+        "start_word": "lifts"
+      },
+      "years": [],
+      "trophies": [],
+      "expectedTrophyCount": 4,
+      "keyFrame": 2521,
+      "visualStartSeconds": 28.033333,
+      "syncDeltaSeconds": 0.012873
+    },
+    {
+      "id": "scene04-s12",
+      "sceneId": "scene04",
+      "text": "Then Madrid called.",
+      "startSeconds": 30.45229,
+      "endSeconds": 31.54317,
+      "keySeconds": 30.70229,
+      "absoluteKeySeconds": 86.70229,
+      "visual_cue": {
+        "action": "reaction",
+        "outfit": "madrid",
+        "props": [
+          "Madrid-stadium"
+        ],
+        "camera": "character-medium",
+        "start_word": "Madrid"
+      },
+      "years": [],
+      "trophies": [],
+      "expectedTrophyCount": 4,
+      "keyFrame": 2602,
+      "visualStartSeconds": 30.733333,
+      "syncDeltaSeconds": 0.031043
+    },
+    {
+      "id": "scene05-s01",
+      "sceneId": "scene05",
+      "text": "Madrid brought him to Spain in two thousand and nine.",
+      "startSeconds": 0.3,
+      "endSeconds": 2.74317,
+      "keySeconds": 0.3,
+      "absoluteKeySeconds": 92.3,
+      "visual_cue": {
+        "action": "run",
+        "outfit": "madrid",
+        "props": [
+          "Madrid-stadium",
+          "year-card"
+        ],
+        "camera": "tracking",
+        "start_word": "Madrid"
+      },
+      "years": [
+        {
+          "year": 2009,
+          "startSeconds": 1.62954,
+          "absoluteSeconds": 93.62954
+        }
+      ],
+      "trophies": [],
+      "expectedTrophyCount": 4,
+      "keyFrame": 2769,
+      "visualStartSeconds": 0.3,
+      "syncDeltaSeconds": 0.0
+    },
+    {
+      "id": "scene05-s02",
+      "sceneId": "scene05",
+      "text": "Four Champions League titles.",
+      "startSeconds": 3.52271,
+      "endSeconds": 5.06817,
+      "keySeconds": 3.52271,
+      "absoluteKeySeconds": 95.52271,
+      "visual_cue": {
+        "action": "celebrate",
+        "outfit": "madrid",
+        "props": [
+          "champions-league",
+          "trophy-cabinet"
+        ],
+        "camera": "trophy-push",
+        "start_word": "Four"
+      },
+      "years": [],
+      "trophies": [
+        {
+          "id": "scene05-s02-champions-league-2014-reveal",
+          "sceneId": "scene05",
+          "kind": "champions-league",
+          "year": 2014,
+          "startSeconds": 3.52271,
+          "absoluteSeconds": 95.52271,
+          "count": 1,
+          "cumulativeCount": 5
+        },
+        {
+          "id": "scene05-s02-champions-league-2016-reveal",
+          "sceneId": "scene05",
+          "kind": "champions-league",
+          "year": 2016,
+          "startSeconds": 3.52271,
+          "absoluteSeconds": 95.52271,
+          "count": 1,
+          "cumulativeCount": 6
+        },
+        {
+          "id": "scene05-s02-champions-league-2017-reveal",
+          "sceneId": "scene05",
+          "kind": "champions-league",
+          "year": 2017,
+          "startSeconds": 3.52271,
+          "absoluteSeconds": 95.52271,
+          "count": 1,
+          "cumulativeCount": 7
+        },
+        {
+          "id": "scene05-s02-champions-league-2018-reveal",
+          "sceneId": "scene05",
+          "kind": "champions-league",
+          "year": 2018,
+          "startSeconds": 3.52271,
+          "absoluteSeconds": 95.52271,
+          "count": 1,
+          "cumulativeCount": 8
+        }
+      ],
+      "expectedTrophyCount": 8,
+      "keyFrame": 2866,
+      "visualStartSeconds": 3.533333,
+      "syncDeltaSeconds": 0.010623
+    },
+    {
+      "id": "scene05-s03",
+      "sceneId": "scene05",
+      "text": "2014.",
+      "startSeconds": 5.85229,
+      "endSeconds": 6.82958,
+      "keySeconds": 5.85229,
+      "absoluteKeySeconds": 97.85229,
+      "visual_cue": {
+        "action": "celebrate",
+        "outfit": "madrid",
+        "props": [
+          "champions-league",
+          "year-card"
+        ],
+        "camera": "trophy-push",
+        "start_word": "2014"
+      },
+      "years": [
+        {
+          "year": 2014,
+          "startSeconds": 5.85229,
+          "absoluteSeconds": 97.85229
+        }
+      ],
+      "trophies": [
+        {
+          "id": "scene05-s03-champions-league-2014-focus",
+          "sceneId": "scene05",
+          "kind": "champions-league",
+          "year": 2014,
+          "startSeconds": 5.85229,
+          "absoluteSeconds": 97.85229,
+          "count": 0,
+          "cumulativeCount": 8
+        }
+      ],
+      "expectedTrophyCount": 8,
+      "keyFrame": 2936,
+      "visualStartSeconds": 5.866667,
+      "syncDeltaSeconds": 0.014377
+    },
+    {
+      "id": "scene05-s04",
+      "sceneId": "scene05",
+      "text": "2016.",
+      "startSeconds": 7.0,
+      "endSeconds": 7.95454,
+      "keySeconds": 7.0,
+      "absoluteKeySeconds": 99.0,
+      "visual_cue": {
+        "action": "celebrate",
+        "outfit": "madrid",
+        "props": [
+          "champions-league",
+          "year-card"
+        ],
+        "camera": "trophy-push",
+        "start_word": "2016"
+      },
+      "years": [
+        {
+          "year": 2016,
+          "startSeconds": 7.0,
+          "absoluteSeconds": 99.0
+        }
+      ],
+      "trophies": [
+        {
+          "id": "scene05-s04-champions-league-2016-focus",
+          "sceneId": "scene05",
+          "kind": "champions-league",
+          "year": 2016,
+          "startSeconds": 7.0,
+          "absoluteSeconds": 99.0,
+          "count": 0,
+          "cumulativeCount": 8
+        }
+      ],
+      "expectedTrophyCount": 8,
+      "keyFrame": 2970,
+      "visualStartSeconds": 7.0,
+      "syncDeltaSeconds": 0.0
+    },
+    {
+      "id": "scene05-s05",
+      "sceneId": "scene05",
+      "text": "2017.",
+      "startSeconds": 8.738620000000001,
+      "endSeconds": 9.670459999999999,
+      "keySeconds": 8.73862,
+      "absoluteKeySeconds": 100.73862,
+      "visual_cue": {
+        "action": "celebrate",
+        "outfit": "madrid",
+        "props": [
+          "champions-league",
+          "year-card"
+        ],
+        "camera": "trophy-push",
+        "start_word": "2017"
+      },
+      "years": [
+        {
+          "year": 2017,
+          "startSeconds": 8.73862,
+          "absoluteSeconds": 100.73862
+        }
+      ],
+      "trophies": [
+        {
+          "id": "scene05-s05-champions-league-2017-focus",
+          "sceneId": "scene05",
+          "kind": "champions-league",
+          "year": 2017,
+          "startSeconds": 8.73862,
+          "absoluteSeconds": 100.73862,
+          "count": 0,
+          "cumulativeCount": 8
+        }
+      ],
+      "expectedTrophyCount": 8,
+      "keyFrame": 3023,
+      "visualStartSeconds": 8.766667,
+      "syncDeltaSeconds": 0.028047
+    },
+    {
+      "id": "scene05-s06",
+      "sceneId": "scene05",
+      "text": "2018.",
+      "startSeconds": 9.84092,
+      "endSeconds": 10.704540000000001,
+      "keySeconds": 9.84092,
+      "absoluteKeySeconds": 101.84092,
+      "visual_cue": {
+        "action": "celebrate",
+        "outfit": "madrid",
+        "props": [
+          "champions-league",
+          "year-card"
+        ],
+        "camera": "trophy-push",
+        "start_word": "2018"
+      },
+      "years": [
+        {
+          "year": 2018,
+          "startSeconds": 9.84092,
+          "absoluteSeconds": 101.84092
+        }
+      ],
+      "trophies": [
+        {
+          "id": "scene05-s06-champions-league-2018-focus",
+          "sceneId": "scene05",
+          "kind": "champions-league",
+          "year": 2018,
+          "startSeconds": 9.84092,
+          "absoluteSeconds": 101.84092,
+          "count": 0,
+          "cumulativeCount": 8
+        }
+      ],
+      "expectedTrophyCount": 8,
+      "keyFrame": 3056,
+      "visualStartSeconds": 9.866667,
+      "syncDeltaSeconds": 0.025747
+    },
+    {
+      "id": "scene05-s07",
+      "sceneId": "scene05",
+      "text": "That finish, 2018.",
+      "startSeconds": 19.2,
+      "endSeconds": 20.97271,
+      "keySeconds": 20.08638,
+      "absoluteKeySeconds": 112.08638,
+      "visual_cue": {
+        "action": "reaction",
+        "outfit": "madrid",
+        "props": [
+          "year-card"
+        ],
+        "camera": "character-medium",
+        "start_word": "2018"
+      },
+      "years": [
+        {
+          "year": 2018,
+          "startSeconds": 20.08638,
+          "absoluteSeconds": 112.08638
+        }
+      ],
+      "trophies": [],
+      "expectedTrophyCount": 8,
+      "keyFrame": 3363,
+      "visualStartSeconds": 20.1,
+      "syncDeltaSeconds": 0.01362
+    },
+    {
+      "id": "scene05-s08",
+      "sceneId": "scene05",
+      "text": "Juventus supporters stood to applaud his bicycle kick.",
+      "startSeconds": 21.752290000000002,
+      "endSeconds": 24.35454,
+      "keySeconds": 23.03638,
+      "absoluteKeySeconds": 115.03638,
+      "visual_cue": {
+        "action": "celebrate",
+        "outfit": "madrid",
+        "props": [
+          "applauding-supporters"
+        ],
+        "camera": "character-medium",
+        "start_word": "applaud"
+      },
+      "years": [],
+      "trophies": [],
+      "expectedTrophyCount": 8,
+      "keyFrame": 3452,
+      "visualStartSeconds": 23.066667,
+      "syncDeltaSeconds": 0.030287
+    },
+    {
+      "id": "scene05-s09",
+      "sceneId": "scene05",
+      "text": "For a moment, rivalry gave way to appreciation.",
+      "startSeconds": 25.13862,
+      "endSeconds": 27.72954,
+      "keySeconds": 26.95683,
+      "absoluteKeySeconds": 118.95683,
+      "visual_cue": {
+        "action": "reaction",
+        "outfit": "madrid",
+        "props": [
+          "supporters"
+        ],
+        "camera": "character-medium",
+        "start_word": "appreciation"
+      },
+      "years": [],
+      "trophies": [],
+      "expectedTrophyCount": 8,
+      "keyFrame": 3569,
+      "visualStartSeconds": 26.966667,
+      "syncDeltaSeconds": 0.009837
+    },
+    {
+      "id": "scene05-s10",
+      "sceneId": "scene05",
+      "text": "More Ballon d'Or wins in white: 2013.",
+      "startSeconds": 28.9,
+      "endSeconds": 31.65,
+      "keySeconds": 29.15,
+      "absoluteKeySeconds": 121.15,
+      "visual_cue": {
+        "action": "celebrate",
+        "outfit": "madrid",
+        "props": [
+          "ballon-dor",
+          "trophy-cabinet",
+          "year-card"
+        ],
+        "camera": "trophy-push",
+        "start_word": "Ballon"
+      },
+      "years": [
+        {
+          "year": 2013,
+          "startSeconds": 30.69546,
+          "absoluteSeconds": 122.69546
+        }
+      ],
+      "trophies": [
+        {
+          "id": "scene05-s10-ballon-dor-2013-reveal",
+          "sceneId": "scene05",
+          "kind": "ballon-dor",
+          "year": 2013,
+          "startSeconds": 29.15,
+          "absoluteSeconds": 121.15,
+          "count": 1,
+          "cumulativeCount": 9
+        }
+      ],
+      "expectedTrophyCount": 9,
+      "keyFrame": 3635,
+      "visualStartSeconds": 29.166667,
+      "syncDeltaSeconds": 0.016667
+    },
+    {
+      "id": "scene05-s11",
+      "sceneId": "scene05",
+      "text": "2014.",
+      "startSeconds": 32.42954,
+      "endSeconds": 33.40683,
+      "keySeconds": 32.42954,
+      "absoluteKeySeconds": 124.42954,
+      "visual_cue": {
+        "action": "celebrate",
+        "outfit": "madrid",
+        "props": [
+          "ballon-dor",
+          "year-card"
+        ],
+        "camera": "trophy-push",
+        "start_word": "2014"
+      },
+      "years": [
+        {
+          "year": 2014,
+          "startSeconds": 32.42954,
+          "absoluteSeconds": 124.42954
+        }
+      ],
+      "trophies": [
+        {
+          "id": "scene05-s11-ballon-dor-2014-reveal",
+          "sceneId": "scene05",
+          "kind": "ballon-dor",
+          "year": 2014,
+          "startSeconds": 32.42954,
+          "absoluteSeconds": 124.42954,
+          "count": 1,
+          "cumulativeCount": 10
+        }
+      ],
+      "expectedTrophyCount": 10,
+      "keyFrame": 3733,
+      "visualStartSeconds": 32.433333,
+      "syncDeltaSeconds": 0.003793
+    },
+    {
+      "id": "scene05-s12",
+      "sceneId": "scene05",
+      "text": "2016.",
+      "startSeconds": 33.57729,
+      "endSeconds": 34.53183,
+      "keySeconds": 33.57729,
+      "absoluteKeySeconds": 125.57729,
+      "visual_cue": {
+        "action": "celebrate",
+        "outfit": "madrid",
+        "props": [
+          "ballon-dor",
+          "year-card"
+        ],
+        "camera": "trophy-push",
+        "start_word": "2016"
+      },
+      "years": [
+        {
+          "year": 2016,
+          "startSeconds": 33.57729,
+          "absoluteSeconds": 125.57729
+        }
+      ],
+      "trophies": [
+        {
+          "id": "scene05-s12-ballon-dor-2016-reveal",
+          "sceneId": "scene05",
+          "kind": "ballon-dor",
+          "year": 2016,
+          "startSeconds": 33.57729,
+          "absoluteSeconds": 125.57729,
+          "count": 1,
+          "cumulativeCount": 11
+        }
+      ],
+      "expectedTrophyCount": 11,
+      "keyFrame": 3768,
+      "visualStartSeconds": 33.6,
+      "syncDeltaSeconds": 0.02271
+    },
+    {
+      "id": "scene05-s13",
+      "sceneId": "scene05",
+      "text": "2017.",
+      "startSeconds": 35.31592,
+      "endSeconds": 36.27046,
+      "keySeconds": 35.31592,
+      "absoluteKeySeconds": 127.31592,
+      "visual_cue": {
+        "action": "celebrate",
+        "outfit": "madrid",
+        "props": [
+          "ballon-dor",
+          "year-card"
+        ],
+        "camera": "trophy-push",
+        "start_word": "2017"
+      },
+      "years": [
+        {
+          "year": 2017,
+          "startSeconds": 35.31592,
+          "absoluteSeconds": 127.31592
+        }
+      ],
+      "trophies": [
+        {
+          "id": "scene05-s13-ballon-dor-2017-reveal",
+          "sceneId": "scene05",
+          "kind": "ballon-dor",
+          "year": 2017,
+          "startSeconds": 35.31592,
+          "absoluteSeconds": 127.31592,
+          "count": 1,
+          "cumulativeCount": 12
+        }
+      ],
+      "expectedTrophyCount": 12,
+      "keyFrame": 3820,
+      "visualStartSeconds": 35.333333,
+      "syncDeltaSeconds": 0.017413
+    },
+    {
+      "id": "scene05-s14",
+      "sceneId": "scene05",
+      "text": "Four more golden balls.",
+      "startSeconds": 36.45229,
+      "endSeconds": 37.65683,
+      "keySeconds": 36.45229,
+      "absoluteKeySeconds": 128.45229,
+      "visual_cue": {
+        "action": "celebrate",
+        "outfit": "madrid",
+        "props": [
+          "trophy-cabinet"
+        ],
+        "camera": "trophy-wide",
+        "start_word": "Four"
+      },
+      "years": [],
+      "trophies": [],
+      "expectedTrophyCount": 12,
+      "keyFrame": 3854,
+      "visualStartSeconds": 36.466667,
+      "syncDeltaSeconds": 0.014377
+    },
+    {
+      "id": "scene06-s01",
+      "sceneId": "scene06",
+      "text": "Juventus, Turin, 2018.",
+      "startSeconds": 0.2,
+      "endSeconds": 2.65454,
+      "keySeconds": 0.2,
+      "absoluteKeySeconds": 132.2,
+      "visual_cue": {
+        "action": "training",
+        "outfit": "juventus",
+        "props": [
+          "Turin-training-ground",
+          "ball",
+          "year-card"
+        ],
+        "camera": "tracking",
+        "start_word": "Juventus"
+      },
+      "years": [
+        {
+          "year": 2018,
+          "startSeconds": 1.76817,
+          "absoluteSeconds": 133.76817
+        }
+      ],
+      "trophies": [],
+      "expectedTrophyCount": 12,
+      "keyFrame": 3966,
+      "visualStartSeconds": 0.2,
+      "syncDeltaSeconds": 0.0
+    },
+    {
+      "id": "scene06-s02",
+      "sceneId": "scene06",
+      "text": "A new dressing room, and new teammates.",
+      "startSeconds": 3.43408,
+      "endSeconds": 5.74092,
+      "keySeconds": 3.83183,
+      "absoluteKeySeconds": 135.83183,
+      "visual_cue": {
+        "action": "reaction",
+        "outfit": "juventus",
+        "props": [
+          "dressing-room",
+          "teammates"
+        ],
+        "camera": "character-medium",
+        "start_word": "dressing"
+      },
+      "years": [],
+      "trophies": [],
+      "expectedTrophyCount": 12,
+      "keyFrame": 4075,
+      "visualStartSeconds": 3.833333,
+      "syncDeltaSeconds": 0.001503
+    },
+    {
+      "id": "scene06-s03",
+      "sceneId": "scene06",
+      "text": "United again in twenty twenty-one.",
+      "startSeconds": 6.9,
+      "endSeconds": 8.775,
+      "keySeconds": 6.9,
+      "absoluteKeySeconds": 138.9,
+      "visual_cue": {
+        "action": "run",
+        "outfit": "united",
+        "props": [
+          "Manchester-stadium",
+          "year-card"
+        ],
+        "camera": "tracking",
+        "start_word": "United"
+      },
+      "years": [
+        {
+          "year": 2021,
+          "startSeconds": 7.79771,
+          "absoluteSeconds": 139.79771
+        }
+      ],
+      "trophies": [],
+      "expectedTrophyCount": 12,
+      "keyFrame": 4167,
+      "visualStartSeconds": 6.9,
+      "syncDeltaSeconds": 0.0
+    },
+    {
+      "id": "scene06-s04",
+      "sceneId": "scene06",
+      "text": "The familiar shirt, in a different moment.",
+      "startSeconds": 9.554540000000001,
+      "endSeconds": 11.65683,
+      "keySeconds": 10.11138,
+      "absoluteKeySeconds": 142.11138,
+      "visual_cue": {
+        "action": "shirt",
+        "outfit": "united",
+        "props": [
+          "number-seven-shirt"
+        ],
+        "camera": "character-medium",
+        "start_word": "shirt"
+      },
+      "years": [],
+      "trophies": [],
+      "expectedTrophyCount": 12,
+      "keyFrame": 4264,
+      "visualStartSeconds": 10.133333,
+      "syncDeltaSeconds": 0.021953
+    },
+    {
+      "id": "scene06-s05",
+      "sceneId": "scene06",
+      "text": "Then Al Nassr, in Riyadh.",
+      "startSeconds": 13.4,
+      "endSeconds": 15.01367,
+      "keySeconds": 13.67271,
+      "absoluteKeySeconds": 145.67271,
+      "visual_cue": {
+        "action": "dribble",
+        "outfit": "alnassr",
+        "props": [
+          "Riyadh-stadium",
+          "ball"
+        ],
+        "camera": "tracking",
+        "start_word": "Al"
+      },
+      "years": [],
+      "trophies": [],
+      "expectedTrophyCount": 12,
+      "keyFrame": 4371,
+      "visualStartSeconds": 13.7,
+      "syncDeltaSeconds": 0.02729
+    },
+    {
+      "id": "scene06-s06",
+      "sceneId": "scene06",
+      "text": "Portugal's red and green still linked him to home.",
+      "startSeconds": 15.79317,
+      "endSeconds": 18.14546,
+      "keySeconds": 15.79317,
+      "absoluteKeySeconds": 147.79317,
+      "visual_cue": {
+        "action": "reaction",
+        "outfit": "portugal",
+        "props": [
+          "number-seven-shirt"
+        ],
+        "camera": "character-medium",
+        "start_word": "Portugal's"
+      },
+      "years": [],
+      "trophies": [],
+      "expectedTrophyCount": 12,
+      "keyFrame": 4434,
+      "visualStartSeconds": 15.8,
+      "syncDeltaSeconds": 0.00683
+    },
+    {
+      "id": "scene07-s01",
+      "sceneId": "scene07",
+      "text": "Portugal won Euro twenty sixteen.",
+      "startSeconds": 0.25,
+      "endSeconds": 2.375,
+      "keySeconds": 1.01138,
+      "absoluteKeySeconds": 153.01138,
+      "visual_cue": {
+        "action": "celebrate",
+        "outfit": "portugal",
+        "props": [
+          "euro",
+          "year-card",
+          "trophy-cabinet"
+        ],
+        "camera": "trophy-push",
+        "start_word": "Euro"
+      },
+      "years": [
+        {
+          "year": 2016,
+          "startSeconds": 1.43183,
+          "absoluteSeconds": 153.43183
+        }
+      ],
+      "trophies": [
+        {
+          "id": "scene07-s01-euro-2016-reveal",
+          "sceneId": "scene07",
+          "kind": "euro",
+          "year": 2016,
+          "startSeconds": 1.01138,
+          "absoluteSeconds": 153.01138,
+          "count": 1,
+          "cumulativeCount": 13
+        }
+      ],
+      "expectedTrophyCount": 13,
+      "keyFrame": 4591,
+      "visualStartSeconds": 1.033333,
+      "syncDeltaSeconds": 0.021953
+    },
+    {
+      "id": "scene07-s02",
+      "sceneId": "scene07",
+      "text": "Nations League, 2019.",
+      "startSeconds": 3.15454,
+      "endSeconds": 5.00683,
+      "keySeconds": 3.15454,
+      "absoluteKeySeconds": 155.15454,
+      "visual_cue": {
+        "action": "celebrate",
+        "outfit": "portugal",
+        "props": [
+          "nations-league",
+          "year-card",
+          "trophy-cabinet"
+        ],
+        "camera": "trophy-push",
+        "start_word": "Nations"
+      },
+      "years": [
+        {
+          "year": 2019,
+          "startSeconds": 4.10908,
+          "absoluteSeconds": 156.10908
+        }
+      ],
+      "trophies": [
+        {
+          "id": "scene07-s02-nations-league-2019-reveal",
+          "sceneId": "scene07",
+          "kind": "nations-league",
+          "year": 2019,
+          "startSeconds": 3.15454,
+          "absoluteSeconds": 155.15454,
+          "count": 1,
+          "cumulativeCount": 14
+        }
+      ],
+      "expectedTrophyCount": 14,
+      "keyFrame": 4655,
+      "visualStartSeconds": 3.166667,
+      "syncDeltaSeconds": 0.012127
+    },
+    {
+      "id": "scene07-s03",
+      "sceneId": "scene07",
+      "text": "Nations League, 2025.",
+      "startSeconds": 5.79092,
+      "endSeconds": 7.85908,
+      "keySeconds": 5.79092,
+      "absoluteKeySeconds": 157.79092,
+      "visual_cue": {
+        "action": "celebrate",
+        "outfit": "portugal",
+        "props": [
+          "nations-league",
+          "year-card",
+          "trophy-cabinet"
+        ],
+        "camera": "trophy-push",
+        "start_word": "Nations"
+      },
+      "years": [
+        {
+          "year": 2025,
+          "startSeconds": 6.74546,
+          "absoluteSeconds": 158.74546
+        }
+      ],
+      "trophies": [
+        {
+          "id": "scene07-s03-nations-league-2025-reveal",
+          "sceneId": "scene07",
+          "kind": "nations-league",
+          "year": 2025,
+          "startSeconds": 5.79092,
+          "absoluteSeconds": 157.79092,
+          "count": 1,
+          "cumulativeCount": 15
+        }
+      ],
+      "expectedTrophyCount": 15,
+      "keyFrame": 4734,
+      "visualStartSeconds": 5.8,
+      "syncDeltaSeconds": 0.00908
+    },
+    {
+      "id": "scene07-s04",
+      "sceneId": "scene07",
+      "text": "He lifts each cup.",
+      "startSeconds": 8.64317,
+      "endSeconds": 9.73408,
+      "keySeconds": 8.80229,
+      "absoluteKeySeconds": 160.80229,
+      "visual_cue": {
+        "action": "lift",
+        "outfit": "portugal",
+        "props": [
+          "euro",
+          "nations-league",
+          "teammates"
+        ],
+        "camera": "trophy-wide",
+        "start_word": "lifts"
+      },
+      "years": [],
+      "trophies": [],
+      "expectedTrophyCount": 15,
+      "keyFrame": 4825,
+      "visualStartSeconds": 8.833333,
+      "syncDeltaSeconds": 0.031043
+    },
+    {
+      "id": "scene07-s05",
+      "sceneId": "scene07",
+      "text": "Ronaldo became men's international record scorer.",
+      "startSeconds": 10.51817,
+      "endSeconds": 13.14321,
+      "keySeconds": 12.71138,
+      "absoluteKeySeconds": 164.71138,
+      "visual_cue": {
+        "action": "score",
+        "outfit": "portugal",
+        "props": [
+          "ball",
+          "goal"
+        ],
+        "camera": "tracking",
+        "start_word": "scorer"
+      },
+      "years": [],
+      "trophies": [],
+      "expectedTrophyCount": 15,
+      "keyFrame": 4942,
+      "visualStartSeconds": 12.733333,
+      "syncDeltaSeconds": 0.021953
+    },
+    {
+      "id": "scene07-s06",
+      "sceneId": "scene07",
+      "text": "On November fifth, twenty twenty-six, he announced his international retirement.",
+      "startSeconds": 14.5,
+      "endSeconds": 18.659080000000003,
+      "keySeconds": 18.0,
+      "absoluteKeySeconds": 170.0,
+      "visual_cue": {
+        "action": "shirt",
+        "outfit": "portugal",
+        "props": [
+          "number-seven-shirt",
+          "year-card"
+        ],
+        "camera": "character-medium",
+        "start_word": "retirement"
+      },
+      "years": [
+        {
+          "year": 2026,
+          "startSeconds": 15.65908,
+          "absoluteSeconds": 167.65908
+        }
+      ],
+      "trophies": [],
+      "expectedTrophyCount": 15,
+      "keyFrame": 5100,
+      "visualStartSeconds": 18.0,
+      "syncDeltaSeconds": 0.0
+    },
+    {
+      "id": "scene07-s07",
+      "sceneId": "scene07",
+      "text": "His club career continues.",
+      "startSeconds": 19.43862,
+      "endSeconds": 21.04092,
+      "keySeconds": 19.66592,
+      "absoluteKeySeconds": 171.66592,
+      "visual_cue": {
+        "action": "reaction",
+        "outfit": "alnassr",
+        "props": [
+          "ball"
+        ],
+        "camera": "character-medium",
+        "start_word": "club"
+      },
+      "years": [],
+      "trophies": [],
+      "expectedTrophyCount": 15,
+      "keyFrame": 5150,
+      "visualStartSeconds": 19.666667,
+      "syncDeltaSeconds": 0.000747
+    },
+    {
+      "id": "scene07-s08",
+      "sceneId": "scene07",
+      "text": "The farewell is to this shirt, and to the teammates and supporters who made it mean something.",
+      "startSeconds": 21.825,
+      "endSeconds": 25.77954,
+      "keySeconds": 22.74546,
+      "absoluteKeySeconds": 174.74546,
+      "visual_cue": {
+        "action": "shirt",
+        "outfit": "portugal",
+        "props": [
+          "number-seven-shirt",
+          "teammates",
+          "supporters"
+        ],
+        "camera": "character-medium",
+        "start_word": "shirt"
+      },
+      "years": [],
+      "trophies": [],
+      "expectedTrophyCount": 15,
+      "keyFrame": 5243,
+      "visualStartSeconds": 22.766667,
+      "syncDeltaSeconds": 0.021207
+    },
+    {
+      "id": "scene08-s01",
+      "sceneId": "scene08",
+      "text": "The shirt will pass on.",
+      "startSeconds": 0.3,
+      "endSeconds": 1.47042,
+      "keySeconds": 0.44771,
+      "absoluteKeySeconds": 184.44771,
+      "visual_cue": {
+        "action": "shirt",
+        "outfit": "portugal",
+        "props": [
+          "number-seven-shirt"
+        ],
+        "camera": "character-medium",
+        "start_word": "shirt"
+      },
+      "years": [],
+      "trophies": [],
+      "expectedTrophyCount": 15,
+      "keyFrame": 5534,
+      "visualStartSeconds": 0.466667,
+      "syncDeltaSeconds": 0.018957
+    },
+    {
+      "id": "scene08-s02",
+      "sceneId": "scene08",
+      "text": "The effort stays in memory.",
+      "startSeconds": 2.25,
+      "endSeconds": 3.5681700000000003,
+      "keySeconds": 2.44317,
+      "absoluteKeySeconds": 186.44317,
+      "visual_cue": {
+        "action": "reaction",
+        "outfit": "portugal",
+        "props": [
+          "number-seven-shirt"
+        ],
+        "camera": "character-medium",
+        "start_word": "effort"
+      },
+      "years": [],
+      "trophies": [],
+      "expectedTrophyCount": 15,
+      "keyFrame": 5594,
+      "visualStartSeconds": 2.466667,
+      "syncDeltaSeconds": 0.023497
+    },
+    {
+      "id": "scene08-s03",
+      "sceneId": "scene08",
+      "text": "Somewhere, another child is taking a ball into the light.",
+      "startSeconds": 4.35229,
+      "endSeconds": 7.06817,
+      "keySeconds": 5.28408,
+      "absoluteKeySeconds": 189.28408,
+      "visual_cue": {
+        "action": "child-exit",
+        "outfit": "portugal",
+        "props": [
+          "ball"
+        ],
+        "camera": "tracking",
+        "start_word": "child"
+      },
+      "years": [],
+      "trophies": [],
+      "expectedTrophyCount": 15,
+      "keyFrame": 5679,
+      "visualStartSeconds": 5.3,
+      "syncDeltaSeconds": 0.01592
+    }
+  ],
+  "trophyEvents": [
+    {
+      "id": "scene04-s06-champions-league-2008-reveal",
+      "sceneId": "scene04",
+      "kind": "champions-league",
+      "year": 2008,
+      "startSeconds": 16.15,
+      "absoluteSeconds": 72.15,
+      "count": 1,
+      "cumulativeCount": 1
+    },
+    {
+      "id": "scene04-s07-premier-league-2008-reveal",
+      "sceneId": "scene04",
+      "kind": "premier-league",
+      "year": 2008,
+      "startSeconds": 17.90683,
+      "absoluteSeconds": 73.90683,
+      "count": 1,
+      "cumulativeCount": 2
+    },
+    {
+      "id": "scene04-s08-ballon-dor-2008-reveal",
+      "sceneId": "scene04",
+      "kind": "ballon-dor",
+      "year": 2008,
+      "startSeconds": 19.98638,
+      "absoluteSeconds": 75.98638,
+      "count": 1,
+      "cumulativeCount": 3
+    },
+    {
+      "id": "scene04-s09-fifa-player-2008-reveal",
+      "sceneId": "scene04",
+      "kind": "fifa-player",
+      "year": 2008,
+      "startSeconds": 22.38408,
+      "absoluteSeconds": 78.38408,
+      "count": 1,
+      "cumulativeCount": 4
+    },
+    {
+      "id": "scene05-s02-champions-league-2014-reveal",
+      "sceneId": "scene05",
+      "kind": "champions-league",
+      "year": 2014,
+      "startSeconds": 3.52271,
+      "absoluteSeconds": 95.52271,
+      "count": 1,
+      "cumulativeCount": 5
+    },
+    {
+      "id": "scene05-s02-champions-league-2016-reveal",
+      "sceneId": "scene05",
+      "kind": "champions-league",
+      "year": 2016,
+      "startSeconds": 3.52271,
+      "absoluteSeconds": 95.52271,
+      "count": 1,
+      "cumulativeCount": 6
+    },
+    {
+      "id": "scene05-s02-champions-league-2017-reveal",
+      "sceneId": "scene05",
+      "kind": "champions-league",
+      "year": 2017,
+      "startSeconds": 3.52271,
+      "absoluteSeconds": 95.52271,
+      "count": 1,
+      "cumulativeCount": 7
+    },
+    {
+      "id": "scene05-s02-champions-league-2018-reveal",
+      "sceneId": "scene05",
+      "kind": "champions-league",
+      "year": 2018,
+      "startSeconds": 3.52271,
+      "absoluteSeconds": 95.52271,
+      "count": 1,
+      "cumulativeCount": 8
+    },
+    {
+      "id": "scene05-s03-champions-league-2014-focus",
+      "sceneId": "scene05",
+      "kind": "champions-league",
+      "year": 2014,
+      "startSeconds": 5.85229,
+      "absoluteSeconds": 97.85229,
+      "count": 0,
+      "cumulativeCount": 8
+    },
+    {
+      "id": "scene05-s04-champions-league-2016-focus",
+      "sceneId": "scene05",
+      "kind": "champions-league",
+      "year": 2016,
+      "startSeconds": 7.0,
+      "absoluteSeconds": 99.0,
+      "count": 0,
+      "cumulativeCount": 8
+    },
+    {
+      "id": "scene05-s05-champions-league-2017-focus",
+      "sceneId": "scene05",
+      "kind": "champions-league",
+      "year": 2017,
+      "startSeconds": 8.73862,
+      "absoluteSeconds": 100.73862,
+      "count": 0,
+      "cumulativeCount": 8
+    },
+    {
+      "id": "scene05-s06-champions-league-2018-focus",
+      "sceneId": "scene05",
+      "kind": "champions-league",
+      "year": 2018,
+      "startSeconds": 9.84092,
+      "absoluteSeconds": 101.84092,
+      "count": 0,
+      "cumulativeCount": 8
+    },
+    {
+      "id": "scene05-s10-ballon-dor-2013-reveal",
+      "sceneId": "scene05",
+      "kind": "ballon-dor",
+      "year": 2013,
+      "startSeconds": 29.15,
+      "absoluteSeconds": 121.15,
+      "count": 1,
+      "cumulativeCount": 9
+    },
+    {
+      "id": "scene05-s11-ballon-dor-2014-reveal",
+      "sceneId": "scene05",
+      "kind": "ballon-dor",
+      "year": 2014,
+      "startSeconds": 32.42954,
+      "absoluteSeconds": 124.42954,
+      "count": 1,
+      "cumulativeCount": 10
+    },
+    {
+      "id": "scene05-s12-ballon-dor-2016-reveal",
+      "sceneId": "scene05",
+      "kind": "ballon-dor",
+      "year": 2016,
+      "startSeconds": 33.57729,
+      "absoluteSeconds": 125.57729,
+      "count": 1,
+      "cumulativeCount": 11
+    },
+    {
+      "id": "scene05-s13-ballon-dor-2017-reveal",
+      "sceneId": "scene05",
+      "kind": "ballon-dor",
+      "year": 2017,
+      "startSeconds": 35.31592,
+      "absoluteSeconds": 127.31592,
+      "count": 1,
+      "cumulativeCount": 12
+    },
+    {
+      "id": "scene07-s01-euro-2016-reveal",
+      "sceneId": "scene07",
+      "kind": "euro",
+      "year": 2016,
+      "startSeconds": 1.01138,
+      "absoluteSeconds": 153.01138,
+      "count": 1,
+      "cumulativeCount": 13
+    },
+    {
+      "id": "scene07-s02-nations-league-2019-reveal",
+      "sceneId": "scene07",
+      "kind": "nations-league",
+      "year": 2019,
+      "startSeconds": 3.15454,
+      "absoluteSeconds": 155.15454,
+      "count": 1,
+      "cumulativeCount": 14
+    },
+    {
+      "id": "scene07-s03-nations-league-2025-reveal",
+      "sceneId": "scene07",
+      "kind": "nations-league",
+      "year": 2025,
+      "startSeconds": 5.79092,
+      "absoluteSeconds": 157.79092,
+      "count": 1,
+      "cumulativeCount": 15
+    }
+  ],
+  "yearEvents": [
+    {
+      "sceneId": "scene02",
+      "sentenceId": "scene02-s03",
+      "year": 1985,
+      "startSeconds": 9.19771,
+      "absoluteSeconds": 19.19771
+    },
+    {
+      "sceneId": "scene03",
+      "sentenceId": "scene03-s01",
+      "year": 2002,
+      "startSeconds": 2.47046,
+      "absoluteSeconds": 38.47046
+    },
+    {
+      "sceneId": "scene04",
+      "sentenceId": "scene04-s01",
+      "year": 2003,
+      "startSeconds": 1.83862,
+      "absoluteSeconds": 57.83862
+    },
+    {
+      "sceneId": "scene04",
+      "sentenceId": "scene04-s05",
+      "year": 2008,
+      "startSeconds": 14.9,
+      "absoluteSeconds": 70.9
+    },
+    {
+      "sceneId": "scene04",
+      "sentenceId": "scene04-s09",
+      "year": 2008,
+      "startSeconds": 21.58862,
+      "absoluteSeconds": 77.58862
+    },
+    {
+      "sceneId": "scene05",
+      "sentenceId": "scene05-s01",
+      "year": 2009,
+      "startSeconds": 1.62954,
+      "absoluteSeconds": 93.62954
+    },
+    {
+      "sceneId": "scene05",
+      "sentenceId": "scene05-s03",
+      "year": 2014,
+      "startSeconds": 5.85229,
+      "absoluteSeconds": 97.85229
+    },
+    {
+      "sceneId": "scene05",
+      "sentenceId": "scene05-s04",
+      "year": 2016,
+      "startSeconds": 7.0,
+      "absoluteSeconds": 99.0
+    },
+    {
+      "sceneId": "scene05",
+      "sentenceId": "scene05-s05",
+      "year": 2017,
+      "startSeconds": 8.73862,
+      "absoluteSeconds": 100.73862
+    },
+    {
+      "sceneId": "scene05",
+      "sentenceId": "scene05-s06",
+      "year": 2018,
+      "startSeconds": 9.84092,
+      "absoluteSeconds": 101.84092
+    },
+    {
+      "sceneId": "scene05",
+      "sentenceId": "scene05-s07",
+      "year": 2018,
+      "startSeconds": 20.08638,
+      "absoluteSeconds": 112.08638
+    },
+    {
+      "sceneId": "scene05",
+      "sentenceId": "scene05-s10",
+      "year": 2013,
+      "startSeconds": 30.69546,
+      "absoluteSeconds": 122.69546
+    },
+    {
+      "sceneId": "scene05",
+      "sentenceId": "scene05-s11",
+      "year": 2014,
+      "startSeconds": 32.42954,
+      "absoluteSeconds": 124.42954
+    },
+    {
+      "sceneId": "scene05",
+      "sentenceId": "scene05-s12",
+      "year": 2016,
+      "startSeconds": 33.57729,
+      "absoluteSeconds": 125.57729
+    },
+    {
+      "sceneId": "scene05",
+      "sentenceId": "scene05-s13",
+      "year": 2017,
+      "startSeconds": 35.31592,
+      "absoluteSeconds": 127.31592
+    },
+    {
+      "sceneId": "scene06",
+      "sentenceId": "scene06-s01",
+      "year": 2018,
+      "startSeconds": 1.76817,
+      "absoluteSeconds": 133.76817
+    },
+    {
+      "sceneId": "scene06",
+      "sentenceId": "scene06-s03",
+      "year": 2021,
+      "startSeconds": 7.79771,
+      "absoluteSeconds": 139.79771
+    },
+    {
+      "sceneId": "scene07",
+      "sentenceId": "scene07-s01",
+      "year": 2016,
+      "startSeconds": 1.43183,
+      "absoluteSeconds": 153.43183
+    },
+    {
+      "sceneId": "scene07",
+      "sentenceId": "scene07-s02",
+      "year": 2019,
+      "startSeconds": 4.10908,
+      "absoluteSeconds": 156.10908
+    },
+    {
+      "sceneId": "scene07",
+      "sentenceId": "scene07-s03",
+      "year": 2025,
+      "startSeconds": 6.74546,
+      "absoluteSeconds": 158.74546
+    },
+    {
+      "sceneId": "scene07",
+      "sentenceId": "scene07-s06",
+      "year": 2026,
+      "startSeconds": 15.65908,
+      "absoluteSeconds": 167.65908
+    }
+  ],
+  "actionEvents": [
+    {
+      "id": "scene01-s01",
+      "sceneId": "scene01",
+      "startSeconds": 1.9,
+      "absoluteSeconds": 1.9,
+      "action": "reaction",
+      "outfit": "portugal",
+      "props": [
+        "number-seven-shirt"
+      ],
+      "camera": "character-medium"
+    },
+    {
+      "id": "scene01-s02",
+      "sceneId": "scene01",
+      "startSeconds": 6.55454,
+      "absoluteSeconds": 6.55454,
+      "action": "run",
+      "outfit": "portugal",
+      "props": [
+        "ball"
+      ],
+      "camera": "tracking"
+    },
+    {
+      "id": "scene02-s01",
+      "sceneId": "scene02",
+      "startSeconds": 1.01138,
+      "absoluteSeconds": 11.01138,
+      "action": "dribble",
+      "outfit": "portugal",
+      "props": [
+        "ball",
+        "Madeira-street",
+        "sea"
+      ],
+      "camera": "tracking"
+    },
+    {
+      "id": "scene02-s02",
+      "sceneId": "scene02",
+      "startSeconds": 2.35796,
+      "absoluteSeconds": 12.35796,
+      "action": "reaction",
+      "outfit": "portugal",
+      "props": [
+        "ball",
+        "Madeira-street",
+        "sea"
+      ],
+      "camera": "character-medium"
+    },
+    {
+      "id": "scene02-s03",
+      "sceneId": "scene02",
+      "startSeconds": 9.19771,
+      "absoluteSeconds": 19.19771,
+      "action": "reaction",
+      "outfit": "portugal",
+      "props": [
+        "ball",
+        "year-card"
+      ],
+      "camera": "character-medium"
+    },
+    {
+      "id": "scene02-s04",
+      "sceneId": "scene02",
+      "startSeconds": 11.38638,
+      "absoluteSeconds": 21.38638,
+      "action": "dribble",
+      "outfit": "portugal",
+      "props": [
+        "ball",
+        "Madeira-street",
+        "sea"
+      ],
+      "camera": "tracking"
+    },
+    {
+      "id": "scene02-s05",
+      "sceneId": "scene02",
+      "startSeconds": 14.89771,
+      "absoluteSeconds": 24.89771,
+      "action": "training",
+      "outfit": "portugal",
+      "props": [
+        "ball"
+      ],
+      "camera": "tracking"
+    },
+    {
+      "id": "scene02-s06",
+      "sceneId": "scene02",
+      "startSeconds": 19.72729,
+      "absoluteSeconds": 29.72729,
+      "action": "run",
+      "outfit": "portugal",
+      "props": [
+        "ball"
+      ],
+      "camera": "tracking"
+    },
+    {
+      "id": "scene03-s01",
+      "sceneId": "scene03",
+      "startSeconds": 0.3,
+      "absoluteSeconds": 36.3,
+      "action": "training",
+      "outfit": "sporting",
+      "props": [
+        "ball",
+        "teammates",
+        "year-card"
+      ],
+      "camera": "tracking"
+    },
+    {
+      "id": "scene03-s02",
+      "sceneId": "scene03",
+      "startSeconds": 4.43183,
+      "absoluteSeconds": 40.43183,
+      "action": "training",
+      "outfit": "sporting",
+      "props": [
+        "ball",
+        "teammates"
+      ],
+      "camera": "tracking"
+    },
+    {
+      "id": "scene03-s03",
+      "sceneId": "scene03",
+      "startSeconds": 7.31817,
+      "absoluteSeconds": 43.31817,
+      "action": "training",
+      "outfit": "sporting",
+      "props": [
+        "ball",
+        "teammate"
+      ],
+      "camera": "tracking"
+    },
+    {
+      "id": "scene03-s04",
+      "sceneId": "scene03",
+      "startSeconds": 9.60229,
+      "absoluteSeconds": 45.60229,
+      "action": "run",
+      "outfit": "sporting",
+      "props": [
+        "ball",
+        "teammate"
+      ],
+      "camera": "tracking"
+    },
+    {
+      "id": "scene03-s05",
+      "sceneId": "scene03",
+      "startSeconds": 13.20454,
+      "absoluteSeconds": 49.20454,
+      "action": "training",
+      "outfit": "sporting",
+      "props": [
+        "ball",
+        "teammates",
+        "opponent"
+      ],
+      "camera": "tracking"
+    },
+    {
+      "id": "scene04-s01",
+      "sceneId": "scene04",
+      "startSeconds": 0.35,
+      "absoluteSeconds": 56.35,
+      "action": "run",
+      "outfit": "united",
+      "props": [
+        "Manchester-stadium",
+        "year-card"
+      ],
+      "camera": "tracking"
+    },
+    {
+      "id": "scene04-s02",
+      "sceneId": "scene04",
+      "startSeconds": 5.52729,
+      "absoluteSeconds": 61.52729,
+      "action": "shirt",
+      "outfit": "united",
+      "props": [
+        "number-seven-shirt"
+      ],
+      "camera": "character-medium"
+    },
+    {
+      "id": "scene04-s03",
+      "sceneId": "scene04",
+      "startSeconds": 7.45908,
+      "absoluteSeconds": 63.45908,
+      "action": "dribble",
+      "outfit": "united",
+      "props": [
+        "ball"
+      ],
+      "camera": "tracking"
+    },
+    {
+      "id": "scene04-s04",
+      "sceneId": "scene04",
+      "startSeconds": 10.33408,
+      "absoluteSeconds": 66.33408,
+      "action": "score",
+      "outfit": "united",
+      "props": [
+        "ball",
+        "goal"
+      ],
+      "camera": "tracking"
+    },
+    {
+      "id": "scene04-s05",
+      "sceneId": "scene04",
+      "startSeconds": 14.9,
+      "absoluteSeconds": 70.9,
+      "action": "celebrate",
+      "outfit": "united",
+      "props": [
+        "year-card"
+      ],
+      "camera": "character-medium"
+    },
+    {
+      "id": "scene04-s06",
+      "sceneId": "scene04",
+      "startSeconds": 16.15,
+      "absoluteSeconds": 72.15,
+      "action": "celebrate",
+      "outfit": "united",
+      "props": [
+        "champions-league"
+      ],
+      "camera": "trophy-push"
+    },
+    {
+      "id": "scene04-s07",
+      "sceneId": "scene04",
+      "startSeconds": 17.90683,
+      "absoluteSeconds": 73.90683,
+      "action": "celebrate",
+      "outfit": "united",
+      "props": [
+        "premier-league"
+      ],
+      "camera": "trophy-push"
+    },
+    {
+      "id": "scene04-s08",
+      "sceneId": "scene04",
+      "startSeconds": 19.98638,
+      "absoluteSeconds": 75.98638,
+      "action": "celebrate",
+      "outfit": "united",
+      "props": [
+        "ballon-dor"
+      ],
+      "camera": "trophy-push"
+    },
+    {
+      "id": "scene04-s09",
+      "sceneId": "scene04",
+      "startSeconds": 22.38408,
+      "absoluteSeconds": 78.38408,
+      "action": "celebrate",
+      "outfit": "united",
+      "props": [
+        "fifa-player"
+      ],
+      "camera": "trophy-push"
+    },
+    {
+      "id": "scene04-s10",
+      "sceneId": "scene04",
+      "startSeconds": 24.98638,
+      "absoluteSeconds": 80.98638,
+      "action": "celebrate",
+      "outfit": "united",
+      "props": [
+        "trophy-cabinet"
+      ],
+      "camera": "character-medium"
+    },
+    {
+      "id": "scene04-s11",
+      "sceneId": "scene04",
+      "startSeconds": 28.02046,
+      "absoluteSeconds": 84.02046,
+      "action": "lift",
+      "outfit": "united",
+      "props": [
+        "trophy",
+        "teammates",
+        "trophy-cabinet"
+      ],
+      "camera": "trophy-wide"
+    },
+    {
+      "id": "scene04-s12",
+      "sceneId": "scene04",
+      "startSeconds": 30.70229,
+      "absoluteSeconds": 86.70229,
+      "action": "reaction",
+      "outfit": "madrid",
+      "props": [
+        "Madrid-stadium"
+      ],
+      "camera": "character-medium"
+    },
+    {
+      "id": "scene05-s01",
+      "sceneId": "scene05",
+      "startSeconds": 0.3,
+      "absoluteSeconds": 92.3,
+      "action": "run",
+      "outfit": "madrid",
+      "props": [
+        "Madrid-stadium",
+        "year-card"
+      ],
+      "camera": "tracking"
+    },
+    {
+      "id": "scene05-s02",
+      "sceneId": "scene05",
+      "startSeconds": 3.52271,
+      "absoluteSeconds": 95.52271,
+      "action": "celebrate",
+      "outfit": "madrid",
+      "props": [
+        "champions-league",
+        "trophy-cabinet"
+      ],
+      "camera": "trophy-push"
+    },
+    {
+      "id": "scene05-s03",
+      "sceneId": "scene05",
+      "startSeconds": 5.85229,
+      "absoluteSeconds": 97.85229,
+      "action": "celebrate",
+      "outfit": "madrid",
+      "props": [
+        "champions-league",
+        "year-card"
+      ],
+      "camera": "trophy-push"
+    },
+    {
+      "id": "scene05-s04",
+      "sceneId": "scene05",
+      "startSeconds": 7.0,
+      "absoluteSeconds": 99.0,
+      "action": "celebrate",
+      "outfit": "madrid",
+      "props": [
+        "champions-league",
+        "year-card"
+      ],
+      "camera": "trophy-push"
+    },
+    {
+      "id": "scene05-s05",
+      "sceneId": "scene05",
+      "startSeconds": 8.73862,
+      "absoluteSeconds": 100.73862,
+      "action": "celebrate",
+      "outfit": "madrid",
+      "props": [
+        "champions-league",
+        "year-card"
+      ],
+      "camera": "trophy-push"
+    },
+    {
+      "id": "scene05-s06",
+      "sceneId": "scene05",
+      "startSeconds": 9.84092,
+      "absoluteSeconds": 101.84092,
+      "action": "celebrate",
+      "outfit": "madrid",
+      "props": [
+        "champions-league",
+        "year-card"
+      ],
+      "camera": "trophy-push"
+    },
+    {
+      "id": "scene05-s07",
+      "sceneId": "scene05",
+      "startSeconds": 20.08638,
+      "absoluteSeconds": 112.08638,
+      "action": "reaction",
+      "outfit": "madrid",
+      "props": [
+        "year-card"
+      ],
+      "camera": "character-medium"
+    },
+    {
+      "id": "scene05-s08",
+      "sceneId": "scene05",
+      "startSeconds": 23.03638,
+      "absoluteSeconds": 115.03638,
+      "action": "celebrate",
+      "outfit": "madrid",
+      "props": [
+        "applauding-supporters"
+      ],
+      "camera": "character-medium"
+    },
+    {
+      "id": "scene05-s09",
+      "sceneId": "scene05",
+      "startSeconds": 26.95683,
+      "absoluteSeconds": 118.95683,
+      "action": "reaction",
+      "outfit": "madrid",
+      "props": [
+        "supporters"
+      ],
+      "camera": "character-medium"
+    },
+    {
+      "id": "scene05-s10",
+      "sceneId": "scene05",
+      "startSeconds": 29.15,
+      "absoluteSeconds": 121.15,
+      "action": "celebrate",
+      "outfit": "madrid",
+      "props": [
+        "ballon-dor",
+        "trophy-cabinet",
+        "year-card"
+      ],
+      "camera": "trophy-push"
+    },
+    {
+      "id": "scene05-s11",
+      "sceneId": "scene05",
+      "startSeconds": 32.42954,
+      "absoluteSeconds": 124.42954,
+      "action": "celebrate",
+      "outfit": "madrid",
+      "props": [
+        "ballon-dor",
+        "year-card"
+      ],
+      "camera": "trophy-push"
+    },
+    {
+      "id": "scene05-s12",
+      "sceneId": "scene05",
+      "startSeconds": 33.57729,
+      "absoluteSeconds": 125.57729,
+      "action": "celebrate",
+      "outfit": "madrid",
+      "props": [
+        "ballon-dor",
+        "year-card"
+      ],
+      "camera": "trophy-push"
+    },
+    {
+      "id": "scene05-s13",
+      "sceneId": "scene05",
+      "startSeconds": 35.31592,
+      "absoluteSeconds": 127.31592,
+      "action": "celebrate",
+      "outfit": "madrid",
+      "props": [
+        "ballon-dor",
+        "year-card"
+      ],
+      "camera": "trophy-push"
+    },
+    {
+      "id": "scene05-s14",
+      "sceneId": "scene05",
+      "startSeconds": 36.45229,
+      "absoluteSeconds": 128.45229,
+      "action": "celebrate",
+      "outfit": "madrid",
+      "props": [
+        "trophy-cabinet"
+      ],
+      "camera": "trophy-wide"
+    },
+    {
+      "id": "scene06-s01",
+      "sceneId": "scene06",
+      "startSeconds": 0.2,
+      "absoluteSeconds": 132.2,
+      "action": "training",
+      "outfit": "juventus",
+      "props": [
+        "Turin-training-ground",
+        "ball",
+        "year-card"
+      ],
+      "camera": "tracking"
+    },
+    {
+      "id": "scene06-s02",
+      "sceneId": "scene06",
+      "startSeconds": 3.83183,
+      "absoluteSeconds": 135.83183,
+      "action": "reaction",
+      "outfit": "juventus",
+      "props": [
+        "dressing-room",
+        "teammates"
+      ],
+      "camera": "character-medium"
+    },
+    {
+      "id": "scene06-s03",
+      "sceneId": "scene06",
+      "startSeconds": 6.9,
+      "absoluteSeconds": 138.9,
+      "action": "run",
+      "outfit": "united",
+      "props": [
+        "Manchester-stadium",
+        "year-card"
+      ],
+      "camera": "tracking"
+    },
+    {
+      "id": "scene06-s04",
+      "sceneId": "scene06",
+      "startSeconds": 10.11138,
+      "absoluteSeconds": 142.11138,
+      "action": "shirt",
+      "outfit": "united",
+      "props": [
+        "number-seven-shirt"
+      ],
+      "camera": "character-medium"
+    },
+    {
+      "id": "scene06-s05",
+      "sceneId": "scene06",
+      "startSeconds": 13.67271,
+      "absoluteSeconds": 145.67271,
+      "action": "dribble",
+      "outfit": "alnassr",
+      "props": [
+        "Riyadh-stadium",
+        "ball"
+      ],
+      "camera": "tracking"
+    },
+    {
+      "id": "scene06-s06",
+      "sceneId": "scene06",
+      "startSeconds": 15.79317,
+      "absoluteSeconds": 147.79317,
+      "action": "reaction",
+      "outfit": "portugal",
+      "props": [
+        "number-seven-shirt"
+      ],
+      "camera": "character-medium"
+    },
+    {
+      "id": "scene07-s01",
+      "sceneId": "scene07",
+      "startSeconds": 1.01138,
+      "absoluteSeconds": 153.01138,
+      "action": "celebrate",
+      "outfit": "portugal",
+      "props": [
+        "euro",
+        "year-card",
+        "trophy-cabinet"
+      ],
+      "camera": "trophy-push"
+    },
+    {
+      "id": "scene07-s02",
+      "sceneId": "scene07",
+      "startSeconds": 3.15454,
+      "absoluteSeconds": 155.15454,
+      "action": "celebrate",
+      "outfit": "portugal",
+      "props": [
+        "nations-league",
+        "year-card",
+        "trophy-cabinet"
+      ],
+      "camera": "trophy-push"
+    },
+    {
+      "id": "scene07-s03",
+      "sceneId": "scene07",
+      "startSeconds": 5.79092,
+      "absoluteSeconds": 157.79092,
+      "action": "celebrate",
+      "outfit": "portugal",
+      "props": [
+        "nations-league",
+        "year-card",
+        "trophy-cabinet"
+      ],
+      "camera": "trophy-push"
+    },
+    {
+      "id": "scene07-s04",
+      "sceneId": "scene07",
+      "startSeconds": 8.80229,
+      "absoluteSeconds": 160.80229,
+      "action": "lift",
+      "outfit": "portugal",
+      "props": [
+        "euro",
+        "nations-league",
+        "teammates"
+      ],
+      "camera": "trophy-wide"
+    },
+    {
+      "id": "scene07-s05",
+      "sceneId": "scene07",
+      "startSeconds": 12.71138,
+      "absoluteSeconds": 164.71138,
+      "action": "score",
+      "outfit": "portugal",
+      "props": [
+        "ball",
+        "goal"
+      ],
+      "camera": "tracking"
+    },
+    {
+      "id": "scene07-s06",
+      "sceneId": "scene07",
+      "startSeconds": 18.0,
+      "absoluteSeconds": 170.0,
+      "action": "shirt",
+      "outfit": "portugal",
+      "props": [
+        "number-seven-shirt",
+        "year-card"
+      ],
+      "camera": "character-medium"
+    },
+    {
+      "id": "scene07-s07",
+      "sceneId": "scene07",
+      "startSeconds": 19.66592,
+      "absoluteSeconds": 171.66592,
+      "action": "reaction",
+      "outfit": "alnassr",
+      "props": [
+        "ball"
+      ],
+      "camera": "character-medium"
+    },
+    {
+      "id": "scene07-s08",
+      "sceneId": "scene07",
+      "startSeconds": 22.74546,
+      "absoluteSeconds": 174.74546,
+      "action": "shirt",
+      "outfit": "portugal",
+      "props": [
+        "number-seven-shirt",
+        "teammates",
+        "supporters"
+      ],
+      "camera": "character-medium"
+    },
+    {
+      "id": "scene08-s01",
+      "sceneId": "scene08",
+      "startSeconds": 0.44771,
+      "absoluteSeconds": 184.44771,
+      "action": "shirt",
+      "outfit": "portugal",
+      "props": [
+        "number-seven-shirt"
+      ],
+      "camera": "character-medium"
+    },
+    {
+      "id": "scene08-s02",
+      "sceneId": "scene08",
+      "startSeconds": 2.44317,
+      "absoluteSeconds": 186.44317,
+      "action": "reaction",
+      "outfit": "portugal",
+      "props": [
+        "number-seven-shirt"
+      ],
+      "camera": "character-medium"
+    },
+    {
+      "id": "scene08-s03",
+      "sceneId": "scene08",
+      "startSeconds": 5.28408,
+      "absoluteSeconds": 189.28408,
+      "action": "child-exit",
+      "outfit": "portugal",
+      "props": [
+        "ball"
+      ],
+      "camera": "tracking"
+    }
+  ],
+  "outfitEvents": [
+    {
+      "sceneId": "scene01",
+      "startSeconds": 0,
+      "absoluteSeconds": 0.0,
+      "outfit": "portugal",
+      "start_word": "Portugal's",
+      "subject": "lead"
+    },
+    {
+      "sceneId": "scene02",
+      "startSeconds": 0,
+      "absoluteSeconds": 10.0,
+      "outfit": "portugal",
+      "start_word": "Madeira",
+      "subject": "lead"
+    },
+    {
+      "sceneId": "scene03",
+      "startSeconds": 0,
+      "absoluteSeconds": 36.0,
+      "outfit": "sporting",
+      "start_word": "Sporting",
+      "subject": "lead"
+    },
+    {
+      "sceneId": "scene04",
+      "startSeconds": 0,
+      "absoluteSeconds": 56.0,
+      "outfit": "united",
+      "start_word": "Manchester",
+      "subject": "lead"
+    },
+    {
+      "sceneId": "scene04",
+      "startSeconds": 30.70229,
+      "absoluteSeconds": 86.70229,
+      "outfit": "madrid",
+      "start_word": "Madrid",
+      "subject": "lead"
+    },
+    {
+      "sceneId": "scene05",
+      "startSeconds": 0,
+      "absoluteSeconds": 92.0,
+      "outfit": "madrid",
+      "start_word": "Madrid",
+      "subject": "lead"
+    },
+    {
+      "sceneId": "scene06",
+      "startSeconds": 0,
+      "absoluteSeconds": 132.0,
+      "outfit": "juventus",
+      "start_word": "Juventus",
+      "subject": "lead"
+    },
+    {
+      "sceneId": "scene06",
+      "startSeconds": 6.9,
+      "absoluteSeconds": 138.9,
+      "outfit": "united",
+      "start_word": "United",
+      "subject": "lead"
+    },
+    {
+      "sceneId": "scene06",
+      "startSeconds": 13.67271,
+      "absoluteSeconds": 145.67271,
+      "outfit": "alnassr",
+      "start_word": "Al",
+      "subject": "lead"
+    },
+    {
+      "sceneId": "scene06",
+      "startSeconds": 15.79317,
+      "absoluteSeconds": 147.79317,
+      "outfit": "portugal",
+      "start_word": "Portugal's",
+      "subject": "lead"
+    },
+    {
+      "sceneId": "scene07",
+      "startSeconds": 0,
+      "absoluteSeconds": 152.0,
+      "outfit": "portugal",
+      "start_word": "Euro",
+      "subject": "lead"
+    },
+    {
+      "sceneId": "scene07",
+      "startSeconds": 19.66592,
+      "absoluteSeconds": 171.66592,
+      "outfit": "alnassr",
+      "start_word": "club",
+      "subject": "lead"
+    },
+    {
+      "sceneId": "scene07",
+      "startSeconds": 22.74546,
+      "absoluteSeconds": 174.74546,
+      "outfit": "portugal",
+      "start_word": "shirt",
+      "subject": "lead"
+    },
+    {
+      "sceneId": "scene08",
+      "startSeconds": 0,
+      "absoluteSeconds": 184.0,
+      "outfit": "portugal",
+      "start_word": "shirt",
+      "subject": "lead"
+    }
+  ],
+  "voiceFiles": [
+    {
+      "sceneId": "scene01",
+      "audio": "voice/scene01.mp3",
+      "audioSha256": "35a3f1d33166275e5875eceb9e2148cc2ae2037dae21508c30d269100c6f841f",
+      "nativeBoundaryCount": 16,
+      "timingSource": "Actual native WordBoundary timings offset into scene; no atempo"
+    },
+    {
+      "sceneId": "scene02",
+      "audio": "voice/scene02.mp3",
+      "audioSha256": "3fb596a098df65c71a18c1ca6a3fd98669bd4804c0df1720146f6c9d97cbe544",
+      "nativeBoundaryCount": 40,
+      "timingSource": "Actual native WordBoundary timings offset into scene; no atempo"
+    },
+    {
+      "sceneId": "scene03",
+      "audio": "voice/scene03.mp3",
+      "audioSha256": "5336416a5b02f1323079588b84f86a75f07cc33cbdb76fdfe67a9f6c21a5ef7d",
+      "nativeBoundaryCount": 47,
+      "timingSource": "Actual native WordBoundary timings offset into scene; no atempo"
+    },
+    {
+      "sceneId": "scene04",
+      "audio": "voice/scene04.mp3",
+      "audioSha256": "9d652e487002c55ef72e6b30d2e192d7dd598e9f66ec6147408f914ea0397809",
+      "nativeBoundaryCount": 67,
+      "timingSource": "Actual native WordBoundary timings offset into scene; no atempo"
+    },
+    {
+      "sceneId": "scene05",
+      "audio": "voice/scene05.mp3",
+      "audioSha256": "527d500b928a5a48458134ca8ed4b6cc49b1cc593d361dceff1673186fa06119",
+      "nativeBoundaryCount": 51,
+      "timingSource": "Actual native WordBoundary timings offset into scene; no atempo"
+    },
+    {
+      "sceneId": "scene06",
+      "audio": "voice/scene06.mp3",
+      "audioSha256": "0b1189c35f13a895c886862e5f35a26bfb4ac7cae590da3d7327c7158418c26a",
+      "nativeBoundaryCount": 36,
+      "timingSource": "Actual native WordBoundary timings offset into scene; no atempo"
+    },
+    {
+      "sceneId": "scene07",
+      "audio": "voice/scene07.mp3",
+      "audioSha256": "208c402facd857178f51f4042f60b048f004dce25ad96274470ef2e69c99d0d2",
+      "nativeBoundaryCount": 52,
+      "timingSource": "Actual native WordBoundary timings offset into scene; no atempo"
+    },
+    {
+      "sceneId": "scene08",
+      "audio": "voice/scene08.mp3",
+      "audioSha256": "af8c6323a8af30461e131b2fff4af9ae1f6cc091c3188bb0a67e1de78c6d885a",
+      "nativeBoundaryCount": 20,
+      "timingSource": "Actual native WordBoundary timings offset into scene; no atempo"
+    }
+  ],
+  "narrationFingerprint": "b8d0af1efd1cbae8e9aa8c6221f05612c734939f29bd5e46f8affb50f91c652f",
+  "maxSyncDeltaSeconds": 0.032587,
+  "checks": {
+    "allAudioHashesMatch": true,
+    "allNarrationMatchesNativeBoundaries": true,
+    "allSentenceKeysResolved": true,
+    "allVisualStartsWithin300ms": true
+  },
+  "audioSha256": {
+    "scene01": "35a3f1d33166275e5875eceb9e2148cc2ae2037dae21508c30d269100c6f841f",
+    "scene02": "3fb596a098df65c71a18c1ca6a3fd98669bd4804c0df1720146f6c9d97cbe544",
+    "scene03": "5336416a5b02f1323079588b84f86a75f07cc33cbdb76fdfe67a9f6c21a5ef7d",
+    "scene04": "9d652e487002c55ef72e6b30d2e192d7dd598e9f66ec6147408f914ea0397809",
+    "scene05": "527d500b928a5a48458134ca8ed4b6cc49b1cc593d361dceff1673186fa06119",
+    "scene06": "0b1189c35f13a895c886862e5f35a26bfb4ac7cae590da3d7327c7158418c26a",
+    "scene07": "208c402facd857178f51f4042f60b048f004dce25ad96274470ef2e69c99d0d2",
+    "scene08": "af8c6323a8af30461e131b2fff4af9ae1f6cc091c3188bb0a67e1de78c6d885a"
+  }
+}

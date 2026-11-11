@@ -1,6 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import {AbsoluteFill, cancelRender, continueRender, delayRender, interpolate, Sequence,
   staticFile, useCurrentFrame, useVideoConfig} from 'remotion';
+import {SyncedScene} from './scenes/SyncedScene';
+import {yearAt} from './animation/sync';
 import {FrameContext} from './components/FrameAudit';
 import {AudioMix} from './components/AudioMix';
 import {Subtitles} from './components/Subtitles';
@@ -34,6 +36,7 @@ const SceneOverlay: React.FC<{index: number; duration: number; scene: TimedScene
   const seconds = frame / fps;
   const length = duration / fps;
   const s = width / 1920;
+  const year = yearAt(scene.id, seconds);
   const labelStart = .3;
   const opacity = index === 0 || index === 7 ? 0 : interpolate(seconds,
     [labelStart, labelStart + .15, labelStart + 1.85, labelStart + 2], [0, 1, 1, 0], clamp);
@@ -48,6 +51,10 @@ const SceneOverlay: React.FC<{index: number; duration: number; scene: TimedScene
       color: '#fff7e9', fontSize: 24 * s, letterSpacing: .4 * s}}>
       Animated tribute, not real footage
     </div>}
+    {year && <div data-visual-year={year.year} style={{position: 'absolute', right: 100 * s, top: 185 * s,
+      color: '#ffe1a0', fontWeight: 900, fontSize: 92 * s,
+      transform: `scale(${.88 + .12 * Math.min(1, (seconds - year.startSeconds) / .18)})`,
+      textShadow: '0 3px 16px #08131b', borderBottom: `${3 * s}px solid #caa66b`}}>{year.year}</div>}
     <Subtitles scene={scene} />
   </>;
 };
@@ -100,7 +107,7 @@ export const Documentary: React.FC<{audioOnly?: boolean}> = ({audioOnly = false}
       const duration = Math.round(scene.durationInFrames / timing.fps * fps);
       return <Sequence key={scene.id} from={Math.round(scene.from / timing.fps * fps)} durationInFrames={duration}>
         <FrameContext.Provider value={{sceneId: scene.id, fromSeconds: scene.from / timing.fps}}>
-          <Scene durationInFrames={duration} />
+          <SyncedScene sceneId={scene.id}><Scene durationInFrames={duration} /></SyncedScene>
         </FrameContext.Provider>
       </Sequence>;
     })}

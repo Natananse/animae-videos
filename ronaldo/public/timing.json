@@ -149,154 +149,164 @@
           "endMs": 9027.25
         },
         {
-          "text": "in 1985",
+          "text": "in",
           "startMs": 9038.62,
-          "endMs": 10379.54
+          "endMs": 9186.33
+        },
+        {
+          "text": "nineteen",
+          "startMs": 9197.71,
+          "endMs": 9618.17
+        },
+        {
+          "text": "eighty-five",
+          "startMs": 9629.54,
+          "endMs": 10322.71
         },
         {
           "text": "This",
-          "startMs": 11159.08,
-          "endMs": 11431.79
+          "startMs": 11102.29,
+          "endMs": 11375.0
         },
         {
           "text": "island",
-          "startMs": 11443.17,
-          "endMs": 11795.46
+          "startMs": 11386.38,
+          "endMs": 11738.67
         },
         {
           "text": "was",
-          "startMs": 11806.83,
-          "endMs": 11943.21
+          "startMs": 11750.0,
+          "endMs": 11886.38
         },
         {
           "text": "the",
-          "startMs": 11954.54,
-          "endMs": 12034.08
+          "startMs": 11897.71,
+          "endMs": 11977.25
         },
         {
           "text": "beginning",
-          "startMs": 12045.46,
-          "endMs": 12386.37
+          "startMs": 11988.62,
+          "endMs": 12329.54
         },
         {
           "text": "of",
-          "startMs": 12397.71,
-          "endMs": 12465.87
+          "startMs": 12340.92,
+          "endMs": 12409.08
         },
         {
           "text": "a",
-          "startMs": 12477.29,
-          "endMs": 12522.75
+          "startMs": 12420.46,
+          "endMs": 12465.92
         },
         {
           "text": "very",
-          "startMs": 12534.08,
-          "endMs": 12840.92
+          "startMs": 12477.29,
+          "endMs": 12784.12
         },
         {
           "text": "different",
-          "startMs": 12852.29,
-          "endMs": 13204.58
+          "startMs": 12795.46,
+          "endMs": 13147.75
         },
         {
           "text": "life",
-          "startMs": 13215.92,
-          "endMs": 13636.37
+          "startMs": 13159.08,
+          "endMs": 13579.54
         },
         {
           "text": "Its",
-          "startMs": 14420.46,
-          "endMs": 14647.75
+          "startMs": 14363.62,
+          "endMs": 14590.92
         },
         {
           "text": "small",
-          "startMs": 14659.08,
-          "endMs": 14943.17
+          "startMs": 14602.29,
+          "endMs": 14886.37
         },
         {
           "text": "disappointments",
-          "startMs": 14954.54,
-          "endMs": 15590.92
+          "startMs": 14897.71,
+          "endMs": 15534.08
         },
         {
           "text": "and",
-          "startMs": 15602.29,
-          "endMs": 15704.58
+          "startMs": 15545.46,
+          "endMs": 15647.75
         },
         {
           "text": "victories",
-          "startMs": 15715.92,
-          "endMs": 16170.46
+          "startMs": 15659.08,
+          "endMs": 16113.62
         },
         {
           "text": "belong",
-          "startMs": 16181.83,
-          "endMs": 16500.0
+          "startMs": 16125.0,
+          "endMs": 16443.17
         },
         {
           "text": "to",
-          "startMs": 16511.38,
-          "endMs": 16602.29
+          "startMs": 16454.54,
+          "endMs": 16545.46
         },
         {
           "text": "childhood",
-          "startMs": 16613.62,
-          "endMs": 17250.0
+          "startMs": 16556.83,
+          "endMs": 17193.21
         },
         {
           "text": "Nobody",
-          "startMs": 18034.08,
-          "endMs": 18477.25
+          "startMs": 17977.29,
+          "endMs": 18420.46
         },
         {
           "text": "in",
-          "startMs": 18488.62,
-          "endMs": 18590.92
+          "startMs": 18431.83,
+          "endMs": 18534.12
         },
         {
           "text": "this",
-          "startMs": 18602.29,
-          "endMs": 18750.0
+          "startMs": 18545.46,
+          "endMs": 18693.17
         },
         {
           "text": "scene",
-          "startMs": 18761.38,
-          "endMs": 18965.92
+          "startMs": 18704.54,
+          "endMs": 18909.08
         },
         {
           "text": "knows",
-          "startMs": 18977.29,
-          "endMs": 19261.37
+          "startMs": 18920.46,
+          "endMs": 19204.54
         },
         {
           "text": "how",
-          "startMs": 19272.71,
-          "endMs": 19454.54
+          "startMs": 19215.92,
+          "endMs": 19397.75
         },
         {
           "text": "far",
-          "startMs": 19465.92,
-          "endMs": 19659.08
+          "startMs": 19409.08,
+          "endMs": 19602.25
         },
         {
           "text": "the",
-          "startMs": 19670.46,
-          "endMs": 19772.75
+          "startMs": 19613.62,
+          "endMs": 19715.92
         },
         {
           "text": "boy",
-          "startMs": 19784.08,
-          "endMs": 19977.25
+          "startMs": 19727.29,
+          "endMs": 19920.46
         },
         {
           "text": "will",
-          "startMs": 19988.62,
-          "endMs": 20136.33
+          "startMs": 19931.83,
+          "endMs": 20079.54
         },
         {
           "text": "travel",
-          "startMs": 20147.71,
-          "endMs": 20590.87
+          "startMs": 20090.92,
+          "endMs": 20534.08
         }
       ],
       "speechRanges": [
@@ -306,7 +316,7 @@
         },
         {
           "start": 7.2,
-          "end": 21.384
+          "end": 21.336
         }
       ]
     },
@@ -353,8 +363,28 @@
           "endMs": 2334.08
         },
         {
-          "text": "in 2002",
+          "text": "in",
           "startMs": 2345.46,
+          "endMs": 2459.08
+        },
+        {
+          "text": "two",
+          "startMs": 2470.46,
+          "endMs": 2652.29
+        },
+        {
+          "text": "thousand",
+          "startMs": 2663.62,
+          "endMs": 3038.62
+        },
+        {
+          "text": "and",
+          "startMs": 3050.0,
+          "endMs": 3129.54
+        },
+        {
+          "text": "two",
+          "startMs": 3140.92,
           "endMs": 3493.21
         },
         {
@@ -548,394 +578,349 @@
       "voiceDuration": 35.925,
       "words": [
         {
-          "text": "United",
+          "text": "Manchester",
           "startMs": 350.0,
-          "endMs": 861.38
+          "endMs": 804.54
+        },
+        {
+          "text": "United",
+          "startMs": 815.92,
+          "endMs": 1247.75
         },
         {
           "text": "signed",
-          "startMs": 872.71,
-          "endMs": 1156.79
+          "startMs": 1259.08,
+          "endMs": 1543.17
         },
         {
           "text": "him",
-          "startMs": 1168.17,
-          "endMs": 1315.87
-        },
-        {
-          "text": "in 2003",
-          "startMs": 1327.29,
-          "endMs": 2565.92
-        },
-        {
-          "text": "A",
-          "startMs": 3345.46,
-          "endMs": 3481.83
-        },
-        {
-          "text": "teenager",
-          "startMs": 3493.17,
-          "endMs": 3981.79
-        },
-        {
-          "text": "inherited",
-          "startMs": 3993.17,
-          "endMs": 4447.71
-        },
-        {
-          "text": "the",
-          "startMs": 4459.08,
-          "endMs": 4527.25
-        },
-        {
-          "text": "number",
-          "startMs": 4538.62,
-          "endMs": 4777.25
-        },
-        {
-          "text": "seven",
-          "startMs": 4788.62,
-          "endMs": 5072.71
-        },
-        {
-          "text": "shirt",
-          "startMs": 5084.08,
-          "endMs": 5447.71
-        },
-        {
-          "text": "carrying",
-          "startMs": 5618.17,
-          "endMs": 6015.87
-        },
-        {
-          "text": "expectations",
-          "startMs": 6027.29,
-          "endMs": 6720.46
-        },
-        {
-          "text": "before",
-          "startMs": 6731.83,
-          "endMs": 7038.67
-        },
-        {
-          "text": "he",
-          "startMs": 7050.0,
-          "endMs": 7186.38
-        },
-        {
-          "text": "had",
-          "startMs": 7197.71,
-          "endMs": 7356.79
-        },
-        {
-          "text": "earned",
-          "startMs": 7368.17,
-          "endMs": 7550.0
-        },
-        {
-          "text": "his",
-          "startMs": 7561.38,
-          "endMs": 7709.08
-        },
-        {
-          "text": "own",
-          "startMs": 7720.46,
-          "endMs": 7879.54
-        },
-        {
-          "text": "place",
-          "startMs": 7890.92,
-          "endMs": 8163.62
+          "startMs": 1554.54,
+          "endMs": 1702.25
         },
         {
           "text": "in",
-          "startMs": 8175.0,
-          "endMs": 8231.83
+          "startMs": 1713.62,
+          "endMs": 1827.25
+        },
+        {
+          "text": "two",
+          "startMs": 1838.62,
+          "endMs": 2009.08
+        },
+        {
+          "text": "thousand",
+          "startMs": 2020.46,
+          "endMs": 2384.08
+        },
+        {
+          "text": "and",
+          "startMs": 2395.46,
+          "endMs": 2486.37
+        },
+        {
+          "text": "three",
+          "startMs": 2497.71,
+          "endMs": 2918.17
+        },
+        {
+          "text": "A",
+          "startMs": 3697.71,
+          "endMs": 3834.08
+        },
+        {
+          "text": "teenager",
+          "startMs": 3845.46,
+          "endMs": 4368.17
+        },
+        {
+          "text": "inherited",
+          "startMs": 4379.54,
+          "endMs": 4856.83
         },
         {
           "text": "the",
-          "startMs": 8243.17,
-          "endMs": 8311.33
+          "startMs": 4868.17,
+          "endMs": 4936.33
         },
         {
-          "text": "club's",
-          "startMs": 8322.71,
-          "endMs": 8629.54
+          "text": "number",
+          "startMs": 4947.71,
+          "endMs": 5197.71
         },
         {
-          "text": "history",
-          "startMs": 8640.92,
-          "endMs": 9072.75
+          "text": "seven",
+          "startMs": 5209.08,
+          "endMs": 5515.92
+        },
+        {
+          "text": "shirt",
+          "startMs": 5527.29,
+          "endMs": 5947.75
         },
         {
           "text": "He",
-          "startMs": 9856.83,
-          "endMs": 10038.67
+          "startMs": 6731.83,
+          "endMs": 6913.67
         },
         {
           "text": "arrived",
-          "startMs": 10050.0,
-          "endMs": 10436.38
+          "startMs": 6925.0,
+          "endMs": 7311.38
         },
         {
           "text": "as",
-          "startMs": 10447.71,
-          "endMs": 10515.87
+          "startMs": 7322.71,
+          "endMs": 7390.87
         },
         {
           "text": "a",
-          "startMs": 10527.29,
-          "endMs": 10572.75
+          "startMs": 7402.29,
+          "endMs": 7447.75
         },
         {
           "text": "winger",
-          "startMs": 10584.08,
-          "endMs": 10947.71
+          "startMs": 7459.08,
+          "endMs": 7822.71
         },
         {
           "text": "full",
-          "startMs": 11140.92,
-          "endMs": 11300.0
+          "startMs": 8015.92,
+          "endMs": 8175.0
         },
         {
           "text": "of",
-          "startMs": 11311.38,
-          "endMs": 11379.54
+          "startMs": 8186.38,
+          "endMs": 8254.54
         },
         {
           "text": "speed",
-          "startMs": 11390.92,
-          "endMs": 11754.54
+          "startMs": 8265.92,
+          "endMs": 8629.54
         },
         {
           "text": "and",
-          "startMs": 11765.92,
-          "endMs": 11856.83
+          "startMs": 8640.92,
+          "endMs": 8731.83
         },
         {
           "text": "invention",
-          "startMs": 11868.17,
-          "endMs": 12436.33
-        },
-        {
-          "text": "Over",
-          "startMs": 17100.0,
-          "endMs": 17361.38
-        },
-        {
-          "text": "the",
-          "startMs": 17372.71,
-          "endMs": 17452.25
-        },
-        {
-          "text": "following",
-          "startMs": 17463.62,
-          "endMs": 17793.17
-        },
-        {
-          "text": "seasons",
-          "startMs": 17804.54,
-          "endMs": 18315.92
-        },
-        {
-          "text": "the",
-          "startMs": 18509.08,
-          "endMs": 18600.0
-        },
-        {
-          "text": "goals",
-          "startMs": 18611.38,
-          "endMs": 18918.21
-        },
-        {
-          "text": "became",
-          "startMs": 18929.54,
-          "endMs": 19259.08
-        },
-        {
-          "text": "as",
-          "startMs": 19270.46,
-          "endMs": 19350.0
-        },
-        {
-          "text": "important",
-          "startMs": 19361.38,
-          "endMs": 19838.67
-        },
-        {
-          "text": "as",
-          "startMs": 19850.0,
-          "endMs": 19929.54
-        },
-        {
-          "text": "the",
-          "startMs": 19940.92,
-          "endMs": 20009.08
-        },
-        {
-          "text": "tricks",
-          "startMs": 20020.46,
-          "endMs": 20452.29
-        },
-        {
-          "text": "In 2008",
-          "startMs": 21231.83,
-          "endMs": 22265.92
-        },
-        {
-          "text": "United",
-          "startMs": 22447.71,
-          "endMs": 22845.42
-        },
-        {
-          "text": "won",
-          "startMs": 22856.83,
-          "endMs": 23050.0
-        },
-        {
-          "text": "the",
-          "startMs": 23061.38,
-          "endMs": 23129.54
-        },
-        {
-          "text": "Champions",
-          "startMs": 23140.92,
-          "endMs": 23606.83
-        },
-        {
-          "text": "League",
-          "startMs": 23618.17,
-          "endMs": 23845.46
-        },
-        {
-          "text": "and",
-          "startMs": 23856.83,
-          "endMs": 23947.75
-        },
-        {
-          "text": "Ronaldo",
-          "startMs": 23959.08,
-          "endMs": 24436.37
-        },
-        {
-          "text": "received",
-          "startMs": 24447.71,
-          "endMs": 24856.79
-        },
-        {
-          "text": "his",
-          "startMs": 24868.17,
-          "endMs": 25004.54
-        },
-        {
-          "text": "first",
-          "startMs": 25015.92,
-          "endMs": 25345.46
-        },
-        {
-          "text": "Ballon",
-          "startMs": 25356.83,
-          "endMs": 25629.54
-        },
-        {
-          "text": "d'Or",
-          "startMs": 25640.92,
-          "endMs": 26004.54
-        },
-        {
-          "text": "Teammates",
-          "startMs": 26788.62,
-          "endMs": 27265.92
-        },
-        {
-          "text": "had",
-          "startMs": 27277.29,
-          "endMs": 27390.92
-        },
-        {
-          "text": "helped",
-          "startMs": 27402.29,
-          "endMs": 27686.37
-        },
-        {
-          "text": "turn",
-          "startMs": 27697.71,
-          "endMs": 27913.62
-        },
-        {
-          "text": "an",
-          "startMs": 27925.0,
-          "endMs": 28004.54
-        },
-        {
-          "text": "individual",
-          "startMs": 28015.92,
-          "endMs": 28515.92
-        },
-        {
-          "text": "talent",
-          "startMs": 28527.29,
-          "endMs": 28845.46
-        },
-        {
-          "text": "into",
-          "startMs": 28856.83,
-          "endMs": 29129.54
-        },
-        {
-          "text": "a",
-          "startMs": 29140.92,
-          "endMs": 29197.75
-        },
-        {
-          "text": "champion",
-          "startMs": 29209.08,
-          "endMs": 29709.08
+          "startMs": 8743.17,
+          "endMs": 9311.33
         },
         {
           "text": "His",
-          "startMs": 30493.17,
-          "endMs": 30720.46
+          "startMs": 10095.46,
+          "endMs": 10322.75
         },
         {
-          "text": "next",
-          "startMs": 30731.83,
-          "endMs": 31015.92
+          "text": "goals",
+          "startMs": 10334.08,
+          "endMs": 10652.25
         },
         {
-          "text": "move",
-          "startMs": 31027.29,
-          "endMs": 31277.29
+          "text": "soon",
+          "startMs": 10663.62,
+          "endMs": 10902.25
         },
         {
-          "text": "took",
-          "startMs": 31288.62,
-          "endMs": 31459.08
+          "text": "matched",
+          "startMs": 10913.62,
+          "endMs": 11175.0
         },
         {
-          "text": "him",
-          "startMs": 31470.46,
-          "endMs": 31595.46
+          "text": "his",
+          "startMs": 11186.38,
+          "endMs": 11334.08
         },
         {
-          "text": "to",
-          "startMs": 31606.83,
-          "endMs": 31686.37
+          "text": "tricks",
+          "startMs": 11345.46,
+          "endMs": 11777.29
+        },
+        {
+          "text": "2008",
+          "startMs": 14900.0,
+          "endMs": 15865.92
+        },
+        {
+          "text": "The",
+          "startMs": 16070.46,
+          "endMs": 16138.62
+        },
+        {
+          "text": "Champions",
+          "startMs": 16150.0,
+          "endMs": 16615.92
+        },
+        {
+          "text": "League",
+          "startMs": 16627.29,
+          "endMs": 16979.58
+        },
+        {
+          "text": "The",
+          "startMs": 17759.08,
+          "endMs": 17895.46
+        },
+        {
+          "text": "Premier",
+          "startMs": 17906.83,
+          "endMs": 18247.75
+        },
+        {
+          "text": "League",
+          "startMs": 18259.08,
+          "endMs": 18622.71
+        },
+        {
+          "text": "His",
+          "startMs": 19406.83,
+          "endMs": 19622.75
+        },
+        {
+          "text": "first",
+          "startMs": 19634.08,
+          "endMs": 19975.0
+        },
+        {
+          "text": "Ballon",
+          "startMs": 19986.38,
+          "endMs": 20293.21
+        },
+        {
+          "text": "d'Or",
+          "startMs": 20304.54,
+          "endMs": 20656.83
+        },
+        {
+          "text": "The",
+          "startMs": 21440.92,
+          "endMs": 21577.29
+        },
+        {
+          "text": "2008",
+          "startMs": 21588.62,
+          "endMs": 22372.71
+        },
+        {
+          "text": "FIFA",
+          "startMs": 22384.08,
+          "endMs": 22679.54
+        },
+        {
+          "text": "World",
+          "startMs": 22690.92,
+          "endMs": 22997.75
+        },
+        {
+          "text": "Player",
+          "startMs": 23009.08,
+          "endMs": 23281.79
+        },
+        {
+          "text": "of",
+          "startMs": 23293.17,
+          "endMs": 23361.33
+        },
+        {
+          "text": "the",
+          "startMs": 23372.71,
+          "endMs": 23452.25
+        },
+        {
+          "text": "Year",
+          "startMs": 23463.62,
+          "endMs": 23725.0
+        },
+        {
+          "text": "award",
+          "startMs": 23736.38,
+          "endMs": 24202.29
+        },
+        {
+          "text": "Four",
+          "startMs": 24986.38,
+          "endMs": 25156.83
+        },
+        {
+          "text": "prizes",
+          "startMs": 25168.17,
+          "endMs": 25713.62
+        },
+        {
+          "text": "one",
+          "startMs": 25884.08,
+          "endMs": 26100.0
+        },
+        {
+          "text": "remarkable",
+          "startMs": 26111.38,
+          "endMs": 26634.08
+        },
+        {
+          "text": "year",
+          "startMs": 26645.46,
+          "endMs": 27054.54
+        },
+        {
+          "text": "He",
+          "startMs": 27838.62,
+          "endMs": 28009.08
+        },
+        {
+          "text": "lifts",
+          "startMs": 28020.46,
+          "endMs": 28281.83
+        },
+        {
+          "text": "a",
+          "startMs": 28293.17,
+          "endMs": 28350.0
+        },
+        {
+          "text": "trophy",
+          "startMs": 28361.38,
+          "endMs": 28736.38
+        },
+        {
+          "text": "with",
+          "startMs": 28747.71,
+          "endMs": 28872.71
+        },
+        {
+          "text": "his",
+          "startMs": 28884.08,
+          "endMs": 29020.46
+        },
+        {
+          "text": "teammates",
+          "startMs": 29031.83,
+          "endMs": 29668.21
+        },
+        {
+          "text": "Then",
+          "startMs": 30452.29,
+          "endMs": 30690.92
         },
         {
           "text": "Madrid",
-          "startMs": 31697.71,
-          "endMs": 32175.0
+          "startMs": 30702.29,
+          "endMs": 31031.83
+        },
+        {
+          "text": "called",
+          "startMs": 31043.17,
+          "endMs": 31543.17
         }
       ],
       "speechRanges": [
         {
           "start": 0.25,
-          "end": 13.234
+          "end": 12.562
         },
         {
-          "start": 17.0,
-          "end": 32.96
+          "start": 14.8,
+          "end": 32.32
         }
       ]
     },
@@ -947,364 +932,273 @@
       "voiceDuration": 39.925,
       "words": [
         {
-          "text": "Real",
-          "startMs": 300.0,
-          "endMs": 743.17
-        },
-        {
           "text": "Madrid",
-          "startMs": 754.54,
-          "endMs": 1106.83
+          "startMs": 300.0,
+          "endMs": 709.08
         },
         {
           "text": "brought",
-          "startMs": 1118.17,
-          "endMs": 1334.08
+          "startMs": 720.46,
+          "endMs": 925.0
         },
         {
           "text": "him",
-          "startMs": 1345.46,
-          "endMs": 1459.08
+          "startMs": 936.38,
+          "endMs": 1050.0
         },
         {
           "text": "to",
-          "startMs": 1470.46,
-          "endMs": 1538.62
+          "startMs": 1061.38,
+          "endMs": 1152.29
         },
         {
           "text": "Spain",
-          "startMs": 1550.0,
-          "endMs": 1879.54
+          "startMs": 1163.62,
+          "endMs": 1470.46
         },
         {
-          "text": "in 2009",
-          "startMs": 1890.92,
-          "endMs": 3140.87
+          "text": "in",
+          "startMs": 1481.83,
+          "endMs": 1618.21
         },
         {
-          "text": "In",
-          "startMs": 3920.46,
-          "endMs": 4113.62
+          "text": "two",
+          "startMs": 1629.54,
+          "endMs": 1822.71
         },
         {
-          "text": "white",
-          "startMs": 4125.0,
-          "endMs": 4465.92
-        },
-        {
-          "text": "he",
-          "startMs": 4568.17,
-          "endMs": 4647.71
-        },
-        {
-          "text": "became",
-          "startMs": 4659.08,
-          "endMs": 4965.92
-        },
-        {
-          "text": "the",
-          "startMs": 4977.29,
-          "endMs": 5045.46
-        },
-        {
-          "text": "club's",
-          "startMs": 5056.83,
-          "endMs": 5397.75
-        },
-        {
-          "text": "record",
-          "startMs": 5409.08,
-          "endMs": 5818.17
-        },
-        {
-          "text": "scorer",
-          "startMs": 5829.54,
-          "endMs": 6227.25
+          "text": "thousand",
+          "startMs": 1834.08,
+          "endMs": 2220.46
         },
         {
           "text": "and",
-          "startMs": 6238.62,
-          "endMs": 6306.79
+          "startMs": 2231.83,
+          "endMs": 2334.12
         },
         {
-          "text": "helped",
-          "startMs": 6318.17,
-          "endMs": 6590.87
+          "text": "nine",
+          "startMs": 2345.46,
+          "endMs": 2743.17
         },
         {
-          "text": "win",
-          "startMs": 6602.29,
-          "endMs": 6829.58
-        },
-        {
-          "text": "four",
-          "startMs": 6840.92,
-          "endMs": 6988.62
+          "text": "Four",
+          "startMs": 3522.71,
+          "endMs": 3704.54
         },
         {
           "text": "Champions",
-          "startMs": 7000.0,
-          "endMs": 7488.62
+          "startMs": 3715.92,
+          "endMs": 4227.29
         },
         {
           "text": "League",
-          "startMs": 7500.0,
-          "endMs": 7715.92
+          "startMs": 4238.62,
+          "endMs": 4443.17
         },
         {
           "text": "titles",
-          "startMs": 7727.29,
-          "endMs": 8318.21
+          "startMs": 4454.54,
+          "endMs": 5068.17
         },
         {
-          "text": "Turin",
-          "startMs": 19200.0,
-          "endMs": 19700.0
+          "text": "2014",
+          "startMs": 5852.29,
+          "endMs": 6829.58
+        },
+        {
+          "text": "2016",
+          "startMs": 7000.0,
+          "endMs": 7954.54
+        },
+        {
+          "text": "2017",
+          "startMs": 8738.62,
+          "endMs": 9670.46
         },
         {
           "text": "2018",
-          "startMs": 19927.29,
-          "endMs": 20813.62
-        },
-        {
-          "text": "Even",
-          "startMs": 21593.17,
-          "endMs": 21877.25
-        },
-        {
-          "text": "the",
-          "startMs": 21888.62,
-          "endMs": 21945.46
-        },
-        {
-          "text": "Juventus",
-          "startMs": 21956.83,
-          "endMs": 22422.75
-        },
-        {
-          "text": "supporters",
-          "startMs": 22434.08,
-          "endMs": 22865.92
-        },
-        {
-          "text": "stood",
-          "startMs": 22877.29,
-          "endMs": 23104.58
-        },
-        {
-          "text": "to",
-          "startMs": 23115.92,
-          "endMs": 23206.83
-        },
-        {
-          "text": "applaud",
-          "startMs": 23218.17,
-          "endMs": 23559.08
-        },
-        {
-          "text": "that",
-          "startMs": 23570.46,
-          "endMs": 23695.46
-        },
-        {
-          "text": "finish",
-          "startMs": 23706.83,
-          "endMs": 24161.37
-        },
-        {
-          "text": "For",
-          "startMs": 24945.46,
-          "endMs": 25127.29
-        },
-        {
-          "text": "a",
-          "startMs": 25138.62,
-          "endMs": 25184.08
-        },
-        {
-          "text": "moment",
-          "startMs": 25195.46,
-          "endMs": 25570.46
-        },
-        {
-          "text": "rivalry",
-          "startMs": 25752.29,
-          "endMs": 26161.37
-        },
-        {
-          "text": "gave",
-          "startMs": 26172.71,
-          "endMs": 26388.62
-        },
-        {
-          "text": "way",
-          "startMs": 26400.0,
-          "endMs": 26581.83
-        },
-        {
-          "text": "to",
-          "startMs": 26593.17,
-          "endMs": 26752.25
-        },
-        {
-          "text": "appreciation",
-          "startMs": 26763.62,
-          "endMs": 27536.33
-        },
-        {
-          "text": "They",
-          "startMs": 28320.46,
-          "endMs": 28479.54
-        },
-        {
-          "text": "had",
-          "startMs": 28490.92,
-          "endMs": 28672.75
-        },
-        {
-          "text": "come",
-          "startMs": 28684.08,
-          "endMs": 28854.54
-        },
-        {
-          "text": "to",
-          "startMs": 28865.92,
-          "endMs": 28934.08
-        },
-        {
-          "text": "support",
-          "startMs": 28945.46,
-          "endMs": 29331.83
-        },
-        {
-          "text": "another",
-          "startMs": 29343.17,
-          "endMs": 29615.87
-        },
-        {
-          "text": "team",
-          "startMs": 29627.29,
-          "endMs": 29956.83
-        },
-        {
-          "text": "yet",
-          "startMs": 30093.17,
-          "endMs": 30218.17
-        },
-        {
-          "text": "this",
-          "startMs": 30229.54,
-          "endMs": 30422.71
-        },
-        {
-          "text": "visiting",
-          "startMs": 30434.08,
-          "endMs": 30786.37
-        },
-        {
-          "text": "player",
-          "startMs": 30797.71,
-          "endMs": 31047.71
-        },
-        {
-          "text": "had",
-          "startMs": 31059.08,
-          "endMs": 31218.17
-        },
-        {
-          "text": "made",
-          "startMs": 31229.54,
-          "endMs": 31445.46
-        },
-        {
-          "text": "them",
-          "startMs": 31456.83,
-          "endMs": 31593.21
-        },
-        {
-          "text": "rise",
-          "startMs": 31604.54,
-          "endMs": 31900.0
-        },
-        {
-          "text": "to",
-          "startMs": 31911.38,
-          "endMs": 32002.29
-        },
-        {
-          "text": "their",
-          "startMs": 32013.62,
-          "endMs": 32184.08
-        },
-        {
-          "text": "feet",
-          "startMs": 32195.46,
-          "endMs": 32615.92
+          "startMs": 9840.92,
+          "endMs": 10704.54
         },
         {
           "text": "That",
-          "startMs": 33400.0,
-          "endMs": 33593.17
+          "startMs": 19200.0,
+          "endMs": 19438.62
         },
         {
-          "text": "response",
-          "startMs": 33604.54,
-          "endMs": 34002.25
+          "text": "finish",
+          "startMs": 19450.0,
+          "endMs": 19859.08
         },
         {
-          "text": "became",
-          "startMs": 34013.62,
-          "endMs": 34309.08
+          "text": "2018",
+          "startMs": 20086.38,
+          "endMs": 20972.71
         },
         {
-          "text": "part",
-          "startMs": 34320.46,
-          "endMs": 34570.46
+          "text": "Juventus",
+          "startMs": 21752.29,
+          "endMs": 22252.29
         },
         {
-          "text": "of",
-          "startMs": 34581.83,
-          "endMs": 34650.0
+          "text": "supporters",
+          "startMs": 22263.62,
+          "endMs": 22684.08
         },
         {
-          "text": "the",
-          "startMs": 34661.38,
-          "endMs": 34718.21
+          "text": "stood",
+          "startMs": 22695.46,
+          "endMs": 22911.37
         },
         {
-          "text": "memory",
-          "startMs": 34729.54,
-          "endMs": 35047.71
+          "text": "to",
+          "startMs": 22922.71,
+          "endMs": 23025.0
         },
         {
-          "text": "of",
-          "startMs": 35059.08,
-          "endMs": 35138.62
+          "text": "applaud",
+          "startMs": 23036.38,
+          "endMs": 23354.54
         },
         {
           "text": "his",
-          "startMs": 35150.0,
-          "endMs": 35286.38
+          "startMs": 23365.92,
+          "endMs": 23502.29
         },
         {
           "text": "bicycle",
-          "startMs": 35297.71,
-          "endMs": 35775.0
+          "startMs": 23513.62,
+          "endMs": 24002.25
         },
         {
           "text": "kick",
-          "startMs": 35786.38,
-          "endMs": 36104.54
+          "startMs": 24013.62,
+          "endMs": 24354.54
+        },
+        {
+          "text": "For",
+          "startMs": 25138.62,
+          "endMs": 25320.46
+        },
+        {
+          "text": "a",
+          "startMs": 25331.83,
+          "endMs": 25377.29
+        },
+        {
+          "text": "moment",
+          "startMs": 25388.62,
+          "endMs": 25763.62
+        },
+        {
+          "text": "rivalry",
+          "startMs": 25945.46,
+          "endMs": 26354.54
+        },
+        {
+          "text": "gave",
+          "startMs": 26365.92,
+          "endMs": 26581.83
+        },
+        {
+          "text": "way",
+          "startMs": 26593.17,
+          "endMs": 26775.0
+        },
+        {
+          "text": "to",
+          "startMs": 26786.38,
+          "endMs": 26945.46
+        },
+        {
+          "text": "appreciation",
+          "startMs": 26956.83,
+          "endMs": 27729.54
+        },
+        {
+          "text": "More",
+          "startMs": 28900.0,
+          "endMs": 29138.62
+        },
+        {
+          "text": "Ballon",
+          "startMs": 29150.0,
+          "endMs": 29445.46
+        },
+        {
+          "text": "d'Or",
+          "startMs": 29456.83,
+          "endMs": 29638.67
+        },
+        {
+          "text": "wins",
+          "startMs": 29650.0,
+          "endMs": 29968.17
+        },
+        {
+          "text": "in",
+          "startMs": 29979.54,
+          "endMs": 30104.54
+        },
+        {
+          "text": "white",
+          "startMs": 30115.92,
+          "endMs": 30468.21
+        },
+        {
+          "text": "2013",
+          "startMs": 30695.46,
+          "endMs": 31650.0
+        },
+        {
+          "text": "2014",
+          "startMs": 32429.54,
+          "endMs": 33406.83
+        },
+        {
+          "text": "2016",
+          "startMs": 33577.29,
+          "endMs": 34531.83
+        },
+        {
+          "text": "2017",
+          "startMs": 35315.92,
+          "endMs": 36270.46
+        },
+        {
+          "text": "Four",
+          "startMs": 36452.29,
+          "endMs": 36531.83
+        },
+        {
+          "text": "more",
+          "startMs": 36543.17,
+          "endMs": 36747.71
+        },
+        {
+          "text": "golden",
+          "startMs": 36759.08,
+          "endMs": 37168.17
+        },
+        {
+          "text": "balls",
+          "startMs": 37179.54,
+          "endMs": 37656.83
         }
       ],
       "speechRanges": [
         {
           "start": 0.2,
-          "end": 9.104
+          "end": 11.504
         },
         {
           "start": 19.1,
-          "end": 36.908
+          "end": 28.532
+        },
+        {
+          "start": 28.8,
+          "end": 38.448
         }
       ]
     },
@@ -1316,88 +1210,78 @@
       "voiceDuration": 19.925,
       "words": [
         {
-          "text": "The",
-          "startMs": 200.0,
-          "endMs": 325.0
-        },
-        {
-          "text": "move",
-          "startMs": 336.38,
-          "endMs": 654.54
-        },
-        {
-          "text": "brought",
-          "startMs": 665.92,
-          "endMs": 915.92
-        },
-        {
-          "text": "him",
-          "startMs": 927.29,
-          "endMs": 1063.67
-        },
-        {
-          "text": "to",
-          "startMs": 1075.0,
-          "endMs": 1154.54
-        },
-        {
           "text": "Juventus",
-          "startMs": 1165.92,
-          "endMs": 1654.54
+          "startMs": 200.0,
+          "endMs": 893.17
         },
         {
-          "text": "in 2018",
-          "startMs": 1665.92,
-          "endMs": 2586.37
+          "text": "Turin",
+          "startMs": 1120.46,
+          "endMs": 1540.92
+        },
+        {
+          "text": "2018",
+          "startMs": 1768.17,
+          "endMs": 2654.54
         },
         {
           "text": "A",
-          "startMs": 3365.92,
-          "endMs": 3490.92
+          "startMs": 3434.08,
+          "endMs": 3559.08
         },
         {
           "text": "new",
-          "startMs": 3502.29,
-          "endMs": 3752.29
+          "startMs": 3570.46,
+          "endMs": 3820.46
         },
         {
           "text": "dressing",
-          "startMs": 3763.62,
-          "endMs": 4195.46
+          "startMs": 3831.83,
+          "endMs": 4263.67
         },
         {
           "text": "room",
-          "startMs": 4206.83,
-          "endMs": 4456.83
+          "startMs": 4275.0,
+          "endMs": 4525.0
         },
         {
           "text": "and",
-          "startMs": 4650.0,
-          "endMs": 4763.62
+          "startMs": 4718.17,
+          "endMs": 4831.79
         },
         {
           "text": "new",
-          "startMs": 4775.0,
-          "endMs": 4990.92
+          "startMs": 4843.17,
+          "endMs": 5059.08
         },
         {
           "text": "teammates",
-          "startMs": 5002.29,
-          "endMs": 5672.75
+          "startMs": 5070.46,
+          "endMs": 5740.92
         },
         {
           "text": "United",
           "startMs": 6900.0,
-          "endMs": 7388.62
+          "endMs": 7377.29
         },
         {
           "text": "again",
-          "startMs": 7400.0,
-          "endMs": 7661.38
+          "startMs": 7388.62,
+          "endMs": 7650.0
         },
         {
-          "text": "in 2021",
-          "startMs": 7672.71,
+          "text": "in",
+          "startMs": 7661.38,
+          "endMs": 7786.38
+        },
+        {
+          "text": "twenty",
+          "startMs": 7797.71,
+          "endMs": 8093.17
+        },
+        {
+          "text": "twenty-one",
+          "startMs": 8104.54,
           "endMs": 8775.0
         },
         {
@@ -1438,83 +1322,78 @@
         {
           "text": "Then",
           "startMs": 13400.0,
-          "endMs": 13672.71
+          "endMs": 13661.38
         },
         {
           "text": "Al",
-          "startMs": 13684.08,
-          "endMs": 13865.92
+          "startMs": 13672.71,
+          "endMs": 13820.42
         },
         {
           "text": "Nassr",
-          "startMs": 13877.29,
-          "endMs": 14309.12
+          "startMs": 13831.83,
+          "endMs": 14229.54
         },
         {
           "text": "in",
-          "startMs": 14479.54,
-          "endMs": 14627.25
+          "startMs": 14400.0,
+          "endMs": 14525.0
         },
         {
-          "text": "Saudi",
-          "startMs": 14638.62,
-          "endMs": 15013.62
-        },
-        {
-          "text": "Arabia",
-          "startMs": 15025.0,
-          "endMs": 15570.46
+          "text": "Riyadh",
+          "startMs": 14536.38,
+          "endMs": 15013.67
         },
         {
           "text": "Portugal's",
-          "startMs": 16350.0,
-          "endMs": 16906.83
+          "startMs": 15793.17,
+          "endMs": 16350.0
         },
         {
           "text": "red",
-          "startMs": 16918.17,
-          "endMs": 17156.79
+          "startMs": 16361.38,
+          "endMs": 16600.0
         },
         {
           "text": "and",
-          "startMs": 17168.17,
-          "endMs": 17247.71
+          "startMs": 16611.38,
+          "endMs": 16690.92
         },
         {
           "text": "green",
-          "startMs": 17259.08,
-          "endMs": 17543.17
+          "startMs": 16702.29,
+          "endMs": 16986.37
         },
         {
           "text": "still",
-          "startMs": 17554.54,
-          "endMs": 17815.92
+          "startMs": 16997.71,
+          "endMs": 17259.08
         },
         {
           "text": "linked",
-          "startMs": 17827.29,
-          "endMs": 18054.58
+          "startMs": 17270.46,
+          "endMs": 17497.75
         },
         {
           "text": "him",
-          "startMs": 18065.92,
-          "endMs": 18190.92
+          "startMs": 17509.08,
+          "endMs": 17634.08
         },
         {
           "text": "to",
-          "startMs": 18202.29,
-          "endMs": 18281.83
+          "startMs": 17645.46,
+          "endMs": 17725.0
         },
         {
           "text": "home",
-          "startMs": 18293.17,
-          "endMs": 18702.25
+          "startMs": 17736.38,
+          "endMs": 18145.46
         }
       ],
       "speechRanges": [
         {
           "start": 0.1,
-          "end": 6.46
+          "end": 6.532
         },
         {
           "start": 6.8,
@@ -1522,7 +1401,7 @@
         },
         {
           "start": 13.3,
-          "end": 19.492
+          "end": 18.94
         }
       ]
     },
@@ -1534,119 +1413,109 @@
       "voiceDuration": 31.925,
       "words": [
         {
-          "text": "Portugal's",
+          "text": "Portugal",
           "startMs": 250.0,
-          "endMs": 772.71
+          "endMs": 761.38
         },
         {
-          "text": "story",
-          "startMs": 784.08,
-          "endMs": 1136.37
+          "text": "won",
+          "startMs": 772.71,
+          "endMs": 1000.0
         },
         {
-          "text": "belonged",
-          "startMs": 1147.71,
-          "endMs": 1488.62
+          "text": "Euro",
+          "startMs": 1011.38,
+          "endMs": 1420.46
         },
         {
-          "text": "to",
-          "startMs": 1500.0,
-          "endMs": 1625.0
+          "text": "twenty",
+          "startMs": 1431.83,
+          "endMs": 1750.0
         },
         {
-          "text": "a",
-          "startMs": 1636.38,
-          "endMs": 1693.21
-        },
-        {
-          "text": "team",
-          "startMs": 1704.54,
-          "endMs": 2113.62
-        },
-        {
-          "text": "The",
-          "startMs": 2893.17,
-          "endMs": 3040.87
-        },
-        {
-          "text": "European",
-          "startMs": 3052.29,
-          "endMs": 3563.67
-        },
-        {
-          "text": "title",
-          "startMs": 3575.0,
-          "endMs": 3904.54
-        },
-        {
-          "text": "came",
-          "startMs": 3915.92,
-          "endMs": 4188.62
-        },
-        {
-          "text": "in 2016",
-          "startMs": 4200.0,
-          "endMs": 5245.46
+          "text": "sixteen",
+          "startMs": 1761.38,
+          "endMs": 2375.0
         },
         {
           "text": "Nations",
-          "startMs": 6029.54,
-          "endMs": 6506.83
+          "startMs": 3154.54,
+          "endMs": 3665.92
         },
         {
           "text": "League",
-          "startMs": 6518.17,
-          "endMs": 6734.08
+          "startMs": 3677.29,
+          "endMs": 3961.37
         },
         {
-          "text": "wins",
+          "text": "2019",
+          "startMs": 4109.08,
+          "endMs": 5006.83
+        },
+        {
+          "text": "Nations",
+          "startMs": 5790.92,
+          "endMs": 6302.29
+        },
+        {
+          "text": "League",
+          "startMs": 6313.62,
+          "endMs": 6586.33
+        },
+        {
+          "text": "2025",
           "startMs": 6745.46,
-          "endMs": 7040.92
+          "endMs": 7859.08
         },
         {
-          "text": "followed",
-          "startMs": 7052.29,
-          "endMs": 7381.83
+          "text": "He",
+          "startMs": 8643.17,
+          "endMs": 8790.87
         },
         {
-          "text": "in 2019 and 2025",
-          "startMs": 7393.17,
-          "endMs": 9563.62
+          "text": "lifts",
+          "startMs": 8802.29,
+          "endMs": 9120.46
+        },
+        {
+          "text": "each",
+          "startMs": 9131.83,
+          "endMs": 9381.83
+        },
+        {
+          "text": "cup",
+          "startMs": 9393.17,
+          "endMs": 9734.08
         },
         {
           "text": "Ronaldo",
-          "startMs": 10347.71,
-          "endMs": 10893.17
+          "startMs": 10518.17,
+          "endMs": 11075.0
         },
         {
           "text": "became",
-          "startMs": 10904.54,
-          "endMs": 11234.08
+          "startMs": 11086.38,
+          "endMs": 11404.54
         },
         {
           "text": "men's",
-          "startMs": 11245.46,
-          "endMs": 11518.17
+          "startMs": 11415.92,
+          "endMs": 11688.62
         },
         {
           "text": "international",
-          "startMs": 11529.54,
-          "endMs": 12120.46
-        },
-        {
-          "text": "football's",
-          "startMs": 12131.83,
-          "endMs": 12597.75
+          "startMs": 11700.0,
+          "endMs": 12336.38
         },
         {
           "text": "record",
-          "startMs": 12609.08,
-          "endMs": 13006.79
+          "startMs": 12347.71,
+          "endMs": 12700.0
         },
         {
           "text": "scorer",
-          "startMs": 13018.17,
-          "endMs": 13438.62
+          "startMs": 12711.38,
+          "endMs": 13143.21
         },
         {
           "text": "On",
@@ -1807,7 +1676,7 @@
       "speechRanges": [
         {
           "start": 0.15,
-          "end": 14.238
+          "end": 13.926
         },
         {
           "start": 14.4,

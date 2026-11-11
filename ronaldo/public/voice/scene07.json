@@ -1,6 +1,6 @@
 {
   "sceneId": "scene07",
-  "cacheKey": "202f95d1d45774f646fbfc3519603c83cd736f1e211b0527af828983ad22720e",
+  "cacheKey": "8101533478c7cb07db719bee723413b8284e2588f1c31eabeab05e05497be030",
   "voice": "en-GB-RyanNeural",
   "duration": 31.925,
   "voiceFrom": 0,
@@ -8,9 +8,9 @@
     {
       "id": "07-1",
       "offset": 0.15,
-      "duration": 14.088,
+      "duration": 13.776,
       "rate": "+10%",
-      "cacheKey": "500c10f4613675eaae63ad3d098ef4f3090293c85916d666ed52afbd998709d4"
+      "cacheKey": "28ba52553d3aec7ad40409b2270a776b32a74e70731269b18311251bf2bd95c3"
     },
     {
       "id": "07-2",
@@ -23,7 +23,7 @@
   "speechRanges": [
     {
       "start": 0.15,
-      "end": 14.238
+      "end": 13.926
     },
     {
       "start": 14.4,
@@ -32,119 +32,109 @@
   ],
   "words": [
     {
-      "text": "Portugal's",
+      "text": "Portugal",
       "startMs": 250.0,
-      "endMs": 772.71
+      "endMs": 761.38
     },
     {
-      "text": "story",
-      "startMs": 784.08,
-      "endMs": 1136.37
+      "text": "won",
+      "startMs": 772.71,
+      "endMs": 1000.0
     },
     {
-      "text": "belonged",
-      "startMs": 1147.71,
-      "endMs": 1488.62
+      "text": "Euro",
+      "startMs": 1011.38,
+      "endMs": 1420.46
     },
     {
-      "text": "to",
-      "startMs": 1500.0,
-      "endMs": 1625.0
+      "text": "twenty",
+      "startMs": 1431.83,
+      "endMs": 1750.0
     },
     {
-      "text": "a",
-      "startMs": 1636.38,
-      "endMs": 1693.21
-    },
-    {
-      "text": "team",
-      "startMs": 1704.54,
-      "endMs": 2113.62
-    },
-    {
-      "text": "The",
-      "startMs": 2893.17,
-      "endMs": 3040.87
-    },
-    {
-      "text": "European",
-      "startMs": 3052.29,
-      "endMs": 3563.67
-    },
-    {
-      "text": "title",
-      "startMs": 3575.0,
-      "endMs": 3904.54
-    },
-    {
-      "text": "came",
-      "startMs": 3915.92,
-      "endMs": 4188.62
-    },
-    {
-      "text": "in 2016",
-      "startMs": 4200.0,
-      "endMs": 5245.46
+      "text": "sixteen",
+      "startMs": 1761.38,
+      "endMs": 2375.0
     },
     {
       "text": "Nations",
-      "startMs": 6029.54,
-      "endMs": 6506.83
+      "startMs": 3154.54,
+      "endMs": 3665.92
     },
     {
       "text": "League",
-      "startMs": 6518.17,
-      "endMs": 6734.08
+      "startMs": 3677.29,
+      "endMs": 3961.37
     },
     {
-      "text": "wins",
+      "text": "2019",
+      "startMs": 4109.08,
+      "endMs": 5006.83
+    },
+    {
+      "text": "Nations",
+      "startMs": 5790.92,
+      "endMs": 6302.29
+    },
+    {
+      "text": "League",
+      "startMs": 6313.62,
+      "endMs": 6586.33
+    },
+    {
+      "text": "2025",
       "startMs": 6745.46,
-      "endMs": 7040.92
+      "endMs": 7859.08
     },
     {
-      "text": "followed",
-      "startMs": 7052.29,
-      "endMs": 7381.83
+      "text": "He",
+      "startMs": 8643.17,
+      "endMs": 8790.87
     },
     {
-      "text": "in 2019 and 2025",
-      "startMs": 7393.17,
-      "endMs": 9563.62
+      "text": "lifts",
+      "startMs": 8802.29,
+      "endMs": 9120.46
+    },
+    {
+      "text": "each",
+      "startMs": 9131.83,
+      "endMs": 9381.83
+    },
+    {
+      "text": "cup",
+      "startMs": 9393.17,
+      "endMs": 9734.08
     },
     {
       "text": "Ronaldo",
-      "startMs": 10347.71,
-      "endMs": 10893.17
+      "startMs": 10518.17,
+      "endMs": 11075.0
     },
     {
       "text": "became",
-      "startMs": 10904.54,
-      "endMs": 11234.08
+      "startMs": 11086.38,
+      "endMs": 11404.54
     },
     {
       "text": "men's",
-      "startMs": 11245.46,
-      "endMs": 11518.17
+      "startMs": 11415.92,
+      "endMs": 11688.62
     },
     {
       "text": "international",
-      "startMs": 11529.54,
-      "endMs": 12120.46
-    },
-    {
-      "text": "football's",
-      "startMs": 12131.83,
-      "endMs": 12597.75
+      "startMs": 11700.0,
+      "endMs": 12336.38
     },
     {
       "text": "record",
-      "startMs": 12609.08,
-      "endMs": 13006.79
+      "startMs": 12347.71,
+      "endMs": 12700.0
     },
     {
       "text": "scorer",
-      "startMs": 13018.17,
-      "endMs": 13438.62
+      "startMs": 12711.38,
+      "endMs": 13143.21
     },
     {
       "text": "On",
@@ -302,6 +292,6 @@
       "endMs": 25779.54
     }
   ],
-  "audioSha256": "e85e4f57ab664b3fcb464e6c16068afc5f01e07ccec50d2ad90645f6fe7ab67c",
+  "audioSha256": "208c402facd857178f51f4042f60b048f004dce25ad96274470ef2e69c99d0d2",
   "timingSource": "Actual native WordBoundary timings offset into scene; no atempo"
 }

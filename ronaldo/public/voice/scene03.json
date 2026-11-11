@@ -1,6 +1,6 @@
 {
   "sceneId": "scene03",
-  "cacheKey": "c5dac9695f4377305450641cb7dd402a56f670f2d7630eac4f8febf7d0d900b1",
+  "cacheKey": "60728d3bb7b1201ad2c56c4b1f53c83ea10ab15535597948e6327bf172a8a83d",
   "voice": "en-GB-RyanNeural",
   "duration": 19.925,
   "voiceFrom": 0,
@@ -10,7 +10,7 @@
       "offset": 0.2,
       "duration": 16.296,
       "rate": "+10%",
-      "cacheKey": "06f7c7808f42d28ff9d31f4260fa4e56aca83de55d0c2b3eaa13e25cbb19ed53"
+      "cacheKey": "9bd9d8fd9fd6f22385c77b3c80191f02ca49220e88538ba3fb91cc9cf8e044c4"
     }
   ],
   "speechRanges": [
@@ -56,8 +56,28 @@
       "endMs": 2334.08
     },
     {
-      "text": "in 2002",
+      "text": "in",
       "startMs": 2345.46,
+      "endMs": 2459.08
+    },
+    {
+      "text": "two",
+      "startMs": 2470.46,
+      "endMs": 2652.29
+    },
+    {
+      "text": "thousand",
+      "startMs": 2663.62,
+      "endMs": 3038.62
+    },
+    {
+      "text": "and",
+      "startMs": 3050.0,
+      "endMs": 3129.54
+    },
+    {
+      "text": "two",
+      "startMs": 3140.92,
       "endMs": 3493.21
     },
     {
@@ -236,6 +256,6 @@
       "endMs": 15693.17
     }
   ],
-  "audioSha256": "16eab1043308196038cfc4533523c36e9552b3050ae53817e4d7ea64864934ed",
+  "audioSha256": "5336416a5b02f1323079588b84f86a75f07cc33cbdb76fdfe67a9f6c21a5ef7d",
   "timingSource": "Actual native WordBoundary timings offset into scene; no atempo"
 }

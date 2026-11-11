@@ -50,6 +50,6 @@ export default function Scene01({durationInFrames}: SceneProps) {
     ? {position: [toe[0] + .55, .3, toe[2] + 1.6] as [number, number, number], target: [toe[0], .17, toe[2]] as [number, number, number], fov: 38}
     : {position: [p[0] + 1.6, 1.15, p[2] + 5.8] as [number, number, number], target: [p[0], .95, p[2]] as [number, number, number], fov: 41};
   return <SceneWorld progress={progress} shot={shot} warm mood="childhood" background="#c19075" fog={[24, 100]}>
-    <MadeiraStreet /><FootballActor sample={sample} outfit="sporting" child worn />
+    <MadeiraStreet /><FootballActor sample={sample} outfit="portugal" child worn />
   </SceneWorld>;
 }

@@ -9,7 +9,7 @@ export type CharacterAppearance = {number?: number; hair?: 'swept' | 'crop' | 'c
   face?: 'ronaldo' | 'round' | 'long' | 'square'; build?: number; height?: number; skin?: string;
   hairColor?: string; gloves?: string};
 export type Player3DProps = {outfit: Outfit; pose?: Pose; child?: boolean; progress?: number; silhouette?: boolean;
-  motion?: ActorMotion; character?: CharacterAppearance};
+  motion?: ActorMotion; character?: CharacterAppearance; visualAction?: string};
 
 const kits: Record<Outfit, {shirt: string; trim: string; shorts: string; socks: string}> = {
   portugal: {shirt: '#ba243c', trim: '#238267', shorts: '#143b35', socks: '#b62138'},
@@ -203,7 +203,7 @@ function CharacterHead({skin, child, silhouette, motion, time, character}: {
 }
 
 export function Player3D({outfit, pose = 'idle', child = false, progress, silhouette = false,
-  motion, character = {}}: Player3DProps) {
+  motion, character = {}, visualAction}: Player3DProps) {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
   const t = frame / fps;

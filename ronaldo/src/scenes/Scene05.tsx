@@ -54,13 +54,17 @@ export default function Scene05({durationInFrames}: SceneProps) {
   }
   if (seconds < 23.3) return <SceneWorld progress={progress} mood="madrid" background="#0b1427"
     shot={seconds < 20.7 ? {position: [.55, 2.48, 2.7], target: [0, 2.4, 0], fov: 35}
-      : {position: [2.1, 3.5, -13.8], target: [1.7, 3.4, -17], fov: 39}}>
+      : {position: [1.4, 2.5, -12.8], target: [.2, 2.2, -16.3], fov: 43}}>
     <Stadium mood="madrid" />
     {seconds < 20.7
       ? <ReactionActor seconds={seconds - 18.4} outfit="madrid" emotion="relieved" emotionFrom="smile"
         emotionBlend={(seconds - 18.4) / 1.25} gaze={[.1, .01]} />
-      : <ReactionActor seconds={seconds - 20.7} outfit="juventus" position={[1.7, 1, -17]}
-        emotion="smile" gaze={[-.15, -.04]} gesture="clap" character={GENERIC_CAST.supporter} />}
+      : <>
+        <ReactionActor seconds={seconds - 20.7} outfit="madrid" position={[-.25, 0, -15.7]}
+          emotion="proud" gaze={[.3, .1]} />
+        <ReactionActor seconds={seconds - 20.7} outfit="juventus" position={[1.7, 0, -17]}
+          emotion="smile" gaze={[-.15, -.04]} gesture="clap" character={GENERIC_CAST.supporter} />
+      </>}
   </SceneWorld>;
   if (seconds < 33) {
     const sample = poseAction('training', seconds - 23.3);
